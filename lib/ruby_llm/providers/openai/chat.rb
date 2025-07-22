@@ -6,7 +6,7 @@ module RubyLLM
       # Chat methods of the OpenAI API integration
       module Chat
         def completion_url
-          'chat/completions'
+          'responses'
         end
 
         module_function
@@ -14,7 +14,7 @@ module RubyLLM
         def render_payload(messages, tools:, temperature:, model:, stream: false)
           payload = {
             model: model,
-            messages: format_messages(messages),
+            input: format_messages(messages),
             stream: stream
           }
 
