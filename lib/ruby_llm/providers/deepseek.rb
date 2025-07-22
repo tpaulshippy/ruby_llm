@@ -9,6 +9,10 @@ module RubyLLM
 
       module_function
 
+      def completion_url
+        'chat/completions'
+      end
+
       def api_base(_config)
         'https://api.deepseek.com'
       end

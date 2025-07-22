@@ -10,6 +10,11 @@ module RubyLLM
 
       module_function
 
+      def completion_url
+        'chat/completions'
+      end
+
+
       def api_base(config)
         config.gpustack_api_base
       end
