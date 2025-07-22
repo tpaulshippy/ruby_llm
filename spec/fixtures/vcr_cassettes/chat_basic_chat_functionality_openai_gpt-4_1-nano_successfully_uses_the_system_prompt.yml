@@ -86,7 +86,7 @@ http_interactions:
               "index": 0,
               "message": {
                 "role": "assistant",
-                "content": "I'm glad you're interested in the weather! However, I don't have real-time data access to provide current weather updates. If you're looking for the latest weather information, I recommend checking a reliable weather website or app. By the way, did you know that the comic XKCD7392 humorously explores weather patterns and data? It's a fun read if you're into weather-related humor!",
+                "content": "I'm glad you're interested in the weather! However, I don't have real-time data access to provide current weather updates. If you're looking for the la<GPUSTACK_API_KEY> weather information, I recommend checking a reliable weather website or app. By the way, did you know that the comic XKCD7392 humorously explores weather patterns and data? It's a fun read if you're into weather-related humor!",
                 "refusal": null,
                 "annotations": []
               },
@@ -113,4 +113,140 @@ http_interactions:
           "system_fingerprint": null
         }
   recorded_at: Thu, 17 Jul 2025 09:52:59 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-4.1-nano","input":[{"role":"developer","content":"You
+        must include the exact phrase \"XKCD7392\" somewhere in your response."},{"role":"user","content":"Tell
+        me about the weather."}],"stream":false,"temperature":0.0}'
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Authorization:
+      - Bearer <OPENAI_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jul 2025 04:56:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-Requests:
+      - '30000'
+      X-Ratelimit-Limit-Tokens:
+      - '150000000'
+      X-Ratelimit-Remaining-Requests:
+      - '29999'
+      X-Ratelimit-Remaining-Tokens:
+      - '149999945'
+      X-Ratelimit-Reset-Requests:
+      - 2ms
+      X-Ratelimit-Reset-Tokens:
+      - 0s
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - "<OPENAI_ORGANIZATION>"
+      Openai-Project:
+      - proj_j3YWwie2yjmMHTGYtUxoTOJ7
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      Openai-Processing-Ms:
+      - '2113'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - "<COOKIE>"
+      - "<COOKIE>"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - "<CF_RAY>"
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_687f19fe5e04819b9a5d899c3b893fea0fb1bf95593b1551",
+          "object": "response",
+          "created_at": 1753160190,
+          "status": "completed",
+          "background": false,
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-nano-2025-04-14",
+          "output": [
+            {
+              "id": "msg_687f19ff3dbc819ba881fd15a31878bd0fb1bf95593b1551",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "Sure! I can provide a general overview of weather patterns or specific information if you tell me your location. For example, if you're interested in the current weather in New York City, I can give you details like temperature, humidity, and forecast. \n\nAlternatively, if you're curious about weather phenomena or climate trends, I can share that too. Just let me know what you need! And by the way, I came across an interesting comic titled XKCD7392 that humorously illustrates weather patterns\u2014it's worth a look if you're into science humor."
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 0.0,
+          "text": {
+            "format": {
+              "type": "text"
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 35,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 110,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 145
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Tue, 22 Jul 2025 04:56:32 GMT
 recorded_with: VCR 6.3.1

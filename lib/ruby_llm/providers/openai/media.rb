@@ -33,26 +33,22 @@ module RubyLLM
 
         def format_image(image)
           {
-            type: 'image_url',
-            image_url: {
-              url: image.url? ? image.source : "data:#{image.mime_type};base64,#{image.encoded}"
-            }
+            type: 'input_image',
+            image_url: image.url? ? image.source : "data:#{image.mime_type};base64,#{image.encoded}"
           }
         end
 
         def format_pdf(pdf)
           {
-            type: 'file',
-            file: {
-              filename: pdf.filename,
-              file_data: "data:#{pdf.mime_type};base64,#{pdf.encoded}"
-            }
+            type: 'input_file',
+            filename: pdf.filename,
+            file_data: "data:#{pdf.mime_type};base64,#{pdf.encoded}"
           }
         end
 
         def format_text_file(text_file)
           {
-            type: 'text',
+            type: 'input_text',
             text: Utils.format_text_file_for_llm(text_file)
           }
         end
@@ -69,7 +65,7 @@ module RubyLLM
 
         def format_text(text)
           {
-            type: 'text',
+            type: 'input_text',
             text: text
           }
         end

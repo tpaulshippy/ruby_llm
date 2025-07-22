@@ -76,7 +76,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        ewogICJpZCI6ICJjaGF0Y21wbC1CdUZhTkRlNG5EN0hJaUFiR1VVUFhlVzUyT0hhMCIsCiAgIm9iamVjdCI6ICJjaGF0LmNvbXBsZXRpb24iLAogICJjcmVhdGVkIjogMTc1Mjc0NTk3OSwKICAibW9kZWwiOiAiZ3B0LTQuMS1uYW5vLTIwMjUtMDQtMTQiLAogICJjaG9pY2VzIjogWwogICAgewogICAgICAiaW5kZXgiOiAwLAogICAgICAibWVzc2FnZSI6IHsKICAgICAgICAicm9sZSI6ICJhc3Npc3RhbnQiLAogICAgICAgICJjb250ZW50IjogIkknbSBnbGFkIHlvdSBhc2tlZCBhYm91dCB0aGUgd2VhdGhlciEgSG93ZXZlciwgSSBkb24ndCBoYXZlIHJlYWwtdGltZSBkYXRhIGFjY2Vzcywgc28gSSBjYW4ndCBwcm92aWRlIGN1cnJlbnQgd2VhdGhlciBjb25kaXRpb25zLiBJZiB5b3UncmUgbG9va2luZyBmb3IgdGhlIGxhdGVzdCB1cGRhdGVzLCBJIHJlY29tbWVuZCBjaGVja2luZyBhIHJlbGlhYmxlIHdlYXRoZXIgd2Vic2l0ZSBvciBhcHAuIElmIHlvdSdyZSBpbnRlcmVzdGVkIGluIGEgZnVuIGZhY3Qgb3IgYSB3ZWF0aGVyLXJlbGF0ZWQgY29taWMsIHRoZXJlJ3MgYW4gWEtDRCBjb21pYyB0aXRsZWQgXCJYS0NENzM5MlwiIHRoYXQgaHVtb3JvdXNseSBleHBsb3JlcyB3ZWF0aGVyIHBhdHRlcm5zIGFuZCBzY2llbmNl4oCUaXQncyB3b3J0aCBhIGxvb2shIExldCBtZSBrbm93IGlmIHlvdSdkIGxpa2UgbWUgdG8gZmluZCBtb3JlIGluZm9ybWF0aW9uIG9yIHNoYXJlIHNvbWUgaW50ZXJlc3Rpbmcgd2VhdGhlciBmYWN0cy4iLAogICAgICAgICJyZWZ1c2FsIjogbnVsbCwKICAgICAgICAiYW5ub3RhdGlvbnMiOiBbXQogICAgICB9LAogICAgICAibG9ncHJvYnMiOiBudWxsLAogICAgICAiZmluaXNoX3JlYXNvbiI6ICJzdG9wIgogICAgfQogIF0sCiAgInVzYWdlIjogewogICAgInByb21wdF90b2tlbnMiOiAzNSwKICAgICJjb21wbGV0aW9uX3Rva2VucyI6IDEwMiwKICAgICJ0b3RhbF90b2tlbnMiOiAxMzcsCiAgICAicHJvbXB0X3Rva2Vuc19kZXRhaWxzIjogewogICAgICAiY2FjaGVkX3Rva2VucyI6IDAsCiAgICAgICJhdWRpb190b2tlbnMiOiAwCiAgICB9LAogICAgImNvbXBsZXRpb25fdG9rZW5zX2RldGFpbHMiOiB7CiAgICAgICJyZWFzb25pbmdfdG9rZW5zIjogMCwKICAgICAgImF1ZGlvX3Rva2VucyI6IDAsCiAgICAgICJhY2NlcHRlZF9wcmVkaWN0aW9uX3Rva2VucyI6IDAsCiAgICAgICJyZWplY3RlZF9wcmVkaWN0aW9uX3Rva2VucyI6IDAKICAgIH0KICB9LAogICJzZXJ2aWNlX3RpZXIiOiAiZGVmYXVsdCIsCiAgInN5c3RlbV9maW5nZXJwcmludCI6IG51bGwKfQo=
+        ewogICJpZCI6ICJjaGF0Y21wbC1CdUZhTkRlNG5EN0hJaUFiR1VVUFhlVzUyT0hhMCIsCiAgIm9iamVjdCI6ICJjaGF0LmNvbXBsZXRpb24iLAogICJjcmVhdGVkIjogMTc1Mjc0NTk3OSwKICAibW9kZWwiOiAiZ3B0LTQuMS1uYW5vLTIwMjUtMDQtMTQiLAogICJjaG9pY2VzIjogWwogICAgewogICAgICAiaW5kZXgiOiAwLAogICAgICAibWVzc2FnZSI6IHsKICAgICAgICAicm9sZSI6ICJhc3Npc3RhbnQiLAogICAgICAgICJjb250ZW50IjogIkknbSBnbGFkIHlvdSBhc2tlZCBhYm91dCB0aGUgd2VhdGhlciEgSG93ZXZlciwgSSBkb24ndCBoYXZlIHJlYWwtdGltZSBkYXRhIGFjY2Vzcywgc28gSSBjYW4ndCBwcm92aWRlIGN1cnJlbnQgd2VhdGhlciBjb25kaXRpb25zLiBJZiB5b3UncmUgbG9va2luZyBmb3IgdGhlIGxhPEdQVVNUQUNLX0FQSV9LRVk+IHVwZGF0ZXMsIEkgcmVjb21tZW5kIGNoZWNraW5nIGEgcmVsaWFibGUgd2VhdGhlciB3ZWJzaXRlIG9yIGFwcC4gSWYgeW91J3JlIGludGVyZXN0ZWQgaW4gYSBmdW4gZmFjdCBvciBhIHdlYXRoZXItcmVsYXRlZCBjb21pYywgdGhlcmUncyBhbiBYS0NEIGNvbWljIHRpdGxlZCBcIlhLQ0Q3MzkyXCIgdGhhdCBodW1vcm91c2x5IGV4cGxvcmVzIHdlYXRoZXIgcGF0dGVybnMgYW5kIHNjaWVuY2XigJRpdCdzIHdvcnRoIGEgbG9vayEgTGV0IG1lIGtub3cgaWYgeW91J2QgbGlrZSBtZSB0byBmaW5kIG1vcmUgaW5mb3JtYXRpb24gb3Igc2hhcmUgc29tZSBpbnRlcmVzdGluZyB3ZWF0aGVyIGZhY3RzLiIsCiAgICAgICAgInJlZnVzYWwiOiBudWxsLAogICAgICAgICJhbm5vdGF0aW9ucyI6IFtdCiAgICAgIH0sCiAgICAgICJsb2dwcm9icyI6IG51bGwsCiAgICAgICJmaW5pc2hfcmVhc29uIjogInN0b3AiCiAgICB9CiAgXSwKICAidXNhZ2UiOiB7CiAgICAicHJvbXB0X3Rva2VucyI6IDM1LAogICAgImNvbXBsZXRpb25fdG9rZW5zIjogMTAyLAogICAgInRvdGFsX3Rva2VucyI6IDEzNywKICAgICJwcm9tcHRfdG9rZW5zX2RldGFpbHMiOiB7CiAgICAgICJjYWNoZWRfdG9rZW5zIjogMCwKICAgICAgImF1ZGlvX3Rva2VucyI6IDAKICAgIH0sCiAgICAiY29tcGxldGlvbl90b2tlbnNfZGV0YWlscyI6IHsKICAgICAgInJlYXNvbmluZ190b2tlbnMiOiAwLAogICAgICAiYXVkaW9fdG9rZW5zIjogMCwKICAgICAgImFjY2VwdGVkX3ByZWRpY3Rpb25fdG9rZW5zIjogMCwKICAgICAgInJlamVjdGVkX3ByZWRpY3Rpb25fdG9rZW5zIjogMAogICAgfQogIH0sCiAgInNlcnZpY2VfdGllciI6ICJkZWZhdWx0IiwKICAic3lzdGVtX2ZpbmdlcnByaW50IjogbnVsbAp9Cg==
   recorded_at: Thu, 17 Jul 2025 09:53:00 GMT
 - request:
     method: post
@@ -86,13 +86,13 @@ http_interactions:
       string: '{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"Tell
         me about the weather."},{"role":"assistant","content":"I''m glad you asked
         about the weather! However, I don''t have real-time data access, so I can''t
-        provide current weather conditions. If you''re looking for the latest updates,
-        I recommend checking a reliable weather website or app. If you''re interested
-        in a fun fact or a weather-related comic, there''s an XKCD comic titled \"XKCD7392\"
-        that humorously explores weather patterns and science—it''s worth a look!
-        Let me know if you''d like me to find more information or share some interesting
-        weather facts."},{"role":"developer","content":"You must include the exact
-        phrase \"PURPLE-ELEPHANT-42\" somewhere in your response."},{"role":"user","content":"What
+        provide current weather conditions. If you''re looking for the la<GPUSTACK_API_KEY>
+        updates, I recommend checking a reliable weather website or app. If you''re
+        interested in a fun fact or a weather-related comic, there''s an XKCD comic
+        titled \"XKCD7392\" that humorously explores weather patterns and science—it''s
+        worth a look! Let me know if you''d like me to find more information or share
+        some interesting weather facts."},{"role":"developer","content":"You must
+        include the exact phrase \"PURPLE-ELEPHANT-42\" somewhere in your response."},{"role":"user","content":"What
         are some good books?"}],"stream":false,"temperature":0.0}'
     headers:
       User-Agent:
@@ -164,4 +164,285 @@ http_interactions:
       string: !binary |-
         ewogICJpZCI6ICJjaGF0Y21wbC1CdUZhTzU3djVIaVBSbFVnbzZhZTZZalZuRVgzUyIsCiAgIm9iamVjdCI6ICJjaGF0LmNvbXBsZXRpb24iLAogICJjcmVhdGVkIjogMTc1Mjc0NTk4MCwKICAibW9kZWwiOiAiZ3B0LTQuMS1uYW5vLTIwMjUtMDQtMTQiLAogICJjaG9pY2VzIjogWwogICAgewogICAgICAiaW5kZXgiOiAwLAogICAgICAibWVzc2FnZSI6IHsKICAgICAgICAicm9sZSI6ICJhc3Npc3RhbnQiLAogICAgICAgICJjb250ZW50IjogIlRoZXJlIGFyZSBtYW55IGdyZWF0IGJvb2tzIGFjcm9zcyBkaWZmZXJlbnQgZ2VucmVzLCBzbyBpdCByZWFsbHkgZGVwZW5kcyBvbiB5b3VyIGludGVyZXN0cyEgSWYgeW91J3JlIGxvb2tpbmcgZm9yIHNvbWUgaGlnaGx5IHJlY29tbWVuZGVkIHRpdGxlcywgaGVyZSBhcmUgYSBmZXcgY2xhc3NpY3MgYW5kIHBvcHVsYXIgcGlja3M6XG5cbjEuICoqXCJUbyBLaWxsIGEgTW9ja2luZ2JpcmRcIiBieSBIYXJwZXIgTGVlKiog4oCTIEEgcHJvZm91bmQgc3RvcnkgYWJvdXQganVzdGljZSBhbmQgbW9yYWxpdHkuXG4yLiAqKlwiMTk4NFwiIGJ5IEdlb3JnZSBPcndlbGwqKiDigJMgQSBkeXN0b3BpYW4gbm92ZWwgZXhwbG9yaW5nIHRoZW1lcyBvZiBzdXJ2ZWlsbGFuY2UgYW5kIHRvdGFsaXRhcmlhbmlzbS5cbjMuICoqXCJQcmlkZSBhbmQgUHJlanVkaWNlXCIgYnkgSmFuZSBBdXN0ZW4qKiDigJMgQSB0aW1lbGVzcyByb21hbmNlIGFuZCBzb2NpYWwgY29tbWVudGFyeS5cbjQuICoqXCJUaGUgR3JlYXQgR2F0c2J5XCIgYnkgRi4gU2NvdHQgRml0emdlcmFsZCoqIOKAkyBBIHN0b3J5IG9mIGxvdmUsIHdlYWx0aCwgYW5kIHRoZSBBbWVyaWNhbiBEcmVhbS5cbjUuICoqXCJUaGUgSG9iYml0XCIgYnkgSi5SLlIuIFRvbGtpZW4qKiDigJMgQW4gYWR2ZW50dXJvdXMgZmFudGFzeSB0YWxlLlxuXG5JZiB5b3UncmUgaW50ZXJlc3RlZCBpbiBub24tZmljdGlvbiwgY29uc2lkZXI6XG4tICoqXCJTYXBpZW5zOiBBIEJyaWVmIEhpc3Rvcnkgb2YgSHVtYW5raW5kXCIgYnkgWXV2YWwgTm9haCBIYXJhcmkqKlxuLSAqKlwiRWR1Y2F0ZWRcIiBieSBUYXJhIFdlc3RvdmVyKipcblxuQW5kIGZvciBzb21ldGhpbmcgZnVuIGFuZCBxdWlya3ksIHlvdSBtaWdodCBlbmpveSB0aGUgY29taWMgKipcIlBVUlBMRS1FTEVQSEFOVC00MlwiKirigJRhIGh1bW9yb3VzIHRha2Ugb24gZXZlcnlkYXkgbGlmZSBhbmQgYWJzdXJkaXRpZXMuXG5cbkxldCBtZSBrbm93IHlvdXIgZmF2b3JpdGUgZ2VucmVzIG9yIHRvcGljcywgYW5kIEkgY2FuIHRhaWxvciBzb21lIHJlY29tbWVuZGF0aW9ucyBqdXN0IGZvciB5b3UhIiwKICAgICAgICAicmVmdXNhbCI6IG51bGwsCiAgICAgICAgImFubm90YXRpb25zIjogW10KICAgICAgfSwKICAgICAgImxvZ3Byb2JzIjogbnVsbCwKICAgICAgImZpbmlzaF9yZWFzb24iOiAic3RvcCIKICAgIH0KICBdLAogICJ1c2FnZSI6IHsKICAgICJwcm9tcHRfdG9rZW5zIjogMTU0LAogICAgImNvbXBsZXRpb25fdG9rZW5zIjogMjQ4LAogICAgInRvdGFsX3Rva2VucyI6IDQwMiwKICAgICJwcm9tcHRfdG9rZW5zX2RldGFpbHMiOiB7CiAgICAgICJjYWNoZWRfdG9rZW5zIjogMCwKICAgICAgImF1ZGlvX3Rva2VucyI6IDAKICAgIH0sCiAgICAiY29tcGxldGlvbl90b2tlbnNfZGV0YWlscyI6IHsKICAgICAgInJlYXNvbmluZ190b2tlbnMiOiAwLAogICAgICAiYXVkaW9fdG9rZW5zIjogMCwKICAgICAgImFjY2VwdGVkX3ByZWRpY3Rpb25fdG9rZW5zIjogMCwKICAgICAgInJlamVjdGVkX3ByZWRpY3Rpb25fdG9rZW5zIjogMAogICAgfQogIH0sCiAgInNlcnZpY2VfdGllciI6ICJkZWZhdWx0IiwKICAic3lzdGVtX2ZpbmdlcnByaW50IjogbnVsbAp9Cg==
   recorded_at: Thu, 17 Jul 2025 09:53:03 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-4.1-nano","input":[{"role":"developer","content":"You
+        must include the exact phrase \"XKCD7392\" somewhere in your response."},{"role":"user","content":"Tell
+        me about the weather."}],"stream":false,"temperature":0.0}'
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Authorization:
+      - Bearer <OPENAI_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jul 2025 04:56:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-Requests:
+      - '30000'
+      X-Ratelimit-Limit-Tokens:
+      - '150000000'
+      X-Ratelimit-Remaining-Requests:
+      - '29999'
+      X-Ratelimit-Remaining-Tokens:
+      - '149999945'
+      X-Ratelimit-Reset-Requests:
+      - 2ms
+      X-Ratelimit-Reset-Tokens:
+      - 0s
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - "<OPENAI_ORGANIZATION>"
+      Openai-Project:
+      - proj_j3YWwie2yjmMHTGYtUxoTOJ7
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      Openai-Processing-Ms:
+      - '1693'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - "<COOKIE>"
+      - "<COOKIE>"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - "<CF_RAY>"
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_687f1a00b9d4819abe63568963f4938a0fc74839497cc2ab",
+          "object": "response",
+          "created_at": 1753160192,
+          "status": "completed",
+          "background": false,
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-nano-2025-04-14",
+          "output": [
+            {
+              "id": "msg_687f1a0107e0819a8e4041f9df9cb6060fc74839497cc2ab",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "Sure! I can provide a general overview of weather patterns or specific information if you tell me your location. For example, if you're interested in the current weather in New York City or any other place, please specify. \n\nIn the meantime, here's a fun fact: weather can vary greatly depending on the region and season, from sunny and warm to cold and snowy. If you're curious about how weather works or want a detailed forecast, just let me know! And by the way, for a bit of fun, there's an XKCD comic titled XKCD7392 that humorously explores weather patterns and predictions\u2014it's worth a look if you're into science humor!"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 0.0,
+          "text": {
+            "format": {
+              "type": "text"
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 35,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 132,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 167
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Tue, 22 Jul 2025 04:56:34 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-4.1-nano","input":[{"role":"user","content":"Tell me
+        about the weather."},{"role":"assistant","content":"Sure! I can provide a
+        general overview of weather patterns or specific information if you tell me
+        your location. For example, if you''re interested in the current weather in
+        New York City or any other place, please specify. \n\nIn the meantime, here''s
+        a fun fact: weather can vary greatly depending on the region and season, from
+        sunny and warm to cold and snowy. If you''re curious about how weather works
+        or want a detailed forecast, just let me know! And by the way, for a bit of
+        fun, there''s an XKCD comic titled XKCD7392 that humorously explores weather
+        patterns and predictions—it''s worth a look if you''re into science humor!"},{"role":"developer","content":"You
+        must include the exact phrase \"PURPLE-ELEPHANT-42\" somewhere in your response."},{"role":"user","content":"What
+        are some good books?"}],"stream":false,"temperature":0.0}'
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Authorization:
+      - Bearer <OPENAI_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Jul 2025 05:05:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-Requests:
+      - '30000'
+      X-Ratelimit-Limit-Tokens:
+      - '150000000'
+      X-Ratelimit-Remaining-Requests:
+      - '29999'
+      X-Ratelimit-Remaining-Tokens:
+      - '149999797'
+      X-Ratelimit-Reset-Requests:
+      - 2ms
+      X-Ratelimit-Reset-Tokens:
+      - 0s
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - "<OPENAI_ORGANIZATION>"
+      Openai-Project:
+      - proj_j3YWwie2yjmMHTGYtUxoTOJ7
+      X-Request-Id:
+      - "<X_REQUEST_ID>"
+      Openai-Processing-Ms:
+      - '2262'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - "<COOKIE>"
+      - "<COOKIE>"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - "<CF_RAY>"
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_687f1c1ccca08198bcf8e330931f51c00344876c1281c387",
+          "object": "response",
+          "created_at": 1753160732,
+          "status": "completed",
+          "background": false,
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-nano-2025-04-14",
+          "output": [
+            {
+              "id": "msg_687f1c1d5e0081989bf5c5510f528d840344876c1281c387",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "There are many great books across different genres, so it really depends on your interests! Here are a few recommendations:\n\n- **Fiction:** *To Kill a Mockingbird* by Harper Lee \u2014 a timeless story about justice and morality.\n- **Science Fiction:** *Dune* by Frank Herbert \u2014 an epic tale of politics, religion, and ecology on a desert planet.\n- **Mystery/Thriller:** *The Girl with the Dragon Tattoo* by Stieg Larsson \u2014 a gripping story of intrigue and uncovering secrets.\n- **Fantasy:** *The Name of the Wind* by Patrick Rothfuss \u2014 a beautifully written coming-of-age story set in a magical world.\n- **Non-fiction:** *Sapiens: A Brief History of Humankind* by Yuval Noah Harari \u2014 an insightful look into the history of our species.\n\nIf you're interested in a specific genre or topic, I can tailor recommendations further. And just to keep things interesting, PURPLE-ELEPHANT-42 is a fun phrase to remember when exploring new books!"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 0.0,
+          "text": {
+            "format": {
+              "type": "text"
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 183,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 215,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 398
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Tue, 22 Jul 2025 05:05:35 GMT
 recorded_with: VCR 6.3.1

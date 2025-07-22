@@ -37,7 +37,7 @@ module RubyLLM
           raise Error.new(response, data.dig('error', 'message')) if data.dig('error', 'message')
 
           message_data = data.dig('choices', 0, 'message')
-          return unless message_data
+          return parse_responses_response(data) unless message_data
 
           Message.new(
             role: :assistant,
@@ -45,6 +45,34 @@ module RubyLLM
             tool_calls: parse_tool_calls(message_data['tool_calls']),
             input_tokens: data['usage']['prompt_tokens'],
             output_tokens: data['usage']['completion_tokens'],
+            model_id: data['model']
+          )
+        end
+
+        def parse_responses_response(data)
+          outputs = data['output']
+          return unless outputs&.any?
+
+          assistant_text = nil
+          raw_calls      = []
+
+          outputs.each do |block|
+            case block['type']
+            when 'text'
+              assistant_text ||= block['text']
+            when 'message'
+              assistant_text ||= extract_content_from_output(block)
+            when 'function_call'
+              raw_calls << block
+            end
+          end
+
+          Message.new(
+            role: :assistant,
+            content: assistant_text,
+            tool_calls: parse_tool_calls(raw_calls),
+            input_tokens: data['usage']['input_tokens'],
+            output_tokens: data['usage']['output_tokens'],
             model_id: data['model']
           )
         end
@@ -67,6 +95,31 @@ module RubyLLM
           else
             role.to_s
           end
+        end
+
+        private
+
+        def parse_tool_calls(raw_calls)
+          return nil unless raw_calls&.any?
+
+          raw_calls.to_h do |tc|
+            [
+              tc['call_id'] || tc['id'],
+              ToolCall.new(
+                id: tc['call_id'] || tc['id'],
+                name: tc['name'],
+                arguments: tc['arguments'].is_a?(String) ? JSON.parse(tc['arguments']) : tc['arguments']
+              )
+            ]
+          end
+        end
+
+        def extract_content_from_output(message_data)
+          content_blocks = message_data['content']
+          return nil unless content_blocks&.any?
+
+          text_block = content_blocks.find { |block| block['type'] == 'output_text' }
+          text_block&.dig('text')
         end
       end
     end
