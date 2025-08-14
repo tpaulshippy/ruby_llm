@@ -163,7 +163,7 @@ CHAT_MODELS = [
   { provider: :ollama, model: 'qwen3' },
   { provider: :gpustack, model: 'qwen3' },
   { provider: :perplexity, model: 'sonar' },
-  { provider: :mistral, model: 'mistral-small-latest' }
+  { provider: :mistral, model: 'mistral-small-latest' },
   { provider: :cohere, model: 'command-a-03-2025' },
   { provider: :ollama, model: 'qwen3' }
 ].freeze
@@ -188,7 +188,7 @@ VISION_MODELS = [
   { provider: :openai, model: 'gpt-4.1-nano' },
   { provider: :openrouter, model: 'anthropic/claude-3.5-haiku' },
   { provider: :ollama, model: 'qwen3' },
-  { provider: :mistral, model: 'pixtral-12b-latest' }
+  { provider: :mistral, model: 'pixtral-12b-latest' },
   { provider: :cohere, model: 'c4ai-aya-vision-32b' },
   { provider: :ollama, model: 'qwen3' }
 ].freeze
