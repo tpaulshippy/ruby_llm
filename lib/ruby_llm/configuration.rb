@@ -20,6 +20,7 @@ module RubyLLM
                   :gemini_api_key,
                   :deepseek_api_key,
                   :perplexity_api_key,
+                  :cohere_api_key,
                   :bedrock_api_key,
                   :bedrock_secret_key,
                   :bedrock_region,

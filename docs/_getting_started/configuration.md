@@ -54,6 +54,7 @@ RubyLLM.configure do |config|
   config.anthropic_api_key = ENV['ANTHROPIC_API_KEY']
   config.gemini_api_key = ENV['GEMINI_API_KEY']
   config.deepseek_api_key = ENV['DEEPSEEK_API_KEY']
+  config.cohere_api_key = ENV['COHERE_API_KEY']
   config.mistral_api_key = ENV['MISTRAL_API_KEY']
   config.perplexity_api_key = ENV['PERPLEXITY_API_KEY']
   config.openrouter_api_key = ENV['OPENROUTER_API_KEY']
@@ -318,6 +319,7 @@ RubyLLM.configure do |config|
   config.anthropic_api_key = String
   config.gemini_api_key = String
   config.deepseek_api_key = String
+  config.cohere_api_key = String
   config.mistral_api_key = String
   config.perplexity_api_key = String
   config.openrouter_api_key = String

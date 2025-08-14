@@ -66,6 +66,31 @@ See the [Contributing Guide](https://github.com/crmne/ruby_llm/blob/main/CONTRIB
 | claude-3-7-sonnet-20250219 | anthropic | 200000 | 64000 | In: $3.00, Out: $15.00, Cache: $3.75 |
 | claude-sonnet-4-20250514 | anthropic | 200000 | 64000 | In: $3.00, Out: $15.00, Cache: $3.75 |
 
+### Cohere (21)
+
+| Model | ID | Provider | Context | Max Output | Standard Pricing (per 1M tokens) |
+| :-- | :-- | :-- | --: | --: | :-- |
+| Aya Expanse 32b | c4ai-aya-expanse-32b | cohere | - | - | In: $1.00, Out: $2.00 |
+| Aya Vision 32b | c4ai-aya-vision-32b | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command A 03 2025 | command-a-03-2025 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command A Vision | command-a-vision | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command Light Nightly | command-light-nightly | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command Nightly | command-nightly | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command R | command-r | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command R 08 2024 | command-r-08-2024 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command R Plus 08 2024 | command-r-plus-08-2024 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command R7b 12 2024 | command-r7b-12-2024 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Command R7b Arabic 02 2025 | command-r7b-arabic-02-2025 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed English Light V3.0 | embed-english-light-v3.0 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed English Light V3.0 Image | embed-english-light-v3.0-image | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed English V3.0 | embed-english-v3.0 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed English V3.0 Image | embed-english-v3.0-image | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed Multilingual Light V3.0 Image | embed-multilingual-light-v3.0-image | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed Multilingual V2.0 | embed-multilingual-v2.0 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed Multilingual V3.0 Image | embed-multilingual-v3.0-image | cohere | - | - | In: $1.00, Out: $2.00 |
+| Embed V4.0 | embed-v4.0 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Rerank English V3.0 | rerank-english-v3.0 | cohere | - | - | In: $1.00, Out: $2.00 |
+| Rerank V3.5 | rerank-v3.5 | cohere | - | - | In: $1.00, Out: $2.00 |
 
 ### Bedrock (31)
 

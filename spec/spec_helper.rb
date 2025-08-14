@@ -67,6 +67,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('<GEMINI_API_KEY>') { ENV.fetch('GEMINI_API_KEY', nil) }
   config.filter_sensitive_data('<DEEPSEEK_API_KEY>') { ENV.fetch('DEEPSEEK_API_KEY', nil) }
   config.filter_sensitive_data('<PERPLEXITY_API_KEY>') { ENV.fetch('PERPLEXITY_API_KEY', nil) }
+  config.filter_sensitive_data('<COHERE_API_KEY>') { ENV.fetch('COHERE_API_KEY', nil) }
   config.filter_sensitive_data('<OPENROUTER_API_KEY>') { ENV.fetch('OPENROUTER_API_KEY', nil) }
   config.filter_sensitive_data('<MISTRAL_API_KEY>') { ENV.fetch('MISTRAL_API_KEY', nil) }
   config.filter_sensitive_data('<OLLAMA_API_BASE>') { ENV.fetch('OLLAMA_API_BASE', 'http://localhost:11434/v1') }
@@ -130,6 +131,7 @@ RSpec.shared_context 'with configured RubyLLM' do
       config.gemini_api_key = ENV.fetch('GEMINI_API_KEY', 'test')
       config.deepseek_api_key = ENV.fetch('DEEPSEEK_API_KEY', 'test')
       config.perplexity_api_key = ENV.fetch('PERPLEXITY_API_KEY', 'test')
+      config.cohere_api_key = ENV.fetch('COHERE_API_KEY', 'test')
       config.openrouter_api_key = ENV.fetch('OPENROUTER_API_KEY', 'test')
       config.mistral_api_key = ENV.fetch('MISTRAL_API_KEY', 'test')
       config.ollama_api_base = ENV.fetch('OLLAMA_API_BASE', 'http://localhost:11434/v1')
@@ -162,6 +164,14 @@ CHAT_MODELS = [
   { provider: :gpustack, model: 'qwen3' },
   { provider: :perplexity, model: 'sonar' },
   { provider: :mistral, model: 'mistral-small-latest' }
+  { provider: :cohere, model: 'command-a-03-2025' },
+  { provider: :ollama, model: 'qwen3' }
+].freeze
+
+EMBEDDINGS_MODELS = [
+  { provider: :openai, model: 'text-embedding-004', default_dimensions: 768 },
+  { provider: :gemini, model: 'text-embedding-3-small', default_dimensions: 1024 },
+  { provider: :cohere, model: 'embed-v4.0', default_dimensions: 1024 }
 ].freeze
 
 PDF_MODELS = [
@@ -179,6 +189,8 @@ VISION_MODELS = [
   { provider: :openrouter, model: 'anthropic/claude-3.5-haiku' },
   { provider: :ollama, model: 'qwen3' },
   { provider: :mistral, model: 'pixtral-12b-latest' }
+  { provider: :cohere, model: 'c4ai-aya-vision-32b' },
+  { provider: :ollama, model: 'qwen3' }
 ].freeze
 
 AUDIO_MODELS = [

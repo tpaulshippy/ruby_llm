@@ -1833,6 +1833,662 @@
     }
   },
   {
+    "id": "c4ai-aya-expanse-32b",
+    "name": "Aya Expanse 32b",
+    "provider": "cohere",
+    "family": "aya-expanse",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "multilingual",
+      "citations"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "c4ai-aya-vision-32b",
+    "name": "Aya Vision 32b",
+    "provider": "cohere",
+    "family": "aya-vision",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "multilingual",
+      "citations"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-a-03-2025",
+    "name": "Command A 03 2025",
+    "provider": "cohere",
+    "family": "command-a",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "citations"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-a-vision",
+    "name": "Command A Vision",
+    "provider": "cohere",
+    "family": "command-a",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "citations"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-light-nightly",
+    "name": "Command Light Nightly",
+    "provider": "cohere",
+    "family": "command-light",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-nightly",
+    "name": "Command Nightly",
+    "provider": "cohere",
+    "family": "command-nightly",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-r",
+    "name": "Command R",
+    "provider": "cohere",
+    "family": "command-r",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-r-08-2024",
+    "name": "Command R 08 2024",
+    "provider": "cohere",
+    "family": "command-r",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-r-plus-08-2024",
+    "name": "Command R Plus 08 2024",
+    "provider": "cohere",
+    "family": "command-r",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-r7b-12-2024",
+    "name": "Command R7b 12 2024",
+    "provider": "cohere",
+    "family": "command-r7b",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "command-r7b-arabic-02-2025",
+    "name": "Command R7b Arabic 02 2025",
+    "provider": "cohere",
+    "family": "command-r7b",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-english-light-v3.0",
+    "name": "Embed English Light V3.0",
+    "provider": "cohere",
+    "family": "embed-english",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-english-light-v3.0-image",
+    "name": "Embed English Light V3.0 Image",
+    "provider": "cohere",
+    "family": "embed-english",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-english-v3.0",
+    "name": "Embed English V3.0",
+    "provider": "cohere",
+    "family": "embed-english-v3",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-english-v3.0-image",
+    "name": "Embed English V3.0 Image",
+    "provider": "cohere",
+    "family": "embed-english-v3",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-multilingual-light-v3.0-image",
+    "name": "Embed Multilingual Light V3.0 Image",
+    "provider": "cohere",
+    "family": "embed-multilingual",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "multilingual"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-multilingual-v2.0",
+    "name": "Embed Multilingual V2.0",
+    "provider": "cohere",
+    "family": "embed-multilingual",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "multilingual"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-multilingual-v3.0-image",
+    "name": "Embed Multilingual V3.0 Image",
+    "provider": "cohere",
+    "family": "embed-multilingual-v3",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "multilingual"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "embed-v4.0",
+    "name": "Embed V4.0",
+    "provider": "cohere",
+    "family": "embed-v4",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "rerank-english-v3.0",
+    "name": "Rerank English V3.0",
+    "provider": "cohere",
+    "family": "rerank-english",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "rerank"
+      ]
+    },
+    "capabilities": [
+      "reranking"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "rerank-v3.5",
+    "name": "Rerank V3.5",
+    "provider": "cohere",
+    "family": "rerank-v3-5",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "rerank"
+      ]
+    },
+    "capabilities": [
+      "reranking"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
     "id": "deepseek-chat",
     "name": "deepseek-chat",
     "provider": "deepseek",
@@ -1862,10 +2518,7 @@
         }
       }
     },
-    "metadata": {
-      "object": "model",
-      "owned_by": "deepseek"
-    }
+    "metadata": {}
   },
   {
     "id": "deepseek-reasoner",
@@ -1897,10 +2550,7 @@
         }
       }
     },
-    "metadata": {
-      "object": "model",
-      "owned_by": "deepseek"
-    }
+    "metadata": {}
   },
   {
     "id": "aqa",
@@ -2592,6 +3242,54 @@
     }
   },
   {
+    "id": "gemini-2.0-flash-exp-image-generation",
+    "name": "Gemini 2.0 Flash (Image Generation) Experimental",
+    "provider": "gemini",
+    "family": "gemini20_flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash (Image Generation) Experimental",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "bidiGenerateContent"
+      ]
+    }
+  },
+  {
     "id": "gemini-2.0-flash-lite",
     "name": "Gemini 2.0 Flash-Lite",
     "provider": "gemini",
@@ -2845,7 +3543,14 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash Preview Image Generation",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash-thinking-exp",
@@ -4179,13 +4884,7 @@
       "streaming"
     ],
     "pricing": {},
-    "metadata": {
-      "version": "01",
-      "description": "Vertex served Imagen 4.0 model",
-      "supported_generation_methods": [
-        "predict"
-      ]
-    }
+    "metadata": {}
   },
   {
     "id": "imagen-4.0-ultra-generate-preview-06-06",
@@ -4210,13 +4909,7 @@
       "streaming"
     ],
     "pricing": {},
-    "metadata": {
-      "version": "01",
-      "description": "Vertex served Imagen 4.0 ultra model",
-      "supported_generation_methods": [
-        "predict"
-      ]
-    }
+    "metadata": {}
   },
   {
     "id": "learnlm-2.0-flash-experimental",
@@ -6372,7 +7065,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "computer-use-preview-2025-03-11",
@@ -6409,7 +7105,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "dall-e-2",
@@ -6536,7 +7235,7 @@
     "name": "GPT-3.5 Turbo 0125",
     "provider": "openai",
     "family": "gpt35_turbo",
-    "created_at": "2024-01-23 23:19:18 +0100",
+    "created_at": "2024-01-24 09:19:18 +1100",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -6569,7 +7268,7 @@
     "name": "GPT-3.5 Turbo 1106",
     "provider": "openai",
     "family": "gpt35_turbo",
-    "created_at": "2023-11-02 22:15:48 +0100",
+    "created_at": "2023-11-03 08:15:48 +1100",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -6602,7 +7301,7 @@
     "name": "GPT-3.5 Turbo 16k",
     "provider": "openai",
     "family": "gpt35_turbo",
-    "created_at": "2023-05-11 00:35:02 +0200",
+    "created_at": "2023-05-11 08:35:02 +1000",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -6635,7 +7334,7 @@
     "name": "GPT-3.5 Turbo Instruct",
     "provider": "openai",
     "family": "gpt35_turbo",
-    "created_at": "2023-08-24 20:23:47 +0200",
+    "created_at": "2023-08-25 04:23:47 +1000",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -6668,7 +7367,7 @@
     "name": "GPT-3.5 Turbo Instruct 0914",
     "provider": "openai",
     "family": "gpt35_turbo",
-    "created_at": "2023-09-07 23:34:32 +0200",
+    "created_at": "2023-09-08 07:34:32 +1000",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -6737,7 +7436,7 @@
     "name": "GPT-4 0125 Preview",
     "provider": "openai",
     "family": "other",
-    "created_at": "2024-01-23 20:20:12 +0100",
+    "created_at": "2024-01-24 06:20:12 +1100",
     "context_window": 4096,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -6803,7 +7502,7 @@
     "name": "GPT-4 1106 Preview",
     "provider": "openai",
     "family": "other",
-    "created_at": "2023-11-02 21:33:26 +0100",
+    "created_at": "2023-11-03 07:33:26 +1100",
     "context_window": 4096,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -6916,7 +7615,7 @@
     "name": "GPT-4 Turbo Preview",
     "provider": "openai",
     "family": "gpt4_turbo",
-    "created_at": "2024-01-23 20:22:57 +0100",
+    "created_at": "2024-01-24 06:22:57 +1100",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -7316,7 +8015,7 @@
     "name": "GPT-4o 20240513",
     "provider": "openai",
     "family": "gpt4o",
-    "created_at": "2024-05-10 21:08:52 +0200",
+    "created_at": "2024-05-11 05:08:52 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -7395,7 +8094,7 @@
     "name": "GPT-4o 20241120",
     "provider": "openai",
     "family": "gpt4o",
-    "created_at": "2025-02-12 04:39:03 +0100",
+    "created_at": "2025-02-12 14:39:03 +1100",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -7468,7 +8167,7 @@
     "name": "GPT-4o-Audio Preview 20241001",
     "provider": "openai",
     "family": "gpt4o_audio",
-    "created_at": "2024-09-27 00:17:22 +0200",
+    "created_at": "2024-09-27 08:17:22 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -7505,7 +8204,7 @@
     "name": "GPT-4o-Audio Preview 20241217",
     "provider": "openai",
     "family": "gpt4o_audio",
-    "created_at": "2024-12-12 21:10:39 +0100",
+    "created_at": "2024-12-13 07:10:39 +1100",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -7542,7 +8241,7 @@
     "name": "GPT-4o-Audio Preview 20250603",
     "provider": "openai",
     "family": "gpt4o_audio",
-    "created_at": "2025-06-03 01:54:58 +0200",
+    "created_at": "2025-06-03 09:54:58 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -7979,7 +8678,7 @@
     "name": "GPT-4o-Realtime Preview 20241001",
     "provider": "openai",
     "family": "gpt4o_realtime",
-    "created_at": "2024-09-24 00:49:26 +0200",
+    "created_at": "2024-09-24 08:49:26 +1000",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -8012,7 +8711,7 @@
     "name": "GPT-4o-Realtime Preview 20241217",
     "provider": "openai",
     "family": "gpt4o_realtime",
-    "created_at": "2024-12-11 20:30:30 +0100",
+    "created_at": "2024-12-12 06:30:30 +1100",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -8045,7 +8744,7 @@
     "name": "GPT-4o-Realtime Preview 20250603",
     "provider": "openai",
     "family": "gpt4o_realtime",
-    "created_at": "2025-06-03 01:43:58 +0200",
+    "created_at": "2025-06-03 09:43:58 +1000",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -8495,7 +9194,7 @@
     "name": "O1",
     "provider": "openai",
     "family": "o1",
-    "created_at": "2024-12-16 20:03:36 +0100",
+    "created_at": "2024-09-06 20:54:57 +0200",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -8533,7 +9232,7 @@
     "name": "O1-20241217",
     "provider": "openai",
     "family": "o1",
-    "created_at": "2024-12-16 06:29:36 +0100",
+    "created_at": "2024-09-06 20:54:25 +0200",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -9211,7 +9910,7 @@
     "name": "Omni Moderation 20240926",
     "provider": "openai",
     "family": "moderation",
-    "created_at": "2024-11-27 20:07:46 +0100",
+    "created_at": "2024-11-28 06:07:46 +1100",
     "context_window": null,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -9464,7 +10163,7 @@
     "name": "TTS-1 1106",
     "provider": "openai",
     "family": "tts1",
-    "created_at": "2023-11-04 00:14:01 +0100",
+    "created_at": "2023-11-04 10:14:01 +1100",
     "context_window": null,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -9530,7 +10229,7 @@
     "name": "TTS-1 HD 1106",
     "provider": "openai",
     "family": "tts1_hd",
-    "created_at": "2023-11-04 00:18:53 +0100",
+    "created_at": "2023-11-04 10:18:53 +1100",
     "context_window": null,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -9593,11 +10292,138 @@
     }
   },
   {
+    "id": "01-ai/yi-large",
+    "name": "01.AI: Yi Large",
+    "provider": "openrouter",
+    "family": "01-ai",
+    "created_at": "2024-06-25 02:00:00 +0200",
+    "context_window": 32768,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "structured_output",
+      "predicted_outputs"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 3.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "The Yi Large model was designed by 01.AI with the following usecases in mind: knowledge search, data classification, human-like chat bots, and customer service.\n\nIt stands out for its multilingual proficiency, particularly in Spanish, Chinese, Japanese, German, and French.\n\nCheck out the [launch announcement](https://01-ai.github.io/blog/01.ai-yi-large-llm-launch) to learn more.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Yi",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "logit_bias",
+        "logprobs",
+        "top_logprobs"
+      ]
+    }
+  },
+  {
+    "id": "aetherwiing/mn-starcannon-12b",
+    "name": "Aetherwiing: Starcannon 12B",
+    "provider": "openrouter",
+    "family": "aetherwiing",
+    "created_at": "2024-08-13 02:00:00 +0200",
+    "context_window": 16384,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.7999999999999999,
+          "output_per_million": 1.2
+        }
+      }
+    },
+    "metadata": {
+      "description": "Starcannon 12B v2 is a creative roleplay and story writing model, based on Mistral Nemo, using [nothingiisreal/mn-celeste-12b](/nothingiisreal/mn-celeste-12b) as a base, with [intervitens/mini-magnum-12b-v1.1](https://huggingface.co/intervitens/mini-magnum-12b-v1.1) merged in using the [TIES](https://arxiv.org/abs/2306.01708) method.\n\nAlthough more similar to Magnum overall, the model remains very creative, with a pleasant writing style. It is recommended for people wanting more variety than Magnum, and yet more verbose prose than Celeste.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral",
+        "instruct_type": "chatml"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "min_p",
+        "seed"
+      ]
+    }
+  },
+  {
     "id": "agentica-org/deepcoder-14b-preview",
     "name": "Agentica: Deepcoder 14B Preview",
     "provider": "openrouter",
     "family": "agentica-org",
-    "created_at": "2025-04-13 16:43:15 +0200",
+    "created_at": "2025-04-14 00:43:15 +1000",
     "context_window": 96000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -9664,7 +10490,7 @@
     "name": "Agentica: Deepcoder 14B Preview (free)",
     "provider": "openrouter",
     "family": "agentica-org",
-    "created_at": "2025-04-13 16:43:15 +0200",
+    "created_at": "2025-04-14 00:43:15 +1000",
     "context_window": 96000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -9724,7 +10550,7 @@
     "name": "AI21: Jamba Large 1.7",
     "provider": "openrouter",
     "family": "ai21",
-    "created_at": "2025-08-08 18:03:40 +0200",
+    "created_at": "2025-03-13 23:32:53 +0100",
     "context_window": 256000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -9784,7 +10610,7 @@
     "name": "AI21: Jamba Mini 1.7",
     "provider": "openrouter",
     "family": "ai21",
-    "created_at": "2025-08-08 18:30:01 +0200",
+    "created_at": "2025-03-13 23:32:51 +0100",
     "context_window": 256000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -9844,7 +10670,7 @@
     "name": "AionLabs: Aion-1.0",
     "provider": "openrouter",
     "family": "aion-labs",
-    "created_at": "2025-02-04 20:32:37 +0100",
+    "created_at": "2025-02-05 06:32:37 +1100",
     "context_window": 131072,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -9900,7 +10726,7 @@
     "name": "AionLabs: Aion-1.0-Mini",
     "provider": "openrouter",
     "family": "aion-labs",
-    "created_at": "2025-02-04 20:25:07 +0100",
+    "created_at": "2025-02-05 06:25:07 +1100",
     "context_window": 131072,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -9956,7 +10782,7 @@
     "name": "AionLabs: Aion-RP 1.0 (8B)",
     "provider": "openrouter",
     "family": "aion-labs",
-    "created_at": "2025-02-04 20:18:38 +0100",
+    "created_at": "2025-02-05 06:18:38 +1100",
     "context_window": 32768,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -10011,8 +10837,8 @@
     "provider": "openrouter",
     "family": "alfredpros",
     "created_at": "2025-04-14 16:44:34 +0200",
-    "context_window": 8192,
-    "max_output_tokens": 8192,
+    "context_window": 4096,
+    "max_output_tokens": 4096,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -10071,7 +10897,7 @@
     "name": "Goliath 120B",
     "provider": "openrouter",
     "family": "alpindale",
-    "created_at": "2023-11-10 01:00:00 +0100",
+    "created_at": "2023-11-10 11:00:00 +1100",
     "context_window": 6144,
     "max_output_tokens": 512,
     "knowledge_cutoff": null,
@@ -10118,6 +10944,61 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
+        "top_k",
+        "min_p",
+        "seed",
+        "top_a"
+      ]
+    }
+  },
+  {
+    "id": "alpindale/magnum-72b",
+    "name": "Magnum 72B",
+    "provider": "openrouter",
+    "family": "alpindale",
+    "created_at": "2024-07-11 02:00:00 +0200",
+    "context_window": 16384,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 4.0,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "From the maker of [Goliath](https://openrouter.ai/models/alpindale/goliath-120b), Magnum 72B is the first in a new family of models designed to achieve the prose quality of the Claude 3 models, notably Opus & Sonnet.\n\nThe model is based on [Qwen2 72B](https://openrouter.ai/models/qwen/qwen-2-72b-instruct) and trained with 55 million tokens of highly curated roleplay (RP) data.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": "chatml"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -10138,7 +11019,7 @@
     "name": "Amazon: Nova Lite 1.0",
     "provider": "openrouter",
     "family": "amazon",
-    "created_at": "2024-12-05 23:22:43 +0100",
+    "created_at": "2024-12-06 09:22:43 +1100",
     "context_window": 300000,
     "max_output_tokens": 5120,
     "knowledge_cutoff": null,
@@ -10198,7 +11079,7 @@
     "name": "Amazon: Nova Micro 1.0",
     "provider": "openrouter",
     "family": "amazon",
-    "created_at": "2024-12-05 23:20:37 +0100",
+    "created_at": "2024-12-06 09:20:37 +1100",
     "context_window": 128000,
     "max_output_tokens": 5120,
     "knowledge_cutoff": null,
@@ -10256,7 +11137,7 @@
     "name": "Amazon: Nova Pro 1.0",
     "provider": "openrouter",
     "family": "amazon",
-    "created_at": "2024-12-05 23:05:03 +0100",
+    "created_at": "2024-12-06 09:05:03 +1100",
     "context_window": 300000,
     "max_output_tokens": 5120,
     "knowledge_cutoff": null,
@@ -10316,7 +11197,7 @@
     "name": "Magnum v2 72B",
     "provider": "openrouter",
     "family": "anthracite-org",
-    "created_at": "2024-09-30 02:00:00 +0200",
+    "created_at": "2024-09-30 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -10379,7 +11260,7 @@
     "name": "Magnum v4 72B",
     "provider": "openrouter",
     "family": "anthracite-org",
-    "created_at": "2024-10-22 02:00:00 +0200",
+    "created_at": "2024-10-22 11:00:00 +1100",
     "context_window": 16384,
     "max_output_tokens": 1024,
     "knowledge_cutoff": null,
@@ -10430,11 +11311,344 @@
         "presence_penalty",
         "repetition_penalty",
         "seed",
-        "stop",
+        "logit_bias",
+        "top_a"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2",
+    "name": "Anthropic: Claude v2",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-11-22 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
         "temperature",
         "top_a",
         "top_k",
-        "top_p"
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2.0",
+    "name": "Anthropic: Claude v2.0",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-07-28 02:00:00 +0200",
+    "context_window": 100000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Anthropic's flagship model. Superior performance on tasks that require complex reasoning. Supports hundreds of pages of text.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 100000,
+        "max_completion_tokens": 4096,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2.0:beta",
+    "name": "Anthropic: Claude v2.0 (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-07-28 02:00:00 +0200",
+    "context_window": 100000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Anthropic's flagship model. Superior performance on tasks that require complex reasoning. Supports hundreds of pages of text.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 100000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2.1",
+    "name": "Anthropic: Claude v2.1",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-11-22 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2.1:beta",
+    "name": "Anthropic: Claude v2.1 (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-11-22 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-2:beta",
+    "name": "Anthropic: Claude v2 (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2023-11-22 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 8.0,
+          "output_per_million": 24.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 2 delivers advancements in key capabilities for enterprises—including an industry-leading 200K token context window, significant reductions in rates of model hallucination, system prompts and a new beta feature: tool use.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "top_k",
+        "stop"
       ]
     }
   },
@@ -10443,7 +11657,7 @@
     "name": "Anthropic: Claude 3 Haiku",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-03-13 01:00:00 +0100",
+    "created_at": "2024-03-13 11:00:00 +1100",
     "context_window": 200000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -10494,6 +11708,66 @@
         "stop",
         "temperature",
         "tool_choice",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3-haiku:beta",
+    "name": "Anthropic: Claude 3 Haiku (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-03-13 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.25,
+          "output_per_million": 1.25,
+          "cached_input_per_million": 0.03
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-haiku)\n\n#multimodal",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
         "tools",
         "top_k",
         "top_p"
@@ -10505,7 +11779,7 @@
     "name": "Anthropic: Claude 3 Opus",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-03-05 01:00:00 +0100",
+    "created_at": "2024-03-05 11:00:00 +1100",
     "context_window": 200000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -10556,9 +11830,193 @@
         "stop",
         "temperature",
         "tool_choice",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3-opus:beta",
+    "name": "Anthropic: Claude 3 Opus (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-03-05 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "output_per_million": 75.0,
+          "cached_input_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3 Opus is Anthropic's most powerful model for highly complex tasks. It boasts top-level performance, intelligence, fluency, and understanding.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
         "tools",
         "top_k",
-        "top_p"
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3-sonnet",
+    "name": "Anthropic: Claude 3 Sonnet",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-03-05 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0,
+          "cached_input_per_million": 0.3
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3 Sonnet is an ideal balance of intelligence and speed for enterprise workloads. Maximum utility at a lower price, dependable, balanced for scaled deployments.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "tools",
+        "tool_choice",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3-sonnet:beta",
+    "name": "Anthropic: Claude 3 Sonnet (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-03-05 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0,
+          "cached_input_per_million": 0.3
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3 Sonnet is an ideal balance of intelligence and speed for enterprise workloads. Maximum utility at a lower price, dependable, balanced for scaled deployments.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "tools",
+        "tool_choice",
+        "top_k",
+        "stop"
       ]
     }
   },
@@ -10567,7 +12025,7 @@
     "name": "Anthropic: Claude 3.5 Haiku",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-11-04 01:00:00 +0100",
+    "created_at": "2024-11-04 11:00:00 +1100",
     "context_window": 200000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -10629,7 +12087,7 @@
     "name": "Anthropic: Claude 3.5 Haiku (2024-10-22)",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-11-04 01:00:00 +0100",
+    "created_at": "2024-11-04 11:00:00 +1100",
     "context_window": 200000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -10662,8 +12120,69 @@
         "modality": "text+image->text",
         "input_modalities": [
           "text",
-          "image",
-          "file"
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 8192,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "tools",
+        "tool_choice",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3.5-haiku-20241022:beta",
+    "name": "Anthropic: Claude 3.5 Haiku (2024-10-22) (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-11-04 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.7999999999999999,
+          "output_per_million": 4.0,
+          "cached_input_per_million": 0.08
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-fly code completions. It also excels in specialized tasks like data extraction and real-time content moderation, making it a versatile tool for a broad range of industries.\n\nIt does not support image inputs.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/3-5-models-and-computer-use)",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
         ],
         "output_modalities": [
           "text"
@@ -10682,6 +12201,66 @@
         "stop",
         "temperature",
         "tool_choice",
+        "top_k",
+        "stop"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3.5-haiku:beta",
+    "name": "Anthropic: Claude 3.5 Haiku (self-moderated)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2024-11-04 01:00:00 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.7999999999999999,
+          "output_per_million": 4.0,
+          "cached_input_per_million": 0.08
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly suitable for environments that demand both speed and precision, such as software development, customer service bots, and data management systems.\n\nThis model is currently pointing to [Claude 3.5 Haiku (2024-10-22)](/anthropic/claude-3-5-haiku-20241022).",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
         "tools",
         "top_k",
         "top_p"
@@ -10693,7 +12272,7 @@
     "name": "Anthropic: Claude 3.5 Sonnet",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-10-22 02:00:00 +0200",
+    "created_at": "2024-10-22 11:00:00 +1100",
     "context_window": 200000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -10757,7 +12336,7 @@
     "name": "Anthropic: Claude 3.5 Sonnet (2024-06-20)",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2024-06-20 02:00:00 +0200",
+    "created_at": "2024-06-20 10:00:00 +1000",
     "context_window": 200000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -10821,7 +12400,7 @@
     "name": "Anthropic: Claude 3.7 Sonnet",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-02-24 19:35:10 +0100",
+    "created_at": "2024-06-20 02:00:00 +0200",
     "context_window": 200000,
     "max_output_tokens": 64000,
     "knowledge_cutoff": null,
@@ -10887,7 +12466,7 @@
     "name": "Anthropic: Claude 3.7 Sonnet (self-moderated)",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-02-24 19:35:10 +0100",
+    "created_at": "2024-10-22 02:00:00 +0200",
     "context_window": 200000,
     "max_output_tokens": 128000,
     "knowledge_cutoff": null,
@@ -10951,7 +12530,7 @@
     "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-02-24 19:35:10 +0100",
+    "created_at": "2025-02-25 05:35:10 +1100",
     "context_window": 200000,
     "max_output_tokens": 64000,
     "knowledge_cutoff": null,
@@ -11015,7 +12594,7 @@
     "name": "Anthropic: Claude Opus 4",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-05-22 18:27:25 +0200",
+    "created_at": "2025-02-24 19:35:10 +0100",
     "context_window": 200000,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -11065,6 +12644,63 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "tools",
+        "tool_choice"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet:thinking",
+    "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+    "provider": "openrouter",
+    "family": "anthropic",
+    "created_at": "2025-02-24 19:35:10 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0,
+          "cached_input_per_million": 0.3
+        }
+      }
+    },
+    "metadata": {
+      "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 64000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "reasoning",
         "stop",
@@ -11081,7 +12717,7 @@
     "name": "Anthropic: Claude Opus 4.1",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-08-05 18:33:11 +0200",
+    "created_at": "2025-05-22 18:27:25 +0200",
     "context_window": 200000,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -11145,7 +12781,7 @@
     "name": "Anthropic: Claude Sonnet 4",
     "provider": "openrouter",
     "family": "anthropic",
-    "created_at": "2025-05-22 18:12:51 +0200",
+    "created_at": "2025-05-23 02:12:51 +1000",
     "context_window": 200000,
     "max_output_tokens": 64000,
     "knowledge_cutoff": null,
@@ -11195,9 +12831,128 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "tools",
+        "tool_choice",
+        "top_p",
+        "top_k"
+      ]
+    }
+  },
+  {
+    "id": "arcee-ai/arcee-blitz",
+    "name": "Arcee AI: Arcee Blitz",
+    "provider": "openrouter",
+    "family": "arcee-ai",
+    "created_at": "2025-05-05 20:35:00 +0200",
+    "context_window": 32768,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "structured_output",
+      "predicted_outputs"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.44999999999999996,
+          "output_per_million": 0.75
+        }
+      }
+    },
+    "metadata": {
+      "description": "Arcee Blitz is a 24 B‑parameter dense model distilled from DeepSeek and built on Mistral architecture for \"everyday\" chat. The distillation‑plus‑refinement pipeline trims compute while keeping DeepSeek‑style reasoning, so Blitz punches above its weight on MMLU, GSM‑8K and BBH compared with other mid‑size open models. With a default 128 k context window and competitive throughput, it serves as a cost‑efficient workhorse for summarization, brainstorming and light code help. Internally, Arcee uses Blitz as the default writer in Conductor pipelines when the heavier Virtuoso line is not required. Users therefore get near‑70 B quality at ~⅓ the latency and price. ",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "reasoning",
         "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "repetition_penalty",
+        "logit_bias",
+        "min_p",
+        "response_format"
+      ]
+    }
+  },
+  {
+    "id": "arcee-ai/caller-large",
+    "name": "Arcee AI: Caller Large",
+    "provider": "openrouter",
+    "family": "arcee-ai",
+    "created_at": "2025-05-06 01:31:09 +0200",
+    "context_window": 32768,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "predicted_outputs"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.55,
+          "output_per_million": 0.85
+        }
+      }
+    },
+    "metadata": {
+      "description": "Caller Large is Arcee's specialist \"function‑calling\" SLM built to orchestrate external tools and APIs. Instead of maximizing next‑token accuracy, training focuses on structured JSON outputs, parameter extraction and multi‑step tool chains, making Caller a natural choice for retrieval‑augmented generation, robotic process automation or data‑pull chatbots. It incorporates a routing head that decides when (and how) to invoke a tool versus answering directly, reducing hallucinated calls. The model is already the backbone of Arcee Conductor's auto‑tool mode, where it parses user intent, emits clean function signatures and hands control back once the tool response is ready. Developers thus gain an OpenAI‑style function‑calling UX without handing requests to a frontier‑scale model. ",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
         "temperature",
         "tool_choice",
         "tools",
@@ -11211,7 +12966,7 @@
     "name": "Arcee AI: Coder Large",
     "provider": "openrouter",
     "family": "arcee-ai",
-    "created_at": "2025-05-05 22:57:43 +0200",
+    "created_at": "2025-05-06 06:57:43 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -11273,7 +13028,7 @@
     "name": "Arcee AI: Maestro Reasoning",
     "provider": "openrouter",
     "family": "arcee-ai",
-    "created_at": "2025-05-05 23:41:09 +0200",
+    "created_at": "2025-05-06 07:41:09 +1000",
     "context_window": 131072,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -11335,7 +13090,7 @@
     "name": "Arcee AI: Spotlight",
     "provider": "openrouter",
     "family": "arcee-ai",
-    "created_at": "2025-05-05 23:45:52 +0200",
+    "created_at": "2025-05-06 07:45:52 +1000",
     "context_window": 131072,
     "max_output_tokens": 65537,
     "knowledge_cutoff": null,
@@ -11399,7 +13154,7 @@
     "name": "Arcee AI: Virtuoso Large",
     "provider": "openrouter",
     "family": "arcee-ai",
-    "created_at": "2025-05-05 23:01:25 +0200",
+    "created_at": "2025-05-06 07:01:25 +1000",
     "context_window": 131072,
     "max_output_tokens": 64000,
     "knowledge_cutoff": null,
@@ -11463,10 +13218,10 @@
     "id": "arliai/qwq-32b-arliai-rpr-v1",
     "name": "ArliAI: QwQ 32B RpR v1",
     "provider": "openrouter",
-    "family": "arliai",
-    "created_at": "2025-04-13 16:53:02 +0200",
-    "context_window": 32768,
-    "max_output_tokens": null,
+    "family": "arcee-ai",
+    "created_at": "2025-05-05 22:53:54 +0200",
+    "context_window": 131072,
+    "max_output_tokens": 32768,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -11531,7 +13286,7 @@
     "name": "ArliAI: QwQ 32B RpR v1 (free)",
     "provider": "openrouter",
     "family": "arliai",
-    "created_at": "2025-04-13 16:53:02 +0200",
+    "created_at": "2025-04-14 00:53:02 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -11591,7 +13346,7 @@
     "name": "Baidu: ERNIE 4.5 300B A47B ",
     "provider": "openrouter",
     "family": "baidu",
-    "created_at": "2025-06-30 18:15:39 +0200",
+    "created_at": "2025-07-01 02:15:39 +1000",
     "context_window": 123000,
     "max_output_tokens": 12000,
     "knowledge_cutoff": null,
@@ -11717,7 +13472,7 @@
     "name": "Venice: Uncensored (free)",
     "provider": "openrouter",
     "family": "cognitivecomputations",
-    "created_at": "2025-07-09 23:02:46 +0200",
+    "created_at": "2025-07-10 07:02:46 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -11771,7 +13526,7 @@
     "name": "Dolphin 2.9.2 Mixtral 8x22B 🐬",
     "provider": "openrouter",
     "family": "cognitivecomputations",
-    "created_at": "2024-06-08 02:00:00 +0200",
+    "created_at": "2024-06-08 10:00:00 +1000",
     "context_window": 16000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -11899,7 +13654,7 @@
     "name": "Dolphin3.0 Mistral 24B (free)",
     "provider": "openrouter",
     "family": "cognitivecomputations",
-    "created_at": "2025-02-13 16:53:39 +0100",
+    "created_at": "2025-02-14 02:53:39 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -11957,7 +13712,7 @@
     "name": "Dolphin3.0 R1 Mistral 24B",
     "provider": "openrouter",
     "family": "cognitivecomputations",
-    "created_at": "2025-02-13 17:01:38 +0100",
+    "created_at": "2025-02-14 03:01:38 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -12024,7 +13779,7 @@
     "name": "Dolphin3.0 R1 Mistral 24B (free)",
     "provider": "openrouter",
     "family": "cognitivecomputations",
-    "created_at": "2025-02-13 17:01:38 +0100",
+    "created_at": "2025-02-14 03:01:38 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -12084,7 +13839,7 @@
     "name": "Cohere: Command",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-03-14 01:00:00 +0100",
+    "created_at": "2024-03-14 11:00:00 +1100",
     "context_window": 4096,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12147,8 +13902,8 @@
     "provider": "openrouter",
     "family": "cohere",
     "created_at": "2025-03-13 20:32:22 +0100",
-    "context_window": 32768,
-    "max_output_tokens": null,
+    "context_window": 256000,
+    "max_output_tokens": 8192,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -12208,7 +13963,7 @@
     "name": "Cohere: Command R",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-03-14 01:00:00 +0100",
+    "created_at": "2024-03-14 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12272,7 +14027,7 @@
     "name": "Cohere: Command R (03-2024)",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-03-02 02:00:00 +0100",
+    "created_at": "2024-03-02 12:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12336,7 +14091,7 @@
     "name": "Cohere: Command R (08-2024)",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-08-30 02:00:00 +0200",
+    "created_at": "2024-08-30 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12400,7 +14155,7 @@
     "name": "Cohere: Command R+",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-04-04 02:00:00 +0200",
+    "created_at": "2024-04-04 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12464,7 +14219,7 @@
     "name": "Cohere: Command R+ (04-2024)",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-04-02 02:00:00 +0200",
+    "created_at": "2024-04-02 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12528,7 +14283,7 @@
     "name": "Cohere: Command R+ (08-2024)",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-08-30 02:00:00 +0200",
+    "created_at": "2024-08-30 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12592,7 +14347,7 @@
     "name": "Cohere: Command R7B (12-2024)",
     "provider": "openrouter",
     "family": "cohere",
-    "created_at": "2024-12-14 07:35:52 +0100",
+    "created_at": "2024-12-14 17:35:52 +1100",
     "context_window": 128000,
     "max_output_tokens": 4000,
     "knowledge_cutoff": null,
@@ -12654,7 +14409,7 @@
     "name": "DeepSeek: DeepSeek V3",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2024-12-26 20:28:40 +0100",
+    "created_at": "2024-12-27 06:28:40 +1100",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -12725,7 +14480,7 @@
     "name": "DeepSeek: DeepSeek V3 0324",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-03-24 14:59:15 +0100",
+    "created_at": "2025-03-25 00:59:15 +1100",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -12797,8 +14552,8 @@
     "provider": "openrouter",
     "family": "deepseek",
     "created_at": "2025-03-24 14:59:15 +0100",
-    "context_window": 163840,
-    "max_output_tokens": 163840,
+    "context_window": 32768,
+    "max_output_tokens": 16384,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -12836,7 +14591,52 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
+        "top_logprobs"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-chat:free",
+    "name": "DeepSeek: DeepSeek V3 (free)",
+    "provider": "openrouter",
+    "family": "deepseek",
+    "created_at": "2024-12-26 20:28:40 +0100",
+    "context_window": 163840,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "predicted_outputs"
+    ],
+    "pricing": {},
+    "metadata": {
+      "description": "DeepSeek-V3 is the latest model from the DeepSeek team, building upon the instruction following and coding abilities of the previous versions. Pre-trained on nearly 15 trillion tokens, the reported evaluations reveal that the model outperforms other open-source models and rivals leading closed-source models.\n\nFor model details, please visit [the DeepSeek-V3 repo](https://github.com/deepseek-ai/DeepSeek-V3) for more information, or see the [launch announcement](https://api-docs.deepseek.com/news/news1226).",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "top_provider": {
+        "context_length": 163840,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -12857,7 +14657,7 @@
     "name": "DeepSeek: DeepSeek Prover V2",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-04-30 13:38:14 +0200",
+    "created_at": "2025-04-30 21:38:14 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -12920,7 +14720,7 @@
     "name": "DeepSeek: R1",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-20 14:51:35 +0100",
+    "created_at": "2025-01-21 00:51:35 +1100",
     "context_window": 163840,
     "max_output_tokens": 163840,
     "knowledge_cutoff": null,
@@ -12993,7 +14793,7 @@
     "name": "DeepSeek: R1 0528",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-05-28 19:59:30 +0200",
+    "created_at": "2025-05-29 03:59:30 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13049,15 +14849,12 @@
         "reasoning",
         "repetition_penalty",
         "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
         "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
+        "tool_choice",
+        "structured_outputs",
+        "seed",
+        "logprobs",
+        "top_logprobs"
       ]
     }
   },
@@ -13066,7 +14863,7 @@
     "name": "DeepSeek: Deepseek R1 0528 Qwen3 8B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-05-29 19:09:03 +0200",
+    "created_at": "2025-05-30 03:09:03 +1000",
     "context_window": 32000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13133,7 +14930,7 @@
     "name": "DeepSeek: Deepseek R1 0528 Qwen3 8B (free)",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-05-29 19:09:03 +0200",
+    "created_at": "2025-05-30 03:09:03 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13193,7 +14990,7 @@
     "name": "DeepSeek: R1 0528 (free)",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-05-28 19:59:30 +0200",
+    "created_at": "2025-05-29 03:59:30 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13253,7 +15050,7 @@
     "name": "DeepSeek: R1 Distill Llama 70B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-23 21:12:49 +0100",
+    "created_at": "2025-01-24 07:12:49 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13326,7 +15123,7 @@
     "name": "DeepSeek: R1 Distill Llama 70B (free)",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-23 21:12:49 +0100",
+    "created_at": "2025-01-24 07:12:49 +1100",
     "context_window": 8192,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -13386,7 +15183,7 @@
     "name": "DeepSeek: R1 Distill Llama 8B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-02-07 15:15:18 +0100",
+    "created_at": "2025-02-08 01:15:18 +1100",
     "context_window": 32000,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -13451,7 +15248,7 @@
     "name": "DeepSeek: R1 Distill Qwen 1.5B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-31 13:54:27 +0100",
+    "created_at": "2025-01-31 23:54:27 +1100",
     "context_window": 131072,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -13515,7 +15312,7 @@
     "name": "DeepSeek: R1 Distill Qwen 14B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-30 00:39:00 +0100",
+    "created_at": "2025-01-30 10:39:00 +1100",
     "context_window": 64000,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -13580,7 +15377,7 @@
     "name": "DeepSeek: R1 Distill Qwen 14B (free)",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-30 00:39:00 +0100",
+    "created_at": "2025-01-30 10:39:00 +1100",
     "context_window": 64000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13640,7 +15437,7 @@
     "name": "DeepSeek: R1 Distill Qwen 32B",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-30 00:53:50 +0100",
+    "created_at": "2025-01-30 10:53:50 +1100",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -13698,7 +15495,67 @@
         "stop",
         "temperature",
         "top_k",
-        "top_p"
+        "min_p",
+        "repetition_penalty",
+        "logit_bias",
+        "response_format"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-r1-distill-qwen-7b",
+    "name": "DeepSeek: R1 Distill Qwen 7B",
+    "provider": "openrouter",
+    "family": "deepseek",
+    "created_at": "2025-05-30 20:03:57 +0200",
+    "context_window": 131072,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.09999999999999999,
+          "output_per_million": 0.19999999999999998
+        }
+      }
+    },
+    "metadata": {
+      "description": "DeepSeek-R1-Distill-Qwen-7B is a 7 billion parameter dense language model distilled from DeepSeek-R1, leveraging reinforcement learning-enhanced reasoning data generated by DeepSeek's larger models. The distillation process transfers advanced reasoning, math, and code capabilities into a smaller, more efficient model architecture based on Qwen2.5-Math-7B. This model demonstrates strong performance across mathematical benchmarks (92.8% pass@1 on MATH-500), coding tasks (Codeforces rating 1189), and general reasoning (49.1% pass@1 on GPQA Diamond), achieving competitive accuracy relative to larger models while maintaining smaller inference costs.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": "deepseek-r1"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "reasoning",
+        "include_reasoning",
+        "seed"
       ]
     }
   },
@@ -13707,7 +15564,7 @@
     "name": "DeepSeek: R1 (free)",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-01-20 14:51:35 +0100",
+    "created_at": "2025-01-21 00:51:35 +1100",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13755,7 +15612,7 @@
     "name": "DeepSeek: DeepSeek V3 Base",
     "provider": "openrouter",
     "family": "deepseek",
-    "created_at": "2025-03-29 19:13:43 +0100",
+    "created_at": "2025-03-30 05:13:43 +1100",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -13820,7 +15677,7 @@
     "name": "EleutherAI: Llemma 7b",
     "provider": "openrouter",
     "family": "eleutherai",
-    "created_at": "2025-04-14 17:07:05 +0200",
+    "created_at": "2025-04-15 01:07:05 +1000",
     "context_window": 4096,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -13864,8 +15721,121 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "min_p",
+        "seed"
+      ]
+    }
+  },
+  {
+    "id": "eva-unit-01/eva-llama-3.33-70b",
+    "name": "EVA Llama 3.33 70B",
+    "provider": "openrouter",
+    "family": "eva-unit-01",
+    "created_at": "2024-12-16 20:28:23 +0100",
+    "context_window": 16384,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 4.0,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "EVA Llama 3.33 70b is a roleplay and storywriting specialist model. It is a full-parameter finetune of [Llama-3.3-70B-Instruct](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct) on mixture of synthetic and natural data.\n\nIt uses Celeste 70B 0.1 data mixture, greatly expanding it to improve versatility, creativity and \"flavor\" of the resulting model\n\nThis model was built with Llama by Meta.\n",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "min_p",
+        "seed"
+      ]
+    }
+  },
+  {
+    "id": "eva-unit-01/eva-qwen-2.5-72b",
+    "name": "EVA Qwen2.5 72B",
+    "provider": "openrouter",
+    "family": "eva-unit-01",
+    "created_at": "2024-11-21 18:36:46 +0100",
+    "context_window": 16384,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 4.0,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {
+      "description": "EVA Qwen2.5 72B is a roleplay and storywriting specialist model. It's a full-parameter finetune of Qwen2.5-72B on mixture of synthetic and natural data.\n\nIt uses Celeste 70B 0.1 data mixture, greatly expanding it to improve versatility, creativity and \"flavor\" of the resulting model.",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": "chatml"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
         "presence_penalty",
         "repetition_penalty",
         "seed",
@@ -13881,7 +15851,7 @@
     "name": "Qrwkv 72B (free)",
     "provider": "openrouter",
     "family": "featherless",
-    "created_at": "2025-03-20 15:39:57 +0100",
+    "created_at": "2025-03-21 01:39:57 +1100",
     "context_window": 32768,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -13935,7 +15905,7 @@
     "name": "Google: Gemini 2.0 Flash",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-02-05 16:30:13 +0100",
+    "created_at": "2025-02-06 02:30:13 +1100",
     "context_window": 1048576,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14004,7 +15974,7 @@
     "name": "Google: Gemini 2.0 Flash Experimental (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-12-11 18:18:43 +0100",
+    "created_at": "2024-12-12 04:18:43 +1100",
     "context_window": 1048576,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14060,7 +16030,7 @@
     "name": "Google: Gemini 2.0 Flash Lite",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-02-25 18:56:52 +0100",
+    "created_at": "2025-02-26 04:56:52 +1100",
     "context_window": 1048576,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14126,7 +16096,7 @@
     "name": "Google: Gemini 2.5 Flash",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-06-17 17:01:28 +0200",
+    "created_at": "2025-06-18 01:01:28 +1000",
     "context_window": 1048576,
     "max_output_tokens": 65535,
     "knowledge_cutoff": null,
@@ -14267,7 +16237,7 @@
     "name": "Google: Gemini 2.5 Flash Lite Preview 06-17",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-06-17 17:23:51 +0200",
+    "created_at": "2025-06-18 01:23:51 +1000",
     "context_window": 1048576,
     "max_output_tokens": 65535,
     "knowledge_cutoff": null,
@@ -14336,7 +16306,7 @@
     "name": "Google: Gemini 2.5 Pro",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-06-17 16:12:24 +0200",
+    "created_at": "2025-06-18 00:12:24 +1000",
     "context_window": 1048576,
     "max_output_tokens": 65536,
     "knowledge_cutoff": null,
@@ -14405,7 +16375,7 @@
     "name": "Google: Gemini 2.5 Pro Experimental",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-25 18:01:39 +0100",
+    "created_at": "2025-03-26 04:01:39 +1100",
     "context_window": 1048576,
     "max_output_tokens": 65535,
     "knowledge_cutoff": null,
@@ -14464,7 +16434,7 @@
     "name": "Google: Gemini 2.5 Pro Preview 06-05",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-06-05 17:27:37 +0200",
+    "created_at": "2025-06-06 01:27:37 +1000",
     "context_window": 1048576,
     "max_output_tokens": 65536,
     "knowledge_cutoff": null,
@@ -14533,7 +16503,7 @@
     "name": "Google: Gemini 2.5 Pro Preview 05-06",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-05-07 02:41:53 +0200",
+    "created_at": "2025-05-07 10:41:53 +1000",
     "context_window": 1048576,
     "max_output_tokens": 65535,
     "knowledge_cutoff": null,
@@ -14602,7 +16572,7 @@
     "name": "Google: Gemini 1.5 Flash ",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-05-14 02:00:00 +0200",
+    "created_at": "2024-05-14 10:00:00 +1000",
     "context_window": 1000000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14669,7 +16639,7 @@
     "name": "Google: Gemini 1.5 Flash 8B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-10-03 02:00:00 +0200",
+    "created_at": "2024-10-03 10:00:00 +1000",
     "context_window": 1000000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14736,7 +16706,7 @@
     "name": "Google: Gemini 1.5 Pro",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-04-09 02:00:00 +0200",
+    "created_at": "2024-04-09 10:00:00 +1000",
     "context_window": 2000000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14802,7 +16772,7 @@
     "name": "Google: Gemma 2 27B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-07-13 02:00:00 +0200",
+    "created_at": "2024-07-13 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -14867,7 +16837,7 @@
     "name": "Google: Gemma 2 9B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-06-28 02:00:00 +0200",
+    "created_at": "2024-06-28 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14934,7 +16904,7 @@
     "name": "Google: Gemma 2 9B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2024-06-28 02:00:00 +0200",
+    "created_at": "2024-06-28 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -14992,7 +16962,7 @@
     "name": "Google: Gemma 3 12B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-13 22:50:25 +0100",
+    "created_at": "2025-03-14 08:50:25 +1100",
     "context_window": 96000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -15061,7 +17031,7 @@
     "name": "Google: Gemma 3 12B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-13 22:50:25 +0100",
+    "created_at": "2025-03-14 08:50:25 +1100",
     "context_window": 96000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -15125,8 +17095,8 @@
     "provider": "openrouter",
     "family": "google",
     "created_at": "2025-03-12 06:12:39 +0100",
-    "context_window": 96000,
-    "max_output_tokens": 8192,
+    "context_window": 131072,
+    "max_output_tokens": 16384,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -15193,7 +17163,7 @@
     "name": "Google: Gemma 3 27B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-12 06:12:39 +0100",
+    "created_at": "2025-03-12 16:12:39 +1100",
     "context_window": 96000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -15256,7 +17226,7 @@
     "name": "Google: Gemma 3 4B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-13 23:38:30 +0100",
+    "created_at": "2025-03-14 09:38:30 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -15321,7 +17291,7 @@
     "name": "Google: Gemma 3 4B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-03-13 23:38:30 +0100",
+    "created_at": "2025-03-14 09:38:30 +1100",
     "context_window": 32768,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -15374,7 +17344,7 @@
     "name": "Google: Gemma 3n 2B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-07-09 17:28:24 +0200",
+    "created_at": "2025-07-10 01:28:24 +1000",
     "context_window": 8192,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -15427,7 +17397,7 @@
     "name": "Google: Gemma 3n 4B",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-05-20 23:33:44 +0200",
+    "created_at": "2025-05-21 07:33:44 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -15489,7 +17459,7 @@
     "name": "Google: Gemma 3n 4B (free)",
     "provider": "openrouter",
     "family": "google",
-    "created_at": "2025-05-20 23:33:44 +0200",
+    "created_at": "2025-05-21 07:33:44 +1000",
     "context_window": 8192,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -15542,7 +17512,7 @@
     "name": "MythoMax 13B",
     "provider": "openrouter",
     "family": "gryphe",
-    "created_at": "2023-07-02 02:00:00 +0200",
+    "created_at": "2023-07-02 10:00:00 +1000",
     "context_window": 4096,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -15610,8 +17580,8 @@
     "provider": "openrouter",
     "family": "inception",
     "created_at": "2025-06-26 23:23:46 +0200",
-    "context_window": 128000,
-    "max_output_tokens": 16384,
+    "context_window": 32000,
+    "max_output_tokens": 16000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -15674,8 +17644,8 @@
     "provider": "openrouter",
     "family": "inception",
     "created_at": "2025-04-30 19:24:40 +0200",
-    "context_window": 128000,
-    "max_output_tokens": 16384,
+    "context_window": 32000,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -15738,8 +17708,8 @@
     "provider": "openrouter",
     "family": "infermatic",
     "created_at": "2024-11-13 03:20:28 +0100",
-    "context_window": 8192,
-    "max_output_tokens": 8192,
+    "context_window": 16384,
+    "max_output_tokens": 4096,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -15798,7 +17768,7 @@
     "name": "Inflection: Inflection 3 Pi",
     "provider": "openrouter",
     "family": "inflection",
-    "created_at": "2024-10-11 02:00:00 +0200",
+    "created_at": "2024-10-11 11:00:00 +1100",
     "context_window": 8000,
     "max_output_tokens": 1024,
     "knowledge_cutoff": null,
@@ -15853,7 +17823,7 @@
     "name": "Inflection: Inflection 3 Productivity",
     "provider": "openrouter",
     "family": "inflection",
-    "created_at": "2024-10-11 02:00:00 +0200",
+    "created_at": "2024-10-11 11:00:00 +1100",
     "context_window": 8000,
     "max_output_tokens": 1024,
     "knowledge_cutoff": null,
@@ -15908,7 +17878,7 @@
     "name": "Liquid: LFM 3B",
     "provider": "openrouter",
     "family": "liquid",
-    "created_at": "2025-01-25 13:01:41 +0100",
+    "created_at": "2025-01-25 23:01:41 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -15970,8 +17940,8 @@
     "provider": "openrouter",
     "family": "liquid",
     "created_at": "2024-09-30 02:00:00 +0200",
-    "context_window": 65536,
-    "max_output_tokens": 65536,
+    "context_window": 32768,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -16023,11 +17993,13 @@
         "repetition_penalty",
         "response_format",
         "seed",
-        "stop",
-        "temperature",
         "top_k",
+        "min_p",
+        "repetition_penalty",
+        "logit_bias",
+        "logprobs",
         "top_logprobs",
-        "top_p"
+        "response_format"
       ]
     }
   },
@@ -16036,7 +18008,7 @@
     "name": "Liquid: LFM 7B",
     "provider": "openrouter",
     "family": "liquid",
-    "created_at": "2025-01-25 13:08:03 +0100",
+    "created_at": "2025-01-25 23:08:03 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -16103,7 +18075,7 @@
     "name": "Mancer: Weaver (alpha)",
     "provider": "openrouter",
     "family": "mancer",
-    "created_at": "2023-08-02 02:00:00 +0200",
+    "created_at": "2023-08-02 10:00:00 +1000",
     "context_window": 8000,
     "max_output_tokens": 1000,
     "knowledge_cutoff": null,
@@ -16167,7 +18139,7 @@
     "name": "Meta: Llama 3 70B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-04-18 02:00:00 +0200",
+    "created_at": "2024-04-18 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16237,7 +18209,7 @@
     "name": "Meta: Llama 3 8B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-04-18 02:00:00 +0200",
+    "created_at": "2024-04-18 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16305,7 +18277,7 @@
     "name": "Meta: Llama 3.1 405B (base)",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-08-02 02:00:00 +0200",
+    "created_at": "2024-08-02 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -16370,7 +18342,7 @@
     "name": "Meta: Llama 3.1 405B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-07-23 02:00:00 +0200",
+    "created_at": "2024-07-23 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16441,7 +18413,7 @@
     "name": "Meta: Llama 3.1 405B Instruct (free)",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-07-23 02:00:00 +0200",
+    "created_at": "2024-07-23 10:00:00 +1000",
     "context_window": 65536,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -16495,7 +18467,7 @@
     "name": "Meta: Llama 3.1 70B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-07-23 02:00:00 +0200",
+    "created_at": "2024-07-23 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16567,8 +18539,8 @@
     "provider": "openrouter",
     "family": "meta-llama",
     "created_at": "2024-07-23 02:00:00 +0200",
-    "context_window": 131072,
-    "max_output_tokens": 16384,
+    "context_window": 131000,
+    "max_output_tokens": 131000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -16637,7 +18609,7 @@
     "name": "Meta: Llama 3.2 11B Vision Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16706,7 +18678,7 @@
     "name": "Meta: Llama 3.2 11B Vision Instruct (free)",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -16763,7 +18735,7 @@
     "name": "Meta: Llama 3.2 1B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -16830,7 +18802,7 @@
     "name": "Meta: Llama 3.2 3B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 20000,
     "max_output_tokens": 20000,
     "knowledge_cutoff": null,
@@ -16901,7 +18873,7 @@
     "name": "Meta: Llama 3.2 3B Instruct (free)",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -16952,7 +18924,7 @@
     "name": "Meta: Llama 3.2 90B Vision Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-09-25 02:00:00 +0200",
+    "created_at": "2024-09-25 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -17019,7 +18991,7 @@
     "name": "Meta: Llama 3.3 70B Instruct",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-12-06 18:28:57 +0100",
+    "created_at": "2024-12-07 04:28:57 +1100",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -17090,7 +19062,7 @@
     "name": "Meta: Llama 3.3 70B Instruct (free)",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-12-06 18:28:57 +0100",
+    "created_at": "2024-12-07 04:28:57 +1100",
     "context_window": 65536,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17148,7 +19120,7 @@
     "name": "Meta: Llama 4 Maverick",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2025-04-05 21:37:02 +0200",
+    "created_at": "2025-04-06 05:37:02 +1000",
     "context_window": 1048576,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -17207,12 +19179,11 @@
         "seed",
         "stop",
         "structured_outputs",
-        "temperature",
-        "tool_choice",
+        "logit_bias",
         "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
+        "tool_choice",
+        "logprobs",
+        "top_logprobs"
       ]
     }
   },
@@ -17221,7 +19192,7 @@
     "name": "Meta: Llama 4 Scout",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2025-04-05 21:31:59 +0200",
+    "created_at": "2025-04-06 05:31:59 +1000",
     "context_window": 1048576,
     "max_output_tokens": 1048576,
     "knowledge_cutoff": null,
@@ -17294,7 +19265,7 @@
     "name": "Meta: LlamaGuard 2 8B",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2024-05-13 02:00:00 +0200",
+    "created_at": "2024-05-13 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17356,7 +19327,7 @@
     "name": "Llama Guard 3 8B",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2025-02-13 00:01:58 +0100",
+    "created_at": "2025-02-13 10:01:58 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17423,7 +19394,7 @@
     "name": "Meta: Llama Guard 4 12B",
     "provider": "openrouter",
     "family": "meta-llama",
-    "created_at": "2025-04-30 03:06:33 +0200",
+    "created_at": "2025-04-30 11:06:33 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17557,7 +19528,7 @@
     "name": "Microsoft: MAI DS R1 (free)",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2025-04-21 02:08:20 +0200",
+    "created_at": "2025-04-21 10:08:20 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17617,7 +19588,7 @@
     "name": "Microsoft: Phi-3 Medium 128K Instruct",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2024-05-24 02:00:00 +0200",
+    "created_at": "2024-05-24 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17674,7 +19645,7 @@
     "name": "Microsoft: Phi-3 Mini 128K Instruct",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2024-05-26 02:00:00 +0200",
+    "created_at": "2024-05-26 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17731,7 +19702,7 @@
     "name": "Microsoft: Phi-3.5 Mini 128K Instruct",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2024-08-21 02:00:00 +0200",
+    "created_at": "2024-08-21 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17788,7 +19759,7 @@
     "name": "Microsoft: Phi 4",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2025-01-10 07:17:52 +0100",
+    "created_at": "2025-01-10 17:17:52 +1100",
     "context_window": 16384,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17856,7 +19827,7 @@
     "name": "Microsoft: Phi 4 Multimodal Instruct",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2025-03-08 02:11:24 +0100",
+    "created_at": "2025-03-08 12:11:24 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17921,7 +19892,7 @@
     "name": "Microsoft: Phi 4 Reasoning Plus",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2025-05-01 22:22:41 +0200",
+    "created_at": "2025-05-02 06:22:41 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -17986,7 +19957,7 @@
     "name": "WizardLM-2 8x22B",
     "provider": "openrouter",
     "family": "microsoft",
-    "created_at": "2024-04-16 02:00:00 +0200",
+    "created_at": "2024-04-16 10:00:00 +1000",
     "context_window": 65536,
     "max_output_tokens": 65536,
     "knowledge_cutoff": null,
@@ -18051,7 +20022,7 @@
     "name": "MiniMax: MiniMax-01",
     "provider": "openrouter",
     "family": "minimax",
-    "created_at": "2025-01-15 05:31:02 +0100",
+    "created_at": "2025-01-15 15:31:02 +1100",
     "context_window": 1000192,
     "max_output_tokens": 1000192,
     "knowledge_cutoff": null,
@@ -18107,7 +20078,7 @@
     "name": "MiniMax: MiniMax M1",
     "provider": "openrouter",
     "family": "minimax",
-    "created_at": "2025-06-18 00:46:54 +0200",
+    "created_at": "2025-06-18 08:46:54 +1000",
     "context_window": 1000000,
     "max_output_tokens": 40000,
     "knowledge_cutoff": null,
@@ -18176,7 +20147,7 @@
     "name": "Mistral: Codestral 2501",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-01-14 23:58:42 +0100",
+    "created_at": "2025-01-15 09:58:42 +1100",
     "context_window": 262144,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -18304,7 +20275,7 @@
     "name": "Mistral: Devstral Medium",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-07-10 17:28:41 +0200",
+    "created_at": "2025-07-11 01:28:41 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -18368,7 +20339,7 @@
     "name": "Mistral: Devstral Small 1.1",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-07-10 17:19:11 +0200",
+    "created_at": "2025-07-11 01:19:11 +1000",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -18436,7 +20407,7 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2025-05-21 16:22:59 +0200",
-    "context_window": 131072,
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -18506,7 +20477,7 @@
     "name": "Mistral: Devstral Small 2505 (free)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-05-21 16:22:59 +0200",
+    "created_at": "2025-05-22 00:22:59 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -18567,7 +20538,7 @@
     "name": "Mistral: Magistral Medium 2506",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-06-08 05:40:54 +0200",
+    "created_at": "2025-06-08 13:40:54 +1000",
     "context_window": 40960,
     "max_output_tokens": 40000,
     "knowledge_cutoff": null,
@@ -18633,7 +20604,7 @@
     "name": "Mistral: Magistral Medium 2506 (thinking)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-06-08 05:40:54 +0200",
+    "created_at": "2025-06-08 13:40:54 +1000",
     "context_window": 40960,
     "max_output_tokens": 40000,
     "knowledge_cutoff": null,
@@ -18700,8 +20671,8 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2025-06-10 17:32:41 +0200",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
+    "context_window": 40960,
+    "max_output_tokens": 40960,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -18744,19 +20715,27 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "reasoning",
+        "include_reasoning",
+        "stop",
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
         "presence_penalty",
-        "reasoning",
-        "response_format",
+        "top_k",
+        "repetition_penalty",
+        "logit_bias",
+        "logprobs",
+        "top_logprobs",
+        "min_p",
         "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
         "tools",
-        "top_p"
+        "tool_choice",
+        "structured_outputs",
+        "response_format"
       ]
     }
   },
@@ -18766,7 +20745,7 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2024-10-17 02:00:00 +0200",
-    "context_window": 32768,
+    "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -18826,7 +20805,7 @@
     "name": "Mistral: Ministral 8B",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-10-17 02:00:00 +0200",
+    "created_at": "2024-10-17 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -18890,7 +20869,7 @@
     "name": "Mistral: Mistral 7B Instruct",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-05-27 02:00:00 +0200",
+    "created_at": "2024-05-27 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -18959,7 +20938,7 @@
     "name": "Mistral: Mistral 7B Instruct v0.1",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2023-09-28 02:00:00 +0200",
+    "created_at": "2023-09-28 10:00:00 +1000",
     "context_window": 2824,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19025,7 +21004,7 @@
     "name": "Mistral: Mistral 7B Instruct v0.2",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2023-12-28 01:00:00 +0100",
+    "created_at": "2023-12-28 11:00:00 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19087,7 +21066,7 @@
     "name": "Mistral: Mistral 7B Instruct v0.3",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-05-27 02:00:00 +0200",
+    "created_at": "2024-05-27 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -19156,7 +21135,7 @@
     "name": "Mistral: Mistral 7B Instruct (free)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-05-27 02:00:00 +0200",
+    "created_at": "2024-05-27 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -19215,7 +21194,7 @@
     "name": "Mistral Large",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-02-26 01:00:00 +0100",
+    "created_at": "2024-02-26 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19279,7 +21258,7 @@
     "name": "Mistral Large 2407",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-11-19 02:06:55 +0100",
+    "created_at": "2024-11-19 12:06:55 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19343,7 +21322,7 @@
     "name": "Mistral Large 2411",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-11-19 02:11:25 +0100",
+    "created_at": "2024-11-19 12:11:25 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19407,7 +21386,7 @@
     "name": "Mistral: Mistral Medium 3",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-05-07 16:15:41 +0200",
+    "created_at": "2025-05-08 00:15:41 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19539,7 +21518,7 @@
     "name": "Mistral: Mistral Nemo",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-07-19 02:00:00 +0200",
+    "created_at": "2024-07-19 10:00:00 +1000",
     "context_window": 32000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19586,17 +21565,16 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "repetition_penalty",
         "logit_bias",
         "logprobs",
-        "max_tokens",
+        "top_logprobs",
         "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
         "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
+        "response_format",
+        "tools",
         "tool_choice",
         "tools",
         "top_k",
@@ -19610,7 +21588,7 @@
     "name": "Mistral: Mistral Nemo (free)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-07-19 02:00:00 +0200",
+    "created_at": "2024-07-19 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 128000,
     "knowledge_cutoff": null,
@@ -19668,7 +21646,7 @@
     "name": "Mistral: Saba",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-02-17 15:40:39 +0100",
+    "created_at": "2025-02-18 01:40:39 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19732,7 +21710,7 @@
     "name": "Mistral Small",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-01-10 01:00:00 +0100",
+    "created_at": "2024-01-10 11:00:00 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19796,7 +21774,7 @@
     "name": "Mistral: Mistral Small 3",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-01-30 17:43:29 +0100",
+    "created_at": "2025-01-31 03:43:29 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19843,12 +21821,14 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "repetition_penalty",
         "logit_bias",
         "logprobs",
-        "max_tokens",
+        "top_logprobs",
         "min_p",
-        "presence_penalty",
-        "repetition_penalty",
+        "seed",
         "response_format",
         "seed",
         "stop",
@@ -19867,7 +21847,7 @@
     "name": "Mistral: Mistral Small 3 (free)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-01-30 17:43:29 +0100",
+    "created_at": "2025-01-31 03:43:29 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -19926,8 +21906,8 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2025-03-17 20:15:37 +0100",
-    "context_window": 131072,
-    "max_output_tokens": 96000,
+    "context_window": 128000,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -19998,7 +21978,7 @@
     "name": "Mistral: Mistral Small 3.1 24B (free)",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2025-03-17 20:15:37 +0100",
+    "created_at": "2025-03-18 06:15:37 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20065,7 +22045,7 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2025-06-20 20:10:16 +0200",
-    "context_window": 131072,
+    "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -20138,7 +22118,7 @@
     "provider": "openrouter",
     "family": "mistralai",
     "created_at": "2025-06-20 20:10:16 +0200",
-    "context_window": 131072,
+    "context_window": 96000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -20201,7 +22181,7 @@
     "name": "Mistral Tiny",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-01-10 01:00:00 +0100",
+    "created_at": "2024-01-10 11:00:00 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20265,7 +22245,7 @@
     "name": "Mistral: Mixtral 8x22B Instruct",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-04-17 02:00:00 +0200",
+    "created_at": "2024-04-17 10:00:00 +1000",
     "context_window": 65536,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20335,7 +22315,7 @@
     "name": "Mistral: Mixtral 8x7B Instruct",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2023-12-10 01:00:00 +0100",
+    "created_at": "2023-12-10 11:00:00 +1100",
     "context_window": 32768,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -20403,7 +22383,7 @@
     "name": "Mistral: Pixtral 12B",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-09-10 02:00:00 +0200",
+    "created_at": "2024-09-10 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20476,7 +22456,7 @@
     "name": "Mistral: Pixtral Large 2411",
     "provider": "openrouter",
     "family": "mistralai",
-    "created_at": "2024-11-19 01:49:48 +0100",
+    "created_at": "2024-11-19 11:49:48 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20542,7 +22522,7 @@
     "name": "MoonshotAI: Kimi Dev 72B (free)",
     "provider": "openrouter",
     "family": "moonshotai",
-    "created_at": "2025-06-17 01:18:29 +0200",
+    "created_at": "2025-06-17 09:18:29 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20602,7 +22582,7 @@
     "name": "MoonshotAI: Kimi K2",
     "provider": "openrouter",
     "family": "moonshotai",
-    "created_at": "2025-07-11 21:47:32 +0200",
+    "created_at": "2025-07-12 05:47:32 +1000",
     "context_window": 63000,
     "max_output_tokens": 63000,
     "knowledge_cutoff": null,
@@ -20674,7 +22654,7 @@
     "provider": "openrouter",
     "family": "moonshotai",
     "created_at": "2025-07-11 21:47:32 +0200",
-    "context_window": 32768,
+    "context_window": 65536,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -20687,7 +22667,6 @@
     },
     "capabilities": [
       "streaming",
-      "function_calling",
       "predicted_outputs"
     ],
     "pricing": {},
@@ -20711,6 +22690,12 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "tools",
+        "tool_choice",
+        "stop",
         "frequency_penalty",
         "logit_bias",
         "logprobs",
@@ -20734,7 +22719,7 @@
     "name": "MoonshotAI: Kimi VL A3B Thinking",
     "provider": "openrouter",
     "family": "moonshotai",
-    "created_at": "2025-04-10 19:07:21 +0200",
+    "created_at": "2025-04-11 03:07:21 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -20802,10 +22787,10 @@
     "id": "moonshotai/kimi-vl-a3b-thinking:free",
     "name": "MoonshotAI: Kimi VL A3B Thinking (free)",
     "provider": "openrouter",
-    "family": "moonshotai",
-    "created_at": "2025-04-10 19:07:21 +0200",
-    "context_window": 131072,
-    "max_output_tokens": null,
+    "family": "morph",
+    "created_at": "2025-06-26 15:55:08 +0200",
+    "context_window": 32000,
+    "max_output_tokens": 16000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -20866,8 +22851,8 @@
     "provider": "openrouter",
     "family": "morph",
     "created_at": "2025-07-07 19:40:02 +0200",
-    "context_window": 81920,
-    "max_output_tokens": 38000,
+    "context_window": 32000,
+    "max_output_tokens": 16000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -20920,8 +22905,8 @@
     "provider": "openrouter",
     "family": "morph",
     "created_at": "2025-07-07 19:54:18 +0200",
-    "context_window": 81920,
-    "max_output_tokens": 38000,
+    "context_window": 32000,
+    "max_output_tokens": 16000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -20973,7 +22958,7 @@
     "name": "NeverSleep: Llama 3 Lumimaid 70B",
     "provider": "openrouter",
     "family": "neversleep",
-    "created_at": "2024-05-16 02:00:00 +0200",
+    "created_at": "2024-05-16 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -21035,8 +23020,8 @@
     "provider": "openrouter",
     "family": "neversleep",
     "created_at": "2024-09-15 02:00:00 +0200",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
+    "context_window": 32768,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -21102,8 +23087,8 @@
     "provider": "openrouter",
     "family": "neversleep",
     "created_at": "2023-11-26 01:00:00 +0100",
-    "context_window": 4096,
-    "max_output_tokens": null,
+    "context_window": 8192,
+    "max_output_tokens": 2048,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -21167,10 +23152,10 @@
     "id": "nousresearch/deephermes-3-llama-3-8b-preview:free",
     "name": "Nous: DeepHermes 3 Llama 3 8B Preview (free)",
     "provider": "openrouter",
-    "family": "nousresearch",
-    "created_at": "2025-02-28 06:09:32 +0100",
-    "context_window": 131072,
-    "max_output_tokens": null,
+    "family": "nothingiisreal",
+    "created_at": "2024-08-02 02:00:00 +0200",
+    "context_window": 16384,
+    "max_output_tokens": 4096,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -21226,8 +23211,8 @@
     "name": "Nous: DeepHermes 3 Mistral 24B Preview",
     "provider": "openrouter",
     "family": "nousresearch",
-    "created_at": "2025-05-10 00:48:24 +0200",
-    "context_window": 32768,
+    "created_at": "2025-02-28 06:09:32 +0100",
+    "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -21293,7 +23278,7 @@
     "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
     "provider": "openrouter",
     "family": "nousresearch",
-    "created_at": "2024-05-27 02:00:00 +0200",
+    "created_at": "2024-05-27 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 131072,
     "knowledge_cutoff": null,
@@ -21361,7 +23346,7 @@
     "name": "Nous: Hermes 3 405B Instruct",
     "provider": "openrouter",
     "family": "nousresearch",
-    "created_at": "2024-08-16 02:00:00 +0200",
+    "created_at": "2024-08-16 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -21428,7 +23413,7 @@
     "name": "Nous: Hermes 3 70B Instruct",
     "provider": "openrouter",
     "family": "nousresearch",
-    "created_at": "2024-08-18 02:00:00 +0200",
+    "created_at": "2024-08-18 10:00:00 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -21499,7 +23484,7 @@
     "name": "Nous: Hermes 2 Mixtral 8x7B DPO",
     "provider": "openrouter",
     "family": "nousresearch",
-    "created_at": "2024-01-16 01:00:00 +0100",
+    "created_at": "2024-01-16 11:00:00 +1100",
     "context_window": 32768,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -21561,7 +23546,7 @@
     "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
     "provider": "openrouter",
     "family": "nvidia",
-    "created_at": "2024-10-15 02:00:00 +0200",
+    "created_at": "2024-10-15 11:00:00 +1100",
     "context_window": 131072,
     "max_output_tokens": 131072,
     "knowledge_cutoff": null,
@@ -21631,7 +23616,7 @@
     "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
     "provider": "openrouter",
     "family": "nvidia",
-    "created_at": "2025-04-08 14:24:19 +0200",
+    "created_at": "2025-04-08 22:24:19 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -21696,7 +23681,7 @@
     "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1 (free)",
     "provider": "openrouter",
     "family": "nvidia",
-    "created_at": "2025-04-08 14:24:19 +0200",
+    "created_at": "2025-04-08 22:24:19 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -21754,7 +23739,7 @@
     "name": "NVIDIA: Llama 3.3 Nemotron Super 49B v1",
     "provider": "openrouter",
     "family": "nvidia",
-    "created_at": "2025-04-08 15:38:14 +0200",
+    "created_at": "2025-04-08 23:38:14 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -21817,7 +23802,7 @@
     "name": "OpenAI: ChatGPT-4o",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-08-14 02:00:00 +0200",
+    "created_at": "2024-08-14 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -21883,7 +23868,7 @@
     "name": "OpenAI: Codex Mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-05-16 17:36:01 +0200",
+    "created_at": "2025-05-17 01:36:01 +1000",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -21947,7 +23932,7 @@
     "name": "OpenAI: GPT-3.5 Turbo",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-05-28 02:00:00 +0200",
+    "created_at": "2023-05-28 10:00:00 +1000",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22014,7 +23999,7 @@
     "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-01-25 01:00:00 +0100",
+    "created_at": "2024-01-25 11:00:00 +1100",
     "context_window": 4095,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22081,7 +24066,7 @@
     "name": "OpenAI: GPT-3.5 Turbo 16k",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-08-28 02:00:00 +0200",
+    "created_at": "2023-08-28 10:00:00 +1000",
     "context_window": 16385,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22148,7 +24133,7 @@
     "name": "OpenAI: GPT-3.5 Turbo Instruct",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-09-28 02:00:00 +0200",
+    "created_at": "2023-09-28 10:00:00 +1000",
     "context_window": 4095,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22212,7 +24197,7 @@
     "name": "OpenAI: GPT-4",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-05-28 02:00:00 +0200",
+    "created_at": "2023-05-28 10:00:00 +1000",
     "context_window": 8191,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22279,7 +24264,7 @@
     "name": "OpenAI: GPT-4 (older v0314)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-05-28 02:00:00 +0200",
+    "created_at": "2023-05-28 10:00:00 +1000",
     "context_window": 8191,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22346,7 +24331,7 @@
     "name": "OpenAI: GPT-4 Turbo (older v1106)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2023-11-06 01:00:00 +0100",
+    "created_at": "2023-11-06 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22413,7 +24398,7 @@
     "name": "OpenAI: GPT-4 Turbo",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-04-09 02:00:00 +0200",
+    "created_at": "2024-04-09 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22482,7 +24467,7 @@
     "name": "OpenAI: GPT-4 Turbo Preview",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-01-25 01:00:00 +0100",
+    "created_at": "2024-01-25 11:00:00 +1100",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22549,7 +24534,7 @@
     "name": "OpenAI: GPT-4.1",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-14 19:23:05 +0200",
+    "created_at": "2025-04-15 03:23:05 +1000",
     "context_window": 1047576,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -22622,7 +24607,7 @@
     "name": "OpenAI: GPT-4.1 Mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-14 19:23:01 +0200",
+    "created_at": "2025-04-15 03:23:01 +1000",
     "context_window": 1047576,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -22695,7 +24680,7 @@
     "name": "OpenAI: GPT-4.1 Nano",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-14 19:22:49 +0200",
+    "created_at": "2025-04-15 03:22:49 +1000",
     "context_window": 1047576,
     "max_output_tokens": 32768,
     "knowledge_cutoff": null,
@@ -22767,7 +24752,7 @@
     "name": "OpenAI: GPT-4o",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-05-13 02:00:00 +0200",
+    "created_at": "2024-05-13 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -22840,7 +24825,7 @@
     "name": "OpenAI: GPT-4o (2024-05-13)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-05-13 02:00:00 +0200",
+    "created_at": "2024-05-13 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -22912,7 +24897,7 @@
     "name": "OpenAI: GPT-4o (2024-08-06)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-08-06 02:00:00 +0200",
+    "created_at": "2024-08-06 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -22985,7 +24970,7 @@
     "name": "OpenAI: GPT-4o (2024-11-20)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-11-20 19:33:14 +0100",
+    "created_at": "2024-11-21 05:33:14 +1100",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -23058,7 +25043,7 @@
     "name": "OpenAI: GPT-4o-mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-07-18 02:00:00 +0200",
+    "created_at": "2024-07-18 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -23131,7 +25116,7 @@
     "name": "OpenAI: GPT-4o-mini (2024-07-18)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-07-18 02:00:00 +0200",
+    "created_at": "2024-07-18 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -23204,7 +25189,7 @@
     "name": "OpenAI: GPT-4o-mini Search Preview",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-03-12 23:22:02 +0100",
+    "created_at": "2025-03-13 09:22:02 +1100",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -23260,7 +25245,7 @@
     "name": "OpenAI: GPT-4o Search Preview",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-03-12 23:19:09 +0100",
+    "created_at": "2025-03-13 09:19:09 +1100",
     "context_window": 128000,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -23316,7 +25301,7 @@
     "name": "OpenAI: GPT-4o (extended)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-05-13 02:00:00 +0200",
+    "created_at": "2024-05-13 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 64000,
     "knowledge_cutoff": null,
@@ -23517,9 +25502,9 @@
     "name": "OpenAI: GPT-5 Mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-08-07 19:23:27 +0200",
-    "context_window": 400000,
-    "max_output_tokens": 128000,
+    "created_at": "2024-12-17 19:26:39 +0100",
+    "context_window": 200000,
+    "max_output_tokens": 100000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -23649,9 +25634,9 @@
     "name": "OpenAI: gpt-oss-120b",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-08-05 19:17:11 +0200",
-    "context_window": 131072,
-    "max_output_tokens": null,
+    "created_at": "2024-09-12 02:00:00 +0200",
+    "context_window": 128000,
+    "max_output_tokens": 65536,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -23722,9 +25707,9 @@
     "name": "OpenAI: gpt-oss-20b",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-08-05 19:17:09 +0200",
-    "context_window": 131072,
-    "max_output_tokens": null,
+    "created_at": "2024-09-12 02:00:00 +0200",
+    "context_window": 128000,
+    "max_output_tokens": 65536,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -23909,7 +25894,7 @@
     "name": "OpenAI: o1-mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-09-12 02:00:00 +0200",
+    "created_at": "2024-09-12 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 65536,
     "knowledge_cutoff": null,
@@ -23963,7 +25948,7 @@
     "name": "OpenAI: o1-mini (2024-09-12)",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2024-09-12 02:00:00 +0200",
+    "created_at": "2024-09-12 10:00:00 +1000",
     "context_window": 128000,
     "max_output_tokens": 65536,
     "knowledge_cutoff": null,
@@ -24017,7 +26002,7 @@
     "name": "OpenAI: o1-pro",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-03-19 23:26:51 +0100",
+    "created_at": "2025-03-20 09:26:51 +1100",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24077,7 +26062,7 @@
     "name": "OpenAI: o3",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-16 19:10:57 +0200",
+    "created_at": "2025-04-17 03:10:57 +1000",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24143,7 +26128,7 @@
     "name": "OpenAI: o3 Mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-01-31 20:28:41 +0100",
+    "created_at": "2025-02-01 06:28:41 +1100",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24203,7 +26188,7 @@
     "name": "OpenAI: o3 Mini High",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-02-12 16:03:31 +0100",
+    "created_at": "2025-02-13 02:03:31 +1100",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24263,7 +26248,7 @@
     "name": "OpenAI: o3 Pro",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-06-11 01:32:32 +0200",
+    "created_at": "2025-06-11 09:32:32 +1000",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24328,7 +26313,7 @@
     "name": "OpenAI: o4 Mini",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-16 18:29:02 +0200",
+    "created_at": "2025-04-17 02:29:02 +1000",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24392,7 +26377,7 @@
     "name": "OpenAI: o4 Mini High",
     "provider": "openrouter",
     "family": "openai",
-    "created_at": "2025-04-16 19:23:32 +0200",
+    "created_at": "2025-04-17 03:23:32 +1000",
     "context_window": 200000,
     "max_output_tokens": 100000,
     "knowledge_cutoff": null,
@@ -24458,7 +26443,7 @@
     "name": "OpenGVLab: InternVL3 14B",
     "provider": "openrouter",
     "family": "opengvlab",
-    "created_at": "2025-04-30 15:55:55 +0200",
+    "created_at": "2025-04-30 23:55:55 +1000",
     "context_window": 12288,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24514,7 +26499,7 @@
     "name": "Auto Router",
     "provider": "openrouter",
     "family": "openrouter",
-    "created_at": "2023-11-08 01:00:00 +0100",
+    "created_at": "2023-11-08 11:00:00 +1100",
     "context_window": 2000000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24557,7 +26542,7 @@
     "name": "Perplexity: R1 1776",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-02-19 23:42:09 +0100",
+    "created_at": "2025-02-20 09:42:09 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24621,7 +26606,7 @@
     "name": "Perplexity: Sonar",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-01-27 22:36:48 +0100",
+    "created_at": "2025-01-28 08:36:48 +1100",
     "context_window": 127072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24681,7 +26666,7 @@
     "name": "Perplexity: Sonar Deep Research",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-03-07 02:34:06 +0100",
+    "created_at": "2025-03-07 12:34:06 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24742,7 +26727,7 @@
     "name": "Perplexity: Sonar Pro",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-03-07 02:53:43 +0100",
+    "created_at": "2025-03-07 12:53:43 +1100",
     "context_window": 200000,
     "max_output_tokens": 8000,
     "knowledge_cutoff": null,
@@ -24802,7 +26787,7 @@
     "name": "Perplexity: Sonar Reasoning",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-01-29 07:11:47 +0100",
+    "created_at": "2025-01-29 17:11:47 +1100",
     "context_window": 127000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24862,7 +26847,7 @@
     "name": "Perplexity: Sonar Reasoning Pro",
     "provider": "openrouter",
     "family": "perplexity",
-    "created_at": "2025-03-07 03:08:28 +0100",
+    "created_at": "2025-03-07 13:08:28 +1100",
     "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -24924,7 +26909,7 @@
     "name": "Pygmalion: Mythalion 13B",
     "provider": "openrouter",
     "family": "pygmalionai",
-    "created_at": "2023-09-02 02:00:00 +0200",
+    "created_at": "2023-09-02 10:00:00 +1000",
     "context_window": 4096,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -24985,7 +26970,7 @@
     "name": "Qwen 2 72B Instruct",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-06-07 02:00:00 +0200",
+    "created_at": "2024-06-07 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": 4096,
     "knowledge_cutoff": null,
@@ -25047,7 +27032,7 @@
     "name": "Qwen2.5 72B Instruct",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-09-19 02:00:00 +0200",
+    "created_at": "2024-09-19 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25117,7 +27102,7 @@
     "name": "Qwen2.5 72B Instruct (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-09-19 02:00:00 +0200",
+    "created_at": "2024-09-19 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25176,8 +27161,8 @@
     "provider": "openrouter",
     "family": "qwen",
     "created_at": "2024-10-16 02:00:00 +0200",
-    "context_window": 65536,
-    "max_output_tokens": null,
+    "context_window": 32768,
+    "max_output_tokens": 16384,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -25241,7 +27226,7 @@
     "name": "Qwen2.5 Coder 32B Instruct",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-11-12 00:40:00 +0100",
+    "created_at": "2024-11-12 10:40:00 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25308,7 +27293,7 @@
     "name": "Qwen2.5 Coder 32B Instruct (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-11-12 00:40:00 +0100",
+    "created_at": "2024-11-12 10:40:00 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25366,7 +27351,7 @@
     "name": "Qwen: Qwen2.5-VL 7B Instruct",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2024-08-28 02:00:00 +0200",
+    "created_at": "2024-08-28 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25414,20 +27399,14 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "repetition_penalty",
         "logit_bias",
         "logprobs",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
         "top_logprobs",
-        "top_p"
+        "min_p",
+        "seed"
       ]
     }
   },
@@ -25436,7 +27415,7 @@
     "name": "Qwen: Qwen-Max ",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-01 10:31:29 +0100",
+    "created_at": "2025-02-01 20:31:29 +1100",
     "context_window": 32768,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -25498,7 +27477,7 @@
     "name": "Qwen: Qwen-Plus",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-01 12:37:20 +0100",
+    "created_at": "2025-02-01 22:37:20 +1100",
     "context_window": 131072,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -25560,7 +27539,7 @@
     "name": "Qwen: Qwen-Turbo",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-01 12:56:14 +0100",
+    "created_at": "2025-02-01 22:56:14 +1100",
     "context_window": 1000000,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -25622,7 +27601,7 @@
     "name": "Qwen: Qwen VL Max",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-01 19:25:04 +0100",
+    "created_at": "2025-02-02 05:25:04 +1100",
     "context_window": 7500,
     "max_output_tokens": 1500,
     "knowledge_cutoff": null,
@@ -25682,7 +27661,7 @@
     "name": "Qwen: Qwen VL Plus",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-05 05:54:15 +0100",
+    "created_at": "2025-02-05 15:54:15 +1100",
     "context_window": 7500,
     "max_output_tokens": 1500,
     "knowledge_cutoff": null,
@@ -25743,7 +27722,7 @@
     "provider": "openrouter",
     "family": "qwen",
     "created_at": "2025-03-24 19:10:38 +0100",
-    "context_window": 16384,
+    "context_window": 128000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -25812,7 +27791,7 @@
     "name": "Qwen: Qwen2.5 VL 32B Instruct (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-03-24 19:10:38 +0100",
+    "created_at": "2025-03-25 05:10:38 +1100",
     "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25875,7 +27854,7 @@
     "provider": "openrouter",
     "family": "qwen",
     "created_at": "2025-02-01 12:45:11 +0100",
-    "context_window": 32768,
+    "context_window": 32000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -25941,7 +27920,7 @@
     "name": "Qwen: Qwen2.5 VL 72B Instruct (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-02-01 12:45:11 +0100",
+    "created_at": "2025-02-01 22:45:11 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -25998,7 +27977,7 @@
     "name": "Qwen: Qwen3 14B",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:41:18 +0200",
+    "created_at": "2025-04-29 07:41:18 +1000",
     "context_window": 40960,
     "max_output_tokens": 40960,
     "knowledge_cutoff": null,
@@ -26071,7 +28050,7 @@
     "name": "Qwen: Qwen3 14B (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:41:18 +0200",
+    "created_at": "2025-04-29 07:41:18 +1000",
     "context_window": 40960,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26131,7 +28110,7 @@
     "name": "Qwen: Qwen3 235B A22B",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:29:17 +0200",
+    "created_at": "2025-04-29 07:29:17 +1000",
     "context_window": 40960,
     "max_output_tokens": 40960,
     "knowledge_cutoff": null,
@@ -26347,7 +28326,7 @@
     "name": "Qwen: Qwen3 235B A22B (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:29:17 +0200",
+    "created_at": "2025-04-29 07:29:17 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26413,7 +28392,7 @@
     "name": "Qwen: Qwen3 30B A3B",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-29 00:16:44 +0200",
+    "created_at": "2025-04-29 08:16:44 +1000",
     "context_window": 40960,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26486,9 +28465,9 @@
     "name": "Qwen: Qwen3 30B A3B Instruct 2507",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-07-29 18:36:05 +0200",
-    "context_window": 131072,
-    "max_output_tokens": 32768,
+    "created_at": "2025-04-29 00:16:44 +0200",
+    "context_window": 40960,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -26544,7 +28523,7 @@
     "name": "Qwen: Qwen3 30B A3B (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-29 00:16:44 +0200",
+    "created_at": "2025-04-28 23:32:25 +0200",
     "context_window": 40960,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26604,7 +28583,7 @@
     "name": "Qwen: Qwen3 32B",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:32:25 +0200",
+    "created_at": "2025-04-29 07:32:25 +1000",
     "context_window": 40960,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26677,7 +28656,7 @@
     "name": "Qwen: Qwen3 4B (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-30 18:38:24 +0200",
+    "created_at": "2025-05-01 02:38:24 +1000",
     "context_window": 40960,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -26736,7 +28715,7 @@
     "name": "Qwen: Qwen3 8B",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:43:52 +0200",
+    "created_at": "2025-04-29 07:43:52 +1000",
     "context_window": 128000,
     "max_output_tokens": 20000,
     "knowledge_cutoff": null,
@@ -26801,7 +28780,7 @@
     "name": "Qwen: Qwen3 8B (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-04-28 23:43:52 +0200",
+    "created_at": "2025-04-29 07:43:52 +1000",
     "context_window": 40960,
     "max_output_tokens": 40960,
     "knowledge_cutoff": null,
@@ -26861,8 +28840,8 @@
     "name": "Qwen: Qwen3 Coder ",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-07-23 02:29:06 +0200",
-    "context_window": 262144,
+    "created_at": "2025-03-05 22:06:54 +0100",
+    "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -26932,8 +28911,8 @@
     "name": "Qwen: Qwen3 Coder  (free)",
     "provider": "openrouter",
     "family": "qwen",
-    "created_at": "2025-07-23 02:29:06 +0200",
-    "context_window": 262144,
+    "created_at": "2024-11-28 01:42:21 +0100",
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -26994,7 +28973,7 @@
     "provider": "openrouter",
     "family": "qwen",
     "created_at": "2025-03-05 22:06:54 +0100",
-    "context_window": 131072,
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -27062,9 +29041,9 @@
     "id": "qwen/qwq-32b-preview",
     "name": "Qwen: QwQ 32B Preview",
     "provider": "openrouter",
-    "family": "qwen",
-    "created_at": "2024-11-28 01:42:21 +0100",
-    "context_window": 32768,
+    "family": "raifle",
+    "created_at": "2024-11-08 23:31:23 +0100",
+    "context_window": 16000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -27127,8 +29106,8 @@
     "id": "qwen/qwq-32b:free",
     "name": "Qwen: QwQ 32B (free)",
     "provider": "openrouter",
-    "family": "qwen",
-    "created_at": "2025-03-05 22:06:54 +0100",
+    "family": "rekaai",
+    "created_at": "2025-03-12 21:53:33 +0100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27181,9 +29160,9 @@
     "id": "raifle/sorcererlm-8x22b",
     "name": "SorcererLM 8x22B",
     "provider": "openrouter",
-    "family": "raifle",
-    "created_at": "2024-11-08 23:31:23 +0100",
-    "context_window": 16000,
+    "family": "rekaai",
+    "created_at": "2025-03-12 21:53:33 +0100",
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -27244,10 +29223,10 @@
     "id": "rekaai/reka-flash-3:free",
     "name": "Reka: Flash 3 (free)",
     "provider": "openrouter",
-    "family": "rekaai",
-    "created_at": "2025-03-12 21:53:33 +0100",
-    "context_window": 32768,
-    "max_output_tokens": null,
+    "family": "sao10k",
+    "created_at": "2024-04-21 02:00:00 +0200",
+    "context_window": 4096,
+    "max_output_tokens": 4096,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -27305,7 +29284,7 @@
     "name": "Sao10k: Llama 3 Euryale 70B v2.1",
     "provider": "openrouter",
     "family": "sao10k",
-    "created_at": "2024-06-18 02:00:00 +0200",
+    "created_at": "2024-06-18 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": 8192,
     "knowledge_cutoff": null,
@@ -27368,7 +29347,7 @@
     "name": "Sao10K: Llama 3 8B Lunaris",
     "provider": "openrouter",
     "family": "sao10k",
-    "created_at": "2024-08-13 02:00:00 +0200",
+    "created_at": "2024-08-13 10:00:00 +1000",
     "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27433,7 +29412,7 @@
     "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
     "provider": "openrouter",
     "family": "sao10k",
-    "created_at": "2024-08-28 02:00:00 +0200",
+    "created_at": "2024-08-28 10:00:00 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27499,7 +29478,7 @@
     "name": "Sao10K: Llama 3.3 Euryale 70B",
     "provider": "openrouter",
     "family": "sao10k",
-    "created_at": "2024-12-18 16:32:08 +0100",
+    "created_at": "2024-12-19 02:32:08 +1100",
     "context_window": 131072,
     "max_output_tokens": 16384,
     "knowledge_cutoff": null,
@@ -27565,7 +29544,7 @@
     "name": "Sarvam AI: Sarvam-M (free)",
     "provider": "openrouter",
     "family": "sarvamai",
-    "created_at": "2025-05-25 17:53:33 +0200",
+    "created_at": "2025-05-26 01:53:33 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27622,9 +29601,9 @@
     "id": "scb10x/llama3.1-typhoon2-70b-instruct",
     "name": "Typhoon2 70B Instruct",
     "provider": "openrouter",
-    "family": "scb10x",
-    "created_at": "2025-03-28 22:09:30 +0100",
-    "context_window": 8192,
+    "family": "sarvamai",
+    "created_at": "2025-05-25 17:53:33 +0200",
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -27684,9 +29663,9 @@
     "id": "shisa-ai/shisa-v2-llama3.3-70b",
     "name": "Shisa AI: Shisa V2 Llama 3.3 70B ",
     "provider": "openrouter",
-    "family": "shisa-ai",
-    "created_at": "2025-04-16 00:07:38 +0200",
-    "context_window": 32768,
+    "family": "scb10x",
+    "created_at": "2025-03-28 22:09:30 +0100",
+    "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -27750,7 +29729,7 @@
     "name": "Shisa AI: Shisa V2 Llama 3.3 70B  (free)",
     "provider": "openrouter",
     "family": "shisa-ai",
-    "created_at": "2025-04-16 00:07:38 +0200",
+    "created_at": "2025-04-16 08:07:38 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27808,7 +29787,7 @@
     "name": "Midnight Rose 70B",
     "provider": "openrouter",
     "family": "sophosympatheia",
-    "created_at": "2024-03-22 01:00:00 +0100",
+    "created_at": "2024-03-22 11:00:00 +1100",
     "context_window": 4096,
     "max_output_tokens": 2048,
     "knowledge_cutoff": null,
@@ -27871,7 +29850,7 @@
     "name": "Switchpoint Router",
     "provider": "openrouter",
     "family": "switchpoint",
-    "created_at": "2025-07-12 00:28:19 +0200",
+    "created_at": "2025-07-12 08:28:19 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27930,7 +29909,7 @@
     "name": "Tencent: Hunyuan A13B Instruct",
     "provider": "openrouter",
     "family": "tencent",
-    "created_at": "2025-07-08 17:14:24 +0200",
+    "created_at": "2025-07-09 01:14:24 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -27997,7 +29976,7 @@
     "name": "Tencent: Hunyuan A13B Instruct (free)",
     "provider": "openrouter",
     "family": "tencent",
-    "created_at": "2025-07-08 17:14:24 +0200",
+    "created_at": "2025-07-09 01:14:24 +1000",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28058,8 +30037,8 @@
     "provider": "openrouter",
     "family": "thedrummer",
     "created_at": "2025-06-29 16:45:47 +0200",
-    "context_window": 16384,
-    "max_output_tokens": null,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -28121,7 +30100,7 @@
     "name": "TheDrummer: Anubis Pro 105B V1",
     "provider": "openrouter",
     "family": "thedrummer",
-    "created_at": "2025-03-10 22:31:30 +0100",
+    "created_at": "2025-03-11 08:31:30 +1100",
     "context_window": 131072,
     "max_output_tokens": 131072,
     "knowledge_cutoff": null,
@@ -28183,8 +30162,8 @@
     "provider": "openrouter",
     "family": "thedrummer",
     "created_at": "2024-09-30 02:00:00 +0200",
-    "context_window": 8192,
-    "max_output_tokens": 8192,
+    "context_window": 32768,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -28252,7 +30231,7 @@
     "name": "TheDrummer: Skyfall 36B V2",
     "provider": "openrouter",
     "family": "thedrummer",
-    "created_at": "2025-03-10 20:56:06 +0100",
+    "created_at": "2025-03-11 06:56:06 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28320,7 +30299,7 @@
     "name": "TheDrummer: UnslopNemo 12B",
     "provider": "openrouter",
     "family": "thedrummer",
-    "created_at": "2024-11-08 23:04:08 +0100",
+    "created_at": "2024-11-09 09:04:08 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28391,8 +30370,8 @@
     "provider": "openrouter",
     "family": "thedrummer",
     "created_at": "2025-05-23 19:51:10 +0200",
-    "context_window": 131072,
-    "max_output_tokens": 131072,
+    "context_window": 32768,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -28453,7 +30432,7 @@
     "name": "THUDM: GLM 4 32B",
     "provider": "openrouter",
     "family": "thudm",
-    "created_at": "2025-04-17 22:15:15 +0200",
+    "created_at": "2025-04-18 06:15:15 +1000",
     "context_window": 32000,
     "max_output_tokens": 32000,
     "knowledge_cutoff": null,
@@ -28516,9 +30495,9 @@
     "name": "THUDM: GLM 4.1V 9B Thinking",
     "provider": "openrouter",
     "family": "thudm",
-    "created_at": "2025-07-11 16:33:05 +0200",
-    "context_window": 65536,
-    "max_output_tokens": 8000,
+    "created_at": "2025-04-17 22:15:15 +0200",
+    "context_window": 32768,
+    "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -28583,9 +30562,9 @@
     "name": "THUDM: GLM Z1 32B",
     "provider": "openrouter",
     "family": "thudm",
-    "created_at": "2025-04-17 23:09:08 +0200",
-    "context_window": 32768,
-    "max_output_tokens": null,
+    "created_at": "2025-07-11 16:33:05 +0200",
+    "context_window": 65536,
+    "max_output_tokens": 8000,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
@@ -28649,9 +30628,9 @@
     "id": "tngtech/deepseek-r1t-chimera",
     "name": "TNG: DeepSeek R1T Chimera",
     "provider": "openrouter",
-    "family": "tngtech",
-    "created_at": "2025-04-27 15:34:35 +0200",
-    "context_window": 163840,
+    "family": "thudm",
+    "created_at": "2025-04-17 23:09:08 +0200",
+    "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
     "modalities": {
@@ -28717,7 +30696,7 @@
     "name": "TNG: DeepSeek R1T Chimera (free)",
     "provider": "openrouter",
     "family": "tngtech",
-    "created_at": "2025-04-27 15:34:35 +0200",
+    "created_at": "2025-04-27 23:34:35 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28777,7 +30756,7 @@
     "name": "TNG: DeepSeek R1T2 Chimera (free)",
     "provider": "openrouter",
     "family": "tngtech",
-    "created_at": "2025-07-08 17:03:05 +0200",
+    "created_at": "2025-07-09 01:03:05 +1000",
     "context_window": 163840,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28837,7 +30816,7 @@
     "name": "ReMM SLERP 13B",
     "provider": "openrouter",
     "family": "undi95",
-    "created_at": "2023-07-22 02:00:00 +0200",
+    "created_at": "2023-07-22 10:00:00 +1000",
     "context_window": 6144,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28884,6 +30863,58 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
+        "top_a"
+      ]
+    }
+  },
+  {
+    "id": "undi95/toppy-m-7b",
+    "name": "Toppy M 7B",
+    "provider": "openrouter",
+    "family": "undi95",
+    "created_at": "2023-11-10 01:00:00 +0100",
+    "context_window": 4096,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.7999999999999999,
+          "output_per_million": 1.2
+        }
+      }
+    },
+    "metadata": {
+      "description": "A wild 7B parameter model that merges several models using the new task_arithmetic merge method from mergekit.\nList of merged models:\n- NousResearch/Nous-Capybara-7B-V1.9\n- [HuggingFaceH4/zephyr-7b-beta](/models/huggingfaceh4/zephyr-7b-beta)\n- lemonilia/AshhLimaRP-Mistral-7B\n- Vulkane/120-Days-of-Sodom-LoRA-Mistral-7b\n- Undi95/Mistral-pippa-sharegpt-7b-qlora\n\n#merge #uncensored",
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral",
+        "instruct_type": "alpaca"
+      },
+      "top_provider": {
+        "context_length": 4096,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -28904,7 +30935,7 @@
     "name": "xAI: Grok 2 1212",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2024-12-15 04:20:14 +0100",
+    "created_at": "2024-12-15 14:20:14 +1100",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -28969,7 +31000,7 @@
     "name": "xAI: Grok 2 Vision 1212",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2024-12-15 05:35:38 +0100",
+    "created_at": "2024-12-15 15:35:38 +1100",
     "context_window": 32768,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29033,7 +31064,7 @@
     "name": "xAI: Grok 3",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2025-06-10 21:15:08 +0200",
+    "created_at": "2025-06-11 05:15:08 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29100,7 +31131,7 @@
     "name": "xAI: Grok 3 Beta",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2025-04-10 01:07:48 +0200",
+    "created_at": "2025-04-10 09:07:48 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29166,7 +31197,7 @@
     "name": "xAI: Grok 3 Mini",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2025-06-10 21:20:45 +0200",
+    "created_at": "2025-06-11 05:20:45 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29233,7 +31264,7 @@
     "name": "xAI: Grok 3 Mini Beta",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2025-04-10 01:09:55 +0200",
+    "created_at": "2025-04-10 09:09:55 +1000",
     "context_window": 131072,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29299,7 +31330,7 @@
     "name": "xAI: Grok 4",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2025-07-09 21:01:29 +0200",
+    "created_at": "2025-07-10 05:01:29 +1000",
     "context_window": 256000,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
@@ -29367,7 +31398,7 @@
     "name": "xAI: Grok Vision Beta",
     "provider": "openrouter",
     "family": "x-ai",
-    "created_at": "2024-11-19 01:37:04 +0100",
+    "created_at": "2024-11-19 11:37:04 +1100",
     "context_window": 8192,
     "max_output_tokens": null,
     "knowledge_cutoff": null,
