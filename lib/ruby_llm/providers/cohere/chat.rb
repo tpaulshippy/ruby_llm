@@ -2,18 +2,18 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Chat methods of the Cohere API integration
       # - https://docs.cohere.com/reference/chat
       # - https://docs.cohere.com/docs/chat-api
       module Chat
+        module_function
+
         def completion_url
           'v2/chat'
         end
 
-        module_function
-
-        def render_payload(messages, tools:, temperature:, model:, stream: false)
+        def render_payload(messages, tools:, temperature:, model:, stream: false, schema: nil) # rubocop:disable Metrics/ParameterLists,Lint/UnusedMethodArgument
           @model_id = model
 
           {

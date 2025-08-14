@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Tools methods of the Cohere API integration
       # - https://docs.cohere.com/reference/chat#request.body.tools
       # - https://docs.cohere.com/docs/tool-use-overview

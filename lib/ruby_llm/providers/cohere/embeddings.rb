@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Embeddings methods of the Cohere API integration
       # - https://docs.cohere.com/reference/embed
       # - https://docs.cohere.com/docs/embeddings

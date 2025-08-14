@@ -11,24 +11,21 @@ module RubyLLM
     # while easily supporting other features like reranking and classification.
     #
     # See https://docs.cohere.com/docs/compatibility-api for more information.
-    module Cohere
-      extend Provider
-      extend Cohere::Chat
-      extend Cohere::Embeddings
-      extend Cohere::Models
-      extend Cohere::Streaming
-      extend Cohere::Tools
-      extend Cohere::Media
+    class Cohere < Provider
+      include Cohere::Chat
+      include Cohere::Embeddings
+      include Cohere::Models
+      include Cohere::Streaming
+      include Cohere::Tools
+      include Cohere::Media
 
-      module_function
-
-      def api_base(_config)
+      def api_base
         'https://api.cohere.ai'
       end
 
-      def headers(config)
+      def headers
         {
-          'Authorization' => "Bearer #{config.cohere_api_key}",
+          'Authorization' => "Bearer #{@config.cohere_api_key}",
           'Content-Type' => 'application/json'
         }
       end

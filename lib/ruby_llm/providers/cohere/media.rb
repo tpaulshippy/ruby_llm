@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Handles formatting of media content (images) for Cohere APIs
       # Supports Aya Vision models with multimodal capabilities
       module Media

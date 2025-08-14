@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Streaming methods of the Cohere API integration
       # - https://docs.cohere.com/docs/streaming
       module Streaming

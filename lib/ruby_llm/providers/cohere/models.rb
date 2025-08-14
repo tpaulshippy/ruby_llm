@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Model definitions for Cohere API
       # https://docs.cohere.com/reference/list-models
       module Models

@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Cohere
+    class Cohere
       # Determines capabilities and constraints for Cohere models
       module Capabilities
         module_function
