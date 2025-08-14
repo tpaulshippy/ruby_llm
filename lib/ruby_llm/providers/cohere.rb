@@ -45,7 +45,9 @@ module RubyLLM
       def parse_error(response)
         return if response.body.empty?
 
-        JSON.parse(response.body)['message']
+        # Handle both String (HTTP response) and Hash (streaming response) body formats
+        body = response.body.is_a?(Hash) ? response.body : JSON.parse(response.body)
+        body['message']
       end
     end
   end
