@@ -127,6 +127,15 @@ module StreamingErrorHelpers
       },
       chunk_status: 500,
       expected_error: RubyLLM::ServerError
+    },
+    cohere: {
+      url: 'https://api.cohere.ai/v2/chat',
+      error_response: {
+        id: 'test-error-id',
+        message: 'Service overloaded - please try again later'
+      },
+      chunk_status: 500,
+      expected_error: RubyLLM::ServerError
     }
   }.freeze
 

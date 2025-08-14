@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.cohere.ai/v2/chat
+    body:
+      encoding: UTF-8
+      string: '{"model":"command-a-03-2025","messages":[{"role":"system","content":[{"type":"text","text":"You
+        must call the dice_roll tool exactly 3 times when asked to roll dice 3 times."}]},{"role":"user","content":[{"type":"text","text":"Roll
+        the dice 3 times"}]}],"temperature":0.7,"stream":false,"tools":[{"type":"function","function":{"name":"dice_roll","description":"Rolls
+        a single six-sided die and returns the result","parameters":{"type":"object","properties":{},"required":[]}}}]}'
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Authorization:
+      - Bearer <COHERE_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-Debug-Trace-ID
+      Cache-Control:
+      - no-cache, no-store, no-transform, must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Num-Chars:
+      - '7011'
+      Num-Tokens:
+      - '68'
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin
+      X-Accel-Expires:
+      - '0'
+      X-Debug-Trace-Id:
+      - 3dc634a0571b9735aa46492aa95853da
+      X-Endpoint-Monthly-Call-Limit:
+      - '1000'
+      X-Trial-Endpoint-Call-Limit:
+      - '10'
+      X-Trial-Endpoint-Call-Remaining:
+      - '8'
+      Date:
+      - Thu, 14 Aug 2025 04:06:22 GMT
+      Content-Length:
+      - '600'
+      X-Envoy-Upstream-Service-Time:
+      - '1128'
+      Server:
+      - envoy
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"id":"1f4c1c62-1414-4083-94e7-435f1da64a00","message":{"role":"assistant","tool_plan":"I
+        will roll the dice 3 times using the dice_roll tool.","tool_calls":[{"id":"dice_roll_8ppvea8gfdcg","type":"function","function":{"name":"dice_roll","arguments":"{}"}},{"id":"dice_roll_zftys38yc38z","type":"function","function":{"name":"dice_roll","arguments":"{}"}},{"id":"dice_roll_7by5r9xt1tx9","type":"function","function":{"name":"dice_roll","arguments":"{}"}}]},"finish_reason":"TOOL_CALL","usage":{"billed_units":{"input_tokens":41,"output_tokens":27},"tokens":{"input_tokens":1485,"output_tokens":100}}}'
+  recorded_at: Thu, 14 Aug 2025 04:06:22 GMT
+- request:
+    method: post
+    uri: https://api.cohere.ai/v2/chat
+    body:
+      encoding: UTF-8
+      string: '{"model":"command-a-03-2025","messages":[{"role":"system","content":[{"type":"text","text":"You
+        must call the dice_roll tool exactly 3 times when asked to roll dice 3 times."}]},{"role":"user","content":[{"type":"text","text":"Roll
+        the dice 3 times"}]},{"role":"assistant","tool_calls":[{"id":"dice_roll_8ppvea8gfdcg","type":"function","function":{"name":"dice_roll","arguments":"{}"}},{"id":"dice_roll_zftys38yc38z","type":"function","function":{"name":"dice_roll","arguments":"{}"}},{"id":"dice_roll_7by5r9xt1tx9","type":"function","function":{"name":"dice_roll","arguments":"{}"}}]},{"role":"tool","tool_call_id":"dice_roll_8ppvea8gfdcg","content":"{:roll=>1}"},{"role":"tool","tool_call_id":"dice_roll_zftys38yc38z","content":"{:roll=>2}"},{"role":"tool","tool_call_id":"dice_roll_7by5r9xt1tx9","content":"{:roll=>3}"}],"temperature":0.7,"stream":false,"tools":[{"type":"function","function":{"name":"dice_roll","description":"Rolls
+        a single six-sided die and returns the result","parameters":{"type":"object","properties":{},"required":[]}}}]}'
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Authorization:
+      - Bearer <COHERE_API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Expose-Headers:
+      - X-Debug-Trace-ID
+      Cache-Control:
+      - no-cache, no-store, no-transform, must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Num-Chars:
+      - '7845'
+      Num-Tokens:
+      - '85'
+      Pragma:
+      - no-cache
+      Vary:
+      - Origin
+      X-Accel-Expires:
+      - '0'
+      X-Debug-Trace-Id:
+      - c8309440bd027bd99feb627f898af805
+      X-Endpoint-Monthly-Call-Limit:
+      - '1000'
+      X-Trial-Endpoint-Call-Limit:
+      - '10'
+      X-Trial-Endpoint-Call-Remaining:
+      - '7'
+      Date:
+      - Thu, 14 Aug 2025 04:06:23 GMT
+      Content-Length:
+      - '814'
+      X-Envoy-Upstream-Service-Time:
+      - '474'
+      Server:
+      - envoy
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"id":"ca000de2-8fb0-432b-8fa0-a4e13b65ffb3","message":{"role":"assistant","content":[{"type":"text","text":"Here
+        are the results of rolling the dice three times:\n- 1\n- 2\n- 3"}],"citations":[{"start":56,"end":57,"text":"1","sources":[{"type":"tool","id":"dice_roll_8ppvea8gfdcg:0","tool_output":{"content":"{:roll=\u003e1}"}}],"type":"TEXT_CONTENT"},{"start":60,"end":61,"text":"2","sources":[{"type":"tool","id":"dice_roll_zftys38yc38z:0","tool_output":{"content":"{:roll=\u003e2}"}}],"type":"TEXT_CONTENT"},{"start":64,"end":65,"text":"3","sources":[{"type":"tool","id":"dice_roll_7by5r9xt1tx9:0","tool_output":{"content":"{:roll=\u003e3}"}}],"type":"TEXT_CONTENT"}]},"finish_reason":"COMPLETE","usage":{"billed_units":{"input_tokens":62,"output_tokens":23},"tokens":{"input_tokens":1708,"output_tokens":55}}}'
+  recorded_at: Thu, 14 Aug 2025 04:06:23 GMT
+recorded_with: VCR 6.3.1

@@ -40,7 +40,8 @@ module RubyLLM
             tool_calls: Tools.parse_tool_calls(message_data['tool_calls']),
             input_tokens: data.dig('usage', 'tokens', 'input_tokens'),
             output_tokens: data.dig('usage', 'tokens', 'output_tokens'),
-            model_id: @model_id
+            model_id: @model_id,
+            raw: response
           )
         end
 

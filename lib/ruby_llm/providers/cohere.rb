@@ -45,7 +45,7 @@ module RubyLLM
       def parse_error(response)
         return if response.body.empty?
 
-        JSON.parse(response.response.body)['message']
+        JSON.parse(response.body)['message']
       end
     end
   end

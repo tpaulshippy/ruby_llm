@@ -88,9 +88,9 @@ module RubyLLM
 
         def parse_streaming_error(data)
           error_data = JSON.parse(data)
-          return unless error_data['type'] == 'error'
-
-          message = error_data.dig('error', 'message') || 'Unknown error'
+          
+          # Cohere's error format: {"id": "...", "message": "..."}
+          message = error_data['message'] || 'Unknown error'
           [500, message]
         rescue JSON::ParserError
           [500, 'Failed to parse error response']
