@@ -55,7 +55,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["text", "image", "audio", "embeddings", "moderation"]
+              "enum": ["text", "image", "audio", "embeddings", "moderation", "rerank"]
             },
             "uniqueItems": true,
             "description": "Supported output modalities"
@@ -70,7 +70,7 @@
             "streaming", "function_calling", "structured_output", "predicted_outputs",
             "distillation", "fine_tuning", "batch", "realtime", "image_generation",
             "speech_generation", "transcription", "translation", "citations", "reasoning",
-            "caching", "moderation", "json_mode", "vision"
+            "caching", "moderation", "json_mode", "vision", "multilingual", "reranking"
           ]
         },
         "uniqueItems": true,
