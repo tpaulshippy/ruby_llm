@@ -31,17 +31,17 @@ module RubyLLM
       }
     end
 
-    def ask(message = nil, with: nil, &)
-      add_message role: :user, content: Content.new(message, with)
+    def ask(message = nil, with: nil, params: nil, &)
+      add_message role: :user, content: Content.new(message, with), params: params
       complete(&)
     end
 
     alias say ask
 
-    def with_instructions(instructions, replace: false)
+    def with_instructions(instructions, replace: false, params: nil)
       @messages = @messages.reject { |msg| msg.role == :system } if replace
 
-      add_message role: :system, content: instructions
+      add_message role: :system, content: instructions, params: params
       self
     end
 

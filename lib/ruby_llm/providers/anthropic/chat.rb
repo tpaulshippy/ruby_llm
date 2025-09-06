@@ -95,17 +95,24 @@ module RubyLLM
           else
             format_basic_message(msg, cache:)
           end
+          
         end
 
         def format_system_message(msg, cache: false)
-          Media.format_content(msg.content, cache:)
+          array = Media.format_content(msg.content, cache:)
+          array.map do |item|
+            item = Utils.deep_merge(item, msg.params) if msg.params
+            item
+          end
         end
 
         def format_basic_message(msg, cache: false)
-          {
+          message = {
             role: convert_role(msg.role),
             content: Media.format_content(msg.content, cache:)
           }
+          message = Utils.deep_merge(message, msg.params) if msg.params
+          message
         end
 
         def convert_role(role)

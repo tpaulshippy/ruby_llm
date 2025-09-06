@@ -18,12 +18,42 @@ RSpec.describe RubyLLM::Chat, '.complete with prompt caching' do
     model = model_info[:model]
 
     describe "with #{provider} provider (#{model})" do
-      let(:chat) { RubyLLM.chat(model: model, provider: provider).with_temperature(0.7) }
+      let(:chat) { RubyLLM.chat(model: model, provider: provider) }
+
+      it 'adds cache_control to the last system message when system caching is requested' do
+        mock_message = RubyLLM::Message.new(role: :assistant, content: "got it")
+        expected_payload = {
+          system: [
+            { text: 'You are an assistant', type: 'text'},
+            { text: MASSIVE_TEXT_FOR_PROMPT_CACHING, type: 'text', cache_control: { type: 'ephemeral' } }
+          ],
+        }
+        allow(chat.instance_variable_get(:@provider)).to receive(:sync_response).and_return(mock_message)
+        chat.with_instructions("You are an assistant")
+        chat.with_instructions(MASSIVE_TEXT_FOR_PROMPT_CACHING, params: { cache_control: { type: 'ephemeral' } })
+        chat.ask('What are the key principles you follow?')
+        expect(chat.instance_variable_get(:@provider)).to have_received(:sync_response).with(chat.instance_variable_get(:@connection), hash_including(expected_payload), {})
+      end
+
+      it 'adds cache_control to the last user message when user caching is requested' do
+        mock_message = RubyLLM::Message.new(role: :assistant, content: "got it")
+        expected_payload = {
+          messages: [
+            { role: 'user', content: [{ text: 'I am curious.', type: 'text'}] },
+            { role: 'user', content: [{ text: 'What is the capital of France?', type: 'text', cache_control: { type: 'ephemeral' } }] }
+          ]
+        }
+        allow(chat.instance_variable_get(:@provider)).to receive(:sync_response).and_return(mock_message)
+        chat.cache_prompts(user: true)
+        chat.add_message(role: :user, content: "I am curious.")
+        chat.ask('What is the capital of France?', params: { content: [{ cache_control: { type: 'ephemeral' } }] })
+        expect(chat.instance_variable_get(:@provider)).to have_received(:sync_response).with(chat.instance_variable_get(:@connection), hash_including(expected_payload), {})
+      end
+
 
       context 'with system message caching' do
         it 'adds cache_control to the last system message when system caching is requested' do
-          chat.with_instructions(MASSIVE_TEXT_FOR_PROMPT_CACHING)
-          chat.cache_prompts(system: true)
+          chat.with_instructions(MASSIVE_TEXT_FOR_PROMPT_CACHING, params:{ content: [{ cache_control: { type: 'ephemeral' } }] })
 
           response = chat.ask('What are the key principles you follow?')
 

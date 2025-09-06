@@ -40,10 +40,26 @@ module RubyLLM
       original.merge(overrides) do |_key, original_value, overrides_value|
         if original_value.is_a?(Hash) && overrides_value.is_a?(Hash)
           deep_merge(original_value, overrides_value)
+        elsif original_value.is_a?(Array) && overrides_value.is_a?(Array)
+          merge_arrays(original_value, overrides_value)
         else
           overrides_value
         end
       end
+    end
+
+    def merge_arrays(original_array, overrides_array)
+      merged = original_array.dup
+      
+      overrides_array.each_with_index do |override_item, index|
+        if index < merged.length && merged[index].is_a?(Hash) && override_item.is_a?(Hash)
+          merged[index] = deep_merge(merged[index], override_item)
+        else
+          merged << override_item
+        end
+      end
+      
+      merged
     end
   end
 end
