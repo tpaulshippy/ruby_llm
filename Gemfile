@@ -40,4 +40,7 @@ group :development do # rubocop:disable Metrics/BlockLength
 
   # Optional dependency for Vertex AI
   gem 'googleauth'
+  
+  # Optional dependency for red-candle local models
+  gem 'red-candle', require: false
 end

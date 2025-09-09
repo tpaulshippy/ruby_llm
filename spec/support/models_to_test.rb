@@ -12,7 +12,7 @@ CHAT_MODELS = [
   { provider: :openrouter, model: 'anthropic/claude-3.5-haiku' },
   { provider: :perplexity, model: 'sonar' },
   { provider: :vertexai, model: 'gemini-2.5-flash' }
-].freeze
+]
 
 PDF_MODELS = [
   { provider: :anthropic, model: 'claude-3-5-haiku-20241022' },

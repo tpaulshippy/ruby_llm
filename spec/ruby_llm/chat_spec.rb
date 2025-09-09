@@ -15,8 +15,8 @@ RSpec.describe RubyLLM::Chat do
 
         expect(response.content).to include('4')
         expect(response.role).to eq(:assistant)
-        expect(response.input_tokens).to be_positive
-        expect(response.output_tokens).to be_positive
+        expect(response.input_tokens).to be_positive unless provider == :red_candle
+        expect(response.output_tokens).to be_positive unless provider == :red_candle
       end
 
       it "#{provider}/#{model} returns raw responses" do

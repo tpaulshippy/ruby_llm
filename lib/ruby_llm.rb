@@ -89,6 +89,9 @@ RubyLLM::Provider.register :openrouter, RubyLLM::Providers::OpenRouter
 RubyLLM::Provider.register :perplexity, RubyLLM::Providers::Perplexity
 RubyLLM::Provider.register :vertexai, RubyLLM::Providers::VertexAI
 
+# Load optional plugins
+RubyLLM::Plugins.load_available_plugins
+
 if defined?(Rails::Railtie)
   require 'ruby_llm/railtie'
   require 'ruby_llm/active_record/acts_as'
