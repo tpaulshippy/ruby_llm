@@ -2,21 +2,23 @@
 
 module RubyLLM
   module Providers
-    module Anthropic
+    class Anthropic
       # Tools methods of the Anthropic API integration
       module Tools
         module_function
 
-        def find_tool_use(blocks)
-          blocks.find { |c| c['type'] == 'tool_use' }
+        def find_tool_uses(blocks)
+          blocks.select { |c| c['type'] == 'tool_use' }
         end
 
         def format_tool_call(msg)
-          tool_call = msg.tool_calls.values.first
-
           content = []
+
           content << Media.format_text(msg.content) unless msg.content.nil? || msg.content.empty?
-          content << format_tool_use_block(tool_call)
+
+          msg.tool_calls.each_value do |tool_call|
+            content << format_tool_use_block(tool_call)
+          end
 
           {
             role: 'assistant',
@@ -44,7 +46,7 @@ module RubyLLM
           {
             type: 'tool_result',
             tool_use_id: msg.tool_call_id,
-            content: msg.content
+            content: Media.format_content(msg.content)
           }
         end
 
@@ -68,16 +70,23 @@ module RubyLLM
           end
         end
 
-        def parse_tool_calls(content_block)
-          return nil unless content_block && content_block['type'] == 'tool_use'
+        def parse_tool_calls(content_blocks)
+          return nil if content_blocks.nil?
 
-          {
-            content_block['id'] => ToolCall.new(
-              id: content_block['id'],
-              name: content_block['name'],
-              arguments: content_block['input']
+          content_blocks = [content_blocks] unless content_blocks.is_a?(Array)
+
+          tool_calls = {}
+          content_blocks.each do |block|
+            next unless block && block['type'] == 'tool_use'
+
+            tool_calls[block['id']] = ToolCall.new(
+              id: block['id'],
+              name: block['name'],
+              arguments: block['input']
             )
-          }
+          end
+
+          tool_calls.empty? ? nil : tool_calls
         end
 
         def clean_parameters(parameters)

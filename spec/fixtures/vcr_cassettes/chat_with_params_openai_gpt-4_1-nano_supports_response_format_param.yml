@@ -5,11 +5,11 @@ http_interactions:
     uri: https://api.openai.com/v1/chat/completions
     body:
       encoding: UTF-8
-      string: '{"response_format":{"type":"json_object"},"model":"gpt-4.1-nano","messages":[{"role":"user","content":"What
-        is the square root of 64? Answer with a JSON object with the key `result`."}],"stream":false,"temperature":0.7}'
+      string: '{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"What
+        is the square root of 64? Answer with a JSON object with the key `result`."}],"stream":false,"response_format":{"type":"json_object"}}'
     headers:
       User-Agent:
-      - Faraday v2.13.1
+      - Faraday v2.13.4
       Authorization:
       - Bearer <OPENAI_API_KEY>
       Content-Type:
@@ -24,7 +24,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 19 Jul 2025 19:53:31 GMT
+      - Sun, 14 Sep 2025 09:58:22 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -36,13 +36,13 @@ http_interactions:
       Openai-Organization:
       - "<OPENAI_ORGANIZATION>"
       Openai-Processing-Ms:
-      - '148'
+      - '309'
       Openai-Project:
-      - proj_Cgr91oaB3FCyMSthpusv7eJc
+      - proj_KyS64Yhsc9qhhwjNcgkOa88E
       Openai-Version:
       - '2020-10-01'
       X-Envoy-Upstream-Service-Time:
-      - '150'
+      - '325'
       X-Ratelimit-Limit-Requests:
       - '500'
       X-Ratelimit-Limit-Tokens:
@@ -50,20 +50,22 @@ http_interactions:
       X-Ratelimit-Remaining-Requests:
       - '499'
       X-Ratelimit-Remaining-Tokens:
-      - '199977'
+      - '199978'
       X-Ratelimit-Reset-Requests:
       - 120ms
       X-Ratelimit-Reset-Tokens:
       - 6ms
       X-Request-Id:
       - "<X_REQUEST_ID>"
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
+      X-Openai-Proxy-Wasm:
+      - v0.1
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
       - "<COOKIE>"
       - "<COOKIE>"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
       X-Content-Type-Options:
       - nosniff
       Server:
@@ -76,9 +78,9 @@ http_interactions:
       encoding: ASCII-8BIT
       string: |
         {
-          "id": "chatcmpl-Bv7ud7hg2U3FxalKcWA4qjZTTRsfk",
+          "id": "chatcmpl-CFdmwaXhPKsMAsaAtTNyPzN1bMuPB",
           "object": "chat.completion",
-          "created": 1752954811,
+          "created": 1757843902,
           "model": "gpt-4.1-nano-2025-04-14",
           "choices": [
             {
@@ -109,7 +111,7 @@ http_interactions:
             }
           },
           "service_tier": "default",
-          "system_fingerprint": null
+          "system_fingerprint": "fp_7c233bf9d1"
         }
-  recorded_at: Sat, 19 Jul 2025 19:53:31 GMT
+  recorded_at: Sun, 14 Sep 2025 09:58:22 GMT
 recorded_with: VCR 6.3.1

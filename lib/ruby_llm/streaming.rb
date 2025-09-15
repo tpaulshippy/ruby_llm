@@ -1,33 +1,31 @@
 # frozen_string_literal: true
 
 module RubyLLM
-  # Handles streaming responses from AI providers. Provides a unified way to process
-  # chunked responses, accumulate content, and handle provider-specific streaming formats.
-  # Each provider implements provider-specific parsing while sharing common stream handling
-  # patterns.
+  # Handles streaming responses from AI providers.
   module Streaming
     module_function
 
-    def stream_response(connection, payload, &block)
+    def stream_response(connection, payload, additional_headers = {}, &block)
       accumulator = StreamAccumulator.new
 
-      connection.post stream_url, payload do |req|
-        if req.options.respond_to?(:on_data)
-          # Handle Faraday 2.x streaming with on_data method
-          req.options.on_data = handle_stream do |chunk|
+      response = connection.post stream_url, payload do |req|
+        req.headers = additional_headers.merge(req.headers) unless additional_headers.empty?
+        if faraday_1?
+          req.options[:on_data] = handle_stream do |chunk|
             accumulator.add chunk
             block.call chunk
           end
         else
-          # Handle Faraday 1.x streaming with :on_data key
-          req.options[:on_data] = handle_stream do |chunk|
+          req.options.on_data = handle_stream do |chunk|
             accumulator.add chunk
             block.call chunk
           end
         end
       end
 
-      accumulator.to_message
+      message = accumulator.to_message(response)
+      RubyLLM.logger.debug "Stream completed: #{message.content}"
+      message
     end
 
     def handle_stream(&block)
@@ -38,30 +36,32 @@ module RubyLLM
 
     private
 
+    def faraday_1?
+      Faraday::VERSION.start_with?('1')
+    end
+
     def to_json_stream(&)
-      buffer = String.new
+      buffer = +''
       parser = EventStreamParser::Parser.new
 
       create_stream_processor(parser, buffer, &)
     end
 
     def create_stream_processor(parser, buffer, &)
-      if Faraday::VERSION.start_with?('1')
-        # Faraday 1.x: on_data receives (chunk, size)
+      if faraday_1?
         legacy_stream_processor(parser, &)
       else
-        # Faraday 2.x: on_data receives (chunk, bytes, env)
         stream_processor(parser, buffer, &)
       end
     end
 
-    def process_stream_chunk(chunk, parser, _env, &)
-      RubyLLM.logger.debug "Received chunk: #{chunk}"
+    def process_stream_chunk(chunk, parser, env, &)
+      RubyLLM.logger.debug "Received chunk: #{chunk}" if RubyLLM.config.log_stream_debug
 
       if error_chunk?(chunk)
-        handle_error_chunk(chunk, nil)
+        handle_error_chunk(chunk, env)
       else
-        yield handle_sse(chunk, parser, nil, &)
+        yield handle_sse(chunk, parser, env, &)
       end
     end
 
@@ -88,7 +88,14 @@ module RubyLLM
     def handle_error_chunk(chunk, env)
       error_data = chunk.split("\n")[1].delete_prefix('data: ')
       status, _message = parse_streaming_error(error_data)
-      error_response = env.merge(body: JSON.parse(error_data), status: status)
+      parsed_data = JSON.parse(error_data)
+
+      error_response = if faraday_1?
+                         Struct.new(:body, :status).new(parsed_data, status)
+                       else
+                         env.merge(body: parsed_data, status: status)
+                       end
+
       ErrorMiddleware.parse_error(provider: self, response: error_response)
     rescue JSON::ParserError => e
       RubyLLM.logger.debug "Failed to parse error chunk: #{e.message}"
@@ -122,10 +129,25 @@ module RubyLLM
 
     def handle_error_event(data, env)
       status, _message = parse_streaming_error(data)
-      error_response = env.merge(body: JSON.parse(data), status: status)
+      parsed_data = JSON.parse(data)
+
+      error_response = if faraday_1?
+                         Struct.new(:body, :status).new(parsed_data, status)
+                       else
+                         env.merge(body: parsed_data, status: status)
+                       end
+
       ErrorMiddleware.parse_error(provider: self, response: error_response)
     rescue JSON::ParserError => e
       RubyLLM.logger.debug "Failed to parse error event: #{e.message}"
+    end
+
+    def parse_streaming_error(data)
+      error_data = JSON.parse(data)
+      [500, error_data['message'] || 'Unknown streaming error']
+    rescue JSON::ParserError => e
+      RubyLLM.logger.debug "Failed to parse streaming error: #{e.message}"
+      [500, "Failed to parse error: #{data}"]
     end
   end
 end

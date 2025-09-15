@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.13.2
+      - Faraday v2.13.4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -26,42 +26,40 @@ http_interactions:
       - GitHub.com
       Content-Type:
       - text/plain; charset=utf-8
-      X-Origin-Cache:
-      - HIT
       Last-Modified:
-      - Wed, 16 Jul 2025 15:35:29 GMT
+      - Tue, 09 Sep 2025 17:42:13 GMT
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"6877c6c1-9c6"
+      - W/"68c066f5-9c6"
       Expires:
-      - Thu, 17 Jul 2025 07:25:20 GMT
+      - Sun, 14 Sep 2025 10:00:19 GMT
       Cache-Control:
       - max-age=600
       X-Proxy-Cache:
       - MISS
       X-Github-Request-Id:
-      - A671:3B165:AFAA75:B103CB:6878A307
+      - 5BE5:BAF07:321C8C2:3283B84:68C68FDA
       Accept-Ranges:
       - bytes
       Age:
       - '0'
       Date:
-      - Thu, 17 Jul 2025 09:42:50 GMT
+      - Sun, 14 Sep 2025 09:50:19 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-fra-etou8220068-FRA
+      - cache-fra-etou8220046-FRA
       X-Cache:
-      - HIT
+      - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1752745370.408747,VS0,VE104
+      - S1757843419.499478,VS0,VE109
       Vary:
       - Accept-Encoding
       X-Fastly-Request-Id:
-      - 7e7932f75ed78838f76a1ee3e3813f894bced6ef
+      - a17d174698ef0a4138e7be98fa074978758c2ac6
     body:
       encoding: ASCII-8BIT
       string: "Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.jp>.\nYou
@@ -97,7 +95,7 @@ http_interactions:
         \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING,
         WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS
         FOR A PARTICULAR\n     PURPOSE.\n"
-  recorded_at: Thu, 17 Jul 2025 09:42:50 GMT
+  recorded_at: Sun, 14 Sep 2025 09:50:19 GMT
 - request:
     method: post
     uri: https://api.anthropic.com/v1/messages
@@ -137,10 +135,10 @@ http_interactions:
         aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS
         IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT
         LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-        A PARTICULAR\n     PURPOSE.\n</file>"}]}],"temperature":0.7,"stream":false,"max_tokens":8192}'
+        A PARTICULAR\n     PURPOSE.\n</file>"}]}],"stream":false,"max_tokens":8192}'
     headers:
       User-Agent:
-      - Faraday v2.13.2
+      - Faraday v2.13.4
       X-Api-Key:
       - "<ANTHROPIC_API_KEY>"
       Anthropic-Version:
@@ -157,7 +155,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 17 Jul 2025 09:42:54 GMT
+      - Sun, 14 Sep 2025 09:50:23 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -169,31 +167,33 @@ http_interactions:
       Anthropic-Ratelimit-Input-Tokens-Remaining:
       - '100000'
       Anthropic-Ratelimit-Input-Tokens-Reset:
-      - '2025-07-17T09:42:51Z'
+      - '2025-09-14T09:50:20Z'
       Anthropic-Ratelimit-Output-Tokens-Limit:
       - '20000'
       Anthropic-Ratelimit-Output-Tokens-Remaining:
       - '20000'
       Anthropic-Ratelimit-Output-Tokens-Reset:
-      - '2025-07-17T09:42:54Z'
+      - '2025-09-14T09:50:23Z'
       Anthropic-Ratelimit-Requests-Limit:
       - '1000'
       Anthropic-Ratelimit-Requests-Remaining:
       - '999'
       Anthropic-Ratelimit-Requests-Reset:
-      - '2025-07-17T09:42:50Z'
+      - '2025-09-14T09:50:19Z'
       Anthropic-Ratelimit-Tokens-Limit:
       - '120000'
       Anthropic-Ratelimit-Tokens-Remaining:
       - '120000'
       Anthropic-Ratelimit-Tokens-Reset:
-      - '2025-07-17T09:42:51Z'
+      - '2025-09-14T09:50:20Z'
       Request-Id:
       - "<REQUEST_ID>"
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       Anthropic-Organization-Id:
-      - 0137b15c-16bf-490d-9f90-8cfd7e325ec0
+      - "<ANTHROPIC_ORGANIZATION_ID>"
+      X-Envoy-Upstream-Service-Time:
+      - '3299'
       Via:
       - 1.1 google
       Cf-Cache-Status:
@@ -206,16 +206,16 @@ http_interactions:
       - "<CF_RAY>"
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"msg_0146VnPHJiZya97iynubtn1d","type":"message","role":"assistant","model":"claude-3-5-haiku-20241022","content":[{"type":"text","text":"This
-        file is a license text for Ruby, the programming language. It appears to be
-        a modified BSD-style license written by Yukihiro Matsumoto (Matz), the creator
-        of Ruby. The license outlines the terms under which Ruby can be redistributed
-        and modified, including:\n\n1. Allowing verbatim copies of the source code\n2.
-        Permitting modifications under certain conditions\n3. Allowing distribution
-        of binaries or source code\n4. Allowing incorporation into other software\n5.
-        Clarifying copyright status of scripts and library files\n6. Providing the
-        software \"AS IS\" without warranties\n\nThe license is quite permissive,
-        giving users significant freedom to use, modify, and distribute the Ruby software
-        with relatively few restrictions."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":588,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":162,"service_tier":"standard"}}'
-  recorded_at: Thu, 17 Jul 2025 09:42:54 GMT
+      string: '{"id":"msg_01VyixX8F7UxLhV3ZD72tPxN","type":"message","role":"assistant","model":"claude-3-5-haiku-20241022","content":[{"type":"text","text":"This
+        file is a license text for the Ruby programming language. Specifically, it
+        appears to be the Ruby License, which is a permissive open-source license
+        that allows redistribution and modification of the software under certain
+        conditions. \n\nKey points of the license include:\n- The software is copyrighted
+        by Yukihiro Matsumoto\n- Users can redistribute and modify the software \n-
+        There are specific guidelines for distributing modified or unmodified versions\n-
+        The software is provided \"AS IS\" without warranties\n- It offers flexibility
+        for both personal and commercial use\n\nThe license is similar to a BSD-style
+        license, with detailed terms about how the software can be used, modified,
+        and distributed."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":588,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":151,"service_tier":"standard"}}'
+  recorded_at: Sun, 14 Sep 2025 09:50:23 GMT
 recorded_with: VCR 6.3.1

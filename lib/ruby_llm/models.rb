@@ -1,14 +1,7 @@
 # frozen_string_literal: true
 
 module RubyLLM
-  # Registry of available AI models and their capabilities. Provides a clean interface
-  # to discover and work with models from different providers.
-  #
-  # Example:
-  #   RubyLLM.models.all                                  # All available models
-  #   RubyLLM.models.chat_models                          # Models that support chat
-  #   RubyLLM.models.by_provider('openai').chat_models    # OpenAI chat models
-  #   RubyLLM.models.find('claude-3')                     # Get info about a specific model
+  # Registry of available AI models and their capabilities.
   class Models
     include Enumerable
 
@@ -25,51 +18,62 @@ module RubyLLM
         File.expand_path('models.json', __dir__)
       end
 
-      def refresh!
-        # Collect models from both sources
-        provider_models = fetch_from_providers
+      def schema_file
+        File.expand_path('models_schema.json', __dir__)
+      end
+
+      def refresh!(remote_only: false)
+        provider_models = fetch_from_providers(remote_only: remote_only)
         parsera_models = fetch_from_parsera
-
-        # Merge with parsera data taking precedence
         merged_models = merge_models(provider_models, parsera_models)
-
         @instance = new(merged_models)
       end
 
-      def fetch_from_providers
-        configured = Provider.configured_providers(RubyLLM.config).filter(&:remote?)
+      def fetch_from_providers(remote_only: true)
+        config = RubyLLM.config
+        configured_classes = if remote_only
+                               Provider.configured_remote_providers(config)
+                             else
+                               Provider.configured_providers(config)
+                             end
+        configured = configured_classes.map { |klass| klass.new(config) }
 
-        RubyLLM.logger.info "Fetching models from providers: #{configured.map(&:slug).join(', ')}"
+        RubyLLM.logger.info "Fetching models from providers: #{configured.map(&:name).join(', ')}"
 
-        configured.flat_map do |provider|
-          provider.list_models(connection: provider.connection(RubyLLM.config))
-        end
+        configured.flat_map(&:list_models)
       end
 
-      def resolve(model_id, provider: nil, assume_exists: false) # rubocop:disable Metrics/PerceivedComplexity
-        assume_exists = true if provider && Provider.providers[provider.to_sym].local?
+      def resolve(model_id, provider: nil, assume_exists: false, config: nil) # rubocop:disable Metrics/PerceivedComplexity
+        config ||= RubyLLM.config
+        provider_class = provider ? Provider.providers[provider.to_sym] : nil
+
+        if provider_class
+          temp_instance = provider_class.new(config)
+          assume_exists = true if temp_instance.local?
+        end
 
         if assume_exists
           raise ArgumentError, 'Provider must be specified if assume_exists is true' unless provider
 
-          provider = Provider.providers[provider.to_sym] || raise(Error, "Unknown provider: #{provider.to_sym}")
-          model = Model::Info.new(
-            id: model_id,
-            name: model_id.gsub('-', ' ').capitalize,
-            provider: provider.slug,
-            capabilities: %w[function_calling streaming],
-            modalities: { input: %w[text image], output: %w[text] },
-            metadata: { warning: 'Assuming model exists, capabilities may not be accurate' }
-          )
-          if RubyLLM.config.log_assume_model_exists
-            RubyLLM.logger.warn "Assuming model '#{model_id}' exists for provider '#{provider}'. " \
-                                'Capabilities may not be accurately reflected.'
-          end
+          provider_class ||= raise(Error, "Unknown provider: #{provider.to_sym}")
+          provider_instance = provider_class.new(config)
+
+          model = if provider_instance.local?
+                    begin
+                      Models.find(model_id, provider)
+                    rescue ModelNotFoundError
+                      nil
+                    end
+                  end
+
+          model ||= Model::Info.default(model_id, provider_instance.slug)
         else
           model = Models.find model_id, provider
-          provider = Provider.providers[model.provider.to_sym] || raise(Error, "Unknown provider: #{model.provider}")
+          provider_class = Provider.providers[model.provider.to_sym] || raise(Error,
+                                                                              "Unknown provider: #{model.provider}")
+          provider_instance = provider_class.new(config)
         end
-        [model, provider]
+        [model, provider_instance]
       end
 
       def method_missing(method, ...)
@@ -97,31 +101,40 @@ module RubyLLM
       end
 
       def merge_models(provider_models, parsera_models)
-        # Create lookups for both sets of models
         parsera_by_key = index_by_key(parsera_models)
         provider_by_key = index_by_key(provider_models)
 
-        # All keys from both sources
         all_keys = parsera_by_key.keys | provider_by_key.keys
 
-        # Merge data, with parsera taking precedence
         models = all_keys.map do |key|
-          if (parsera_model = parsera_by_key[key])
-            # Parsera has this model - use it as the base
-            if (provider_model = provider_by_key[key])
-              # Both sources have this model, add provider metadata
-              add_provider_metadata(parsera_model, provider_model)
-            else
-              # Only parsera has this model
-              parsera_model
-            end
+          parsera_model = find_parsera_model(key, parsera_by_key)
+          provider_model = provider_by_key[key]
+
+          if parsera_model && provider_model
+            add_provider_metadata(parsera_model, provider_model)
+          elsif parsera_model
+            parsera_model
           else
-            # Only provider has this model
-            provider_by_key[key]
+            provider_model
           end
         end
 
         models.sort_by { |m| [m.provider, m.id] }
+      end
+
+      def find_parsera_model(key, parsera_by_key)
+        # Direct match
+        return parsera_by_key[key] if parsera_by_key[key]
+
+        # VertexAI uses same models as Gemini
+        provider, model_id = key.split(':', 2)
+        return unless provider == 'vertexai'
+
+        gemini_model = parsera_by_key["gemini:#{model_id}"]
+        return unless gemini_model
+
+        # Return Gemini's Parsera data but with VertexAI as provider
+        Model::Info.new(gemini_model.to_h.merge(provider: 'vertexai'))
       end
 
       def index_by_key(models)
@@ -131,41 +144,43 @@ module RubyLLM
       end
 
       def add_provider_metadata(parsera_model, provider_model)
-        # Create a new Model::Info with parsera data but include provider metadata
         data = parsera_model.to_h
         data[:metadata] = provider_model.metadata.merge(data[:metadata] || {})
         Model::Info.new(data)
       end
     end
 
-    # Initialize with optional pre-filtered models
     def initialize(models = nil)
       @models = models || load_models
     end
 
-    # Load models from the JSON file
     def load_models
+      read_from_json
+    end
+
+    def load_from_json!
+      @models = read_from_json
+    end
+
+    def read_from_json
       data = File.exist?(self.class.models_file) ? File.read(self.class.models_file) : '[]'
       JSON.parse(data, symbolize_names: true).map { |model| Model::Info.new(model) }
     rescue JSON::ParserError
       []
     end
 
-    def save_models
+    def save_to_json
       File.write(self.class.models_file, JSON.pretty_generate(all.map(&:to_h)))
     end
 
-    # Return all models in the collection
     def all
       @models
     end
 
-    # Allow enumeration over all models
     def each(&)
       all.each(&)
     end
 
-    # Find a specific model by ID
     def find(model_id, provider = nil)
       if provider
         find_with_provider(model_id, provider)
@@ -174,39 +189,36 @@ module RubyLLM
       end
     end
 
-    # Filter to only chat models
     def chat_models
       self.class.new(all.select { |m| m.type == 'chat' })
     end
 
-    # Filter to only embedding models
     def embedding_models
-      self.class.new(all.select { |m| m.type == 'embedding' })
+      self.class.new(all.select { |m| m.type == 'embedding' || m.modalities.output.include?('embeddings') })
     end
 
-    # Filter to only audio models
     def audio_models
-      self.class.new(all.select { |m| m.type == 'audio' })
+      self.class.new(all.select { |m| m.type == 'audio' || m.modalities.output.include?('audio') })
     end
 
-    # Filter to only image models
     def image_models
-      self.class.new(all.select { |m| m.type == 'image' })
+      self.class.new(all.select { |m| m.type == 'image' || m.modalities.output.include?('image') })
     end
 
-    # Filter models by family
     def by_family(family)
       self.class.new(all.select { |m| m.family == family.to_s })
     end
 
-    # Filter models by provider
     def by_provider(provider)
       self.class.new(all.select { |m| m.provider == provider.to_s })
     end
 
-    # Instance method to refresh models
-    def refresh!
-      self.class.refresh!
+    def refresh!(remote_only: false)
+      self.class.refresh!(remote_only: remote_only)
+    end
+
+    def resolve(model_id, provider: nil, assume_exists: false, config: nil)
+      self.class.resolve(model_id, provider: provider, assume_exists: assume_exists, config: config)
     end
 
     private

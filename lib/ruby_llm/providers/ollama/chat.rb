@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Ollama
+    class Ollama
       # Chat methods of the Ollama API integration
       module Chat
         module_function
@@ -19,7 +19,6 @@ module RubyLLM
         end
 
         def format_role(role)
-          # Ollama doesn't use the new OpenAI convention for system prompts
           role.to_s
         end
       end

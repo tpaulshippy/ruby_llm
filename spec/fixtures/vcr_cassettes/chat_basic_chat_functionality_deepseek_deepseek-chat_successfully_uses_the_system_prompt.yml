@@ -10,7 +10,7 @@ http_interactions:
         me about the weather."}],"stream":false,"temperature":0.0}'
     headers:
       User-Agent:
-      - Faraday v2.13.2
+      - Faraday v2.13.4
       Authorization:
       - Bearer <DEEPSEEK_API_KEY>
       Content-Type:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 17 Jul 2025 09:52:20 GMT
+      - Sun, 14 Sep 2025 09:59:51 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       X-Ds-Trace-Id:
-      - 7e326e6f6461cf5bfaa9926338004c81
+      - 1e44dabcc16f5d5952cce149f0ffd846
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Content-Type-Options:
@@ -52,7 +52,16 @@ http_interactions:
       - "<CF_RAY>"
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpZCI6ImYyMDEwYzNiLTRkZTEtNDhiZS1hZTRlLWFiZjg4ZTFjODRiYSIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3NTI3NDU5NDAsIm1vZGVsIjoiZGVlcHNlZWstY2hhdCIsImNob2ljZXMiOlt7ImluZGV4IjowLCJtZXNzYWdlIjp7InJvbGUiOiJhc3Npc3RhbnQiLCJjb250ZW50IjoiVGhlIHdlYXRoZXIgY2FuIHZhcnkgZ3JlYXRseSBkZXBlbmRpbmcgb24gbG9jYXRpb24sIHRpbWUgb2YgeWVhciwgYW5kIGF0bW9zcGhlcmljIGNvbmRpdGlvbnMuIEdlbmVyYWxseSwgaXQgaW5jbHVkZXMgdGVtcGVyYXR1cmUsIHByZWNpcGl0YXRpb24gKHJhaW4sIHNub3csIGV0Yy4pLCBodW1pZGl0eSwgd2luZCwgYW5kIGNsb3VkIGNvdmVyLiBGb3IgZXhhbXBsZSwgdHJvcGljYWwgcmVnaW9ucyBvZnRlbiBoYXZlIHdhcm0sIGh1bWlkIHdlYXRoZXIsIHdoaWxlIHBvbGFyIHJlZ2lvbnMgYXJlIGNvbGQgeWVhci1yb3VuZC4gIFxuXG5JZiB5b3UnZCBsaWtlIHNwZWNpZmljcyBhYm91dCB5b3VyIGFyZWEsIEkgY2FuIGxvb2sgdXAgY3VycmVudCBjb25kaXRpb25zIG9yIGZvcmVjYXN0c+KAlGp1c3QgbGV0IG1lIGtub3cgeW91ciBsb2NhdGlvbiEgIFxuXG5CeSB0aGUgd2F5LCBoZXJlJ3MgYSBmdW4gZmFjdDogd2VhdGhlciBwcmVkaWN0aW9uIGhhcyBpbXByb3ZlZCBkcmFtYXRpY2FsbHkgdGhhbmtzIHRvIHN1cGVyY29tcHV0ZXJzIGFuZCBzYXRlbGxpdGUgZGF0YS4gWEtDRDczOTIhICBcblxuV291bGQgeW91IGxpa2UgZGV0YWlscyBhYm91dCBhIHBhcnRpY3VsYXIgcGxhY2Ugb3Igd2VhdGhlciBwaGVub21lbm9uPyJ9LCJsb2dwcm9icyI6bnVsbCwiZmluaXNoX3JlYXNvbiI6InN0b3AifV0sInVzYWdlIjp7InByb21wdF90b2tlbnMiOjI3LCJjb21wbGV0aW9uX3Rva2VucyI6MTI5LCJ0b3RhbF90b2tlbnMiOjE1NiwicHJvbXB0X3Rva2Vuc19kZXRhaWxzIjp7ImNhY2hlZF90b2tlbnMiOjB9LCJwcm9tcHRfY2FjaGVfaGl0X3Rva2VucyI6MCwicHJvbXB0X2NhY2hlX21pc3NfdG9rZW5zIjoyN30sInN5c3RlbV9maW5nZXJwcmludCI6ImZwXzg4MDIzNjllYWFfcHJvZDA2MjNfZnA4X2t2Y2FjaGUifQ==
-  recorded_at: Thu, 17 Jul 2025 09:52:29 GMT
+      string: '{"id":"5b6301ea-e2ce-45af-bec5-5ffcd9c1860a","object":"chat.completion","created":1757843991,"model":"deepseek-chat","choices":[{"index":0,"message":{"role":"assistant","content":"Of
+        course! I''d be happy to talk about the weather, but it''s important to note
+        that I don''t have real-time data access, so I can''t provide current conditions
+        or forecasts. However, I can share general information about weather patterns,
+        climate, or meteorological concepts. If you''re looking for up-to-date weather
+        details, I recommend checking a reliable source like a weather app, website,
+        or local news.\n\nFor example, I could explain how different types of precipitation
+        form, discuss climate zones, or describe the factors that influence weather
+        systems. Let me know what aspect interests you!\n\nBy the way, XKCD7392 is
+        a fun nod to the idea that even in a world of advanced technology, sometimes
+        we just want to talk about the weather."},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":28,"completion_tokens":153,"total_tokens":181,"prompt_tokens_details":{"cached_tokens":0},"prompt_cache_hit_tokens":0,"prompt_cache_miss_tokens":28},"system_fingerprint":"fp_08f168e49b_prod0820_fp8_kvcache"}'
+  recorded_at: Sun, 14 Sep 2025 10:00:01 GMT
 recorded_with: VCR 6.3.1

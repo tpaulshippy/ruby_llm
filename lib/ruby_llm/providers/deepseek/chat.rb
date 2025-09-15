@@ -2,13 +2,12 @@
 
 module RubyLLM
   module Providers
-    module DeepSeek
+    class DeepSeek
       # Chat methods of the DeepSeek API integration
       module Chat
         module_function
 
         def format_role(role)
-          # DeepSeek doesn't use the new OpenAI convention for system prompts
           role.to_s
         end
       end

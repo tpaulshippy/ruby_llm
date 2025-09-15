@@ -2,7 +2,7 @@
 
 module RubyLLM
   module Providers
-    module Bedrock
+    class Bedrock
       # Media handling methods for the Bedrock API integration
       # NOTE: Bedrock does not support url attachments
       module Media
@@ -11,6 +11,7 @@ module RubyLLM
         module_function
 
         def format_content(content)
+          return [Anthropic::Media.format_text(content.to_json)] if content.is_a?(Hash) || content.is_a?(Array)
           return [Anthropic::Media.format_text(content)] unless content.is_a?(Content)
 
           parts = []

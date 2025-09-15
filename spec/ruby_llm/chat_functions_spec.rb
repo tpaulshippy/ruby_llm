@@ -5,8 +5,8 @@ require 'spec_helper'
 RSpec.describe RubyLLM::Chat do
   include_context 'with configured RubyLLM'
 
-  describe '#with_tool unsupported functions' do
-    it "raises UnsupportedFunctionsError when model doesn't support functions" do # rubocop:disable RSpec/ExampleLength
+  describe '#with_tool' do
+    it 'adds tools regardless of model capabilities' do
       # Create a non-function-calling model by patching the supports_functions attribute
       model = RubyLLM.models.find('gpt-4.1-nano')
       allow(model).to receive(:supports_functions?).and_return(false)
@@ -15,14 +15,15 @@ RSpec.describe RubyLLM::Chat do
       # Replace the model with our modified version
       chat.instance_variable_set(:@model, model)
 
+      # Should not raise an error anymore
       expect do
         chat.with_tool(RubyLLM::Tool)
-      end.to raise_error(RubyLLM::UnsupportedFunctionsError, /doesn't support function calling/)
+      end.not_to raise_error
     end
   end
 
   describe '#with_tools' do
-    it 'adds multiple tools at once' do # rubocop:disable RSpec/ExampleLength,RSpec/MultipleExpectations
+    it 'adds multiple tools at once' do
       chat = described_class.new
 
       tool1 = Class.new(RubyLLM::Tool) do
@@ -38,10 +39,70 @@ RSpec.describe RubyLLM::Chat do
       expect(chat.tools.keys).to include(:tool1, :tool2)
       expect(chat.tools.size).to eq(2)
     end
+
+    it 'replaces all tools when replace: true' do
+      chat = described_class.new
+
+      tool1 = Class.new(RubyLLM::Tool) do
+        def name = 'tool1'
+      end
+
+      tool2 = Class.new(RubyLLM::Tool) do
+        def name = 'tool2'
+      end
+
+      tool3 = Class.new(RubyLLM::Tool) do
+        def name = 'tool3'
+      end
+
+      # Add initial tools
+      chat.with_tools(tool1.new, tool2.new)
+      expect(chat.tools.size).to eq(2)
+
+      # Replace with new tool
+      chat.with_tools(tool3.new, replace: true)
+
+      expect(chat.tools.keys).to eq([:tool3])
+      expect(chat.tools.size).to eq(1)
+    end
+
+    it 'clears all tools when called with nil and replace: true' do
+      chat = described_class.new
+
+      tool1 = Class.new(RubyLLM::Tool) do
+        def name = 'tool1'
+      end
+
+      # Add initial tool
+      chat.with_tool(tool1.new)
+      expect(chat.tools.size).to eq(1)
+
+      # Clear all tools
+      chat.with_tools(nil, replace: true)
+
+      expect(chat.tools).to be_empty
+    end
+
+    it 'clears all tools when called with no arguments and replace: true' do
+      chat = described_class.new
+
+      tool1 = Class.new(RubyLLM::Tool) do
+        def name = 'tool1'
+      end
+
+      # Add initial tool
+      chat.with_tool(tool1.new)
+      expect(chat.tools.size).to eq(1)
+
+      # Clear all tools
+      chat.with_tools(replace: true)
+
+      expect(chat.tools).to be_empty
+    end
   end
 
   describe '#with_model' do
-    it 'changes the model and returns self' do # rubocop:disable RSpec/MultipleExpectations
+    it 'changes the model and returns self' do
       chat = described_class.new(model: 'gpt-4.1-nano')
       result = chat.with_model('claude-3-5-haiku-20241022')
 
@@ -51,7 +112,7 @@ RSpec.describe RubyLLM::Chat do
   end
 
   describe '#with_temperature' do
-    it 'sets the temperature and returns self' do # rubocop:disable RSpec/MultipleExpectations
+    it 'sets the temperature and returns self' do
       chat = described_class.new
       result = chat.with_temperature(0.8)
 
@@ -61,7 +122,7 @@ RSpec.describe RubyLLM::Chat do
   end
 
   describe '#each' do
-    it 'iterates through messages' do # rubocop:disable RSpec/ExampleLength,RSpec/MultipleExpectations
+    it 'iterates through messages' do
       chat = described_class.new
       chat.add_message(role: :user, content: 'Message 1')
       chat.add_message(role: :assistant, content: 'Message 2')

@@ -9,7 +9,7 @@ http_interactions:
         is great"}]}}]}'
     headers:
       User-Agent:
-      - Faraday v2.13.2
+      - Faraday v2.13.4
       X-Goog-Api-Key:
       - "<GEMINI_API_KEY>"
       Content-Type:
@@ -30,7 +30,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Thu, 17 Jul 2025 10:08:30 GMT
+      - Sun, 14 Sep 2025 10:10:13 GMT
       Server:
       - scaffolding on HTTPServer2
       X-Xss-Protection:
@@ -824,5 +824,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Thu, 17 Jul 2025 10:08:30 GMT
+  recorded_at: Sun, 14 Sep 2025 10:10:13 GMT
 recorded_with: VCR 6.3.1

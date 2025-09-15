@@ -5,10 +5,10 @@ http_interactions:
     uri: https://api.openai.com/v1/chat/completions
     body:
       encoding: UTF-8
-      string: '{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"Hello"}],"stream":false,"temperature":0.7}'
+      string: '{"model":"gpt-4.1-nano","messages":[{"role":"user","content":"Hello"}],"stream":false}'
     headers:
       User-Agent:
-      - Faraday v2.13.2
+      - Faraday v2.13.4
       Authorization:
       - Bearer invalid-key
       Content-Type:
@@ -23,7 +23,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Thu, 17 Jul 2025 10:08:33 GMT
+      - Sun, 14 Sep 2025 10:10:20 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -34,13 +34,17 @@ http_interactions:
       - Origin
       X-Request-Id:
       - "<X_REQUEST_ID>"
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
+      X-Envoy-Upstream-Service-Time:
+      - '3'
+      X-Openai-Proxy-Wasm:
+      - v0.1
       Cf-Cache-Status:
       - DYNAMIC
       Set-Cookie:
       - "<COOKIE>"
       - "<COOKIE>"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
       X-Content-Type-Options:
       - nosniff
       Server:
@@ -60,5 +64,5 @@ http_interactions:
                 "code": "invalid_api_key"
             }
         }
-  recorded_at: Thu, 17 Jul 2025 10:08:33 GMT
+  recorded_at: Sun, 14 Sep 2025 10:10:20 GMT
 recorded_with: VCR 6.3.1

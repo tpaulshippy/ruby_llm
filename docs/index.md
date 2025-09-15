@@ -2,19 +2,25 @@
 layout: default
 title: Home
 nav_order: 1
-description: "RubyLLM is a delightful Ruby way to work with AI."
+description: One beautiful Ruby API for GPT, Claude, Gemini, and more. Easily build chatbots, AI agents, RAG applications, and content generators.
 permalink: /
 ---
 
-<div class="logo-container">
-  <img src="/assets/images/logotype.svg" alt="RubyLLM" height="120" width="250">
-  <iframe src="https://ghbtns.com/github-btn.html?user=crmne&repo=ruby_llm&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub" style="vertical-align: middle; display: inline-block;"></iframe>
-</div>
+<h1>
+  <div class="logo-container">
+    <img src="/assets/images/logotype.svg" alt="RubyLLM" height="120" width="250">
+    <div style="transform: scale(1.2); transform-origin: left center; display: inline-block; margin-left: 20px;">
+      <a class="github-button" href="https://github.com/crmne/ruby_llm" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star crmne/ruby_llm on GitHub">Star</a>
+    </div>
+  </div>
+</h1>
 
-A delightful Ruby way to work with AI through a unified interface to Anthropic, AWS Bedrock Anthropic, DeepSeek, Ollama, OpenAI, Gemini, OpenRouter, and any OpenAI-compatible API.
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+{{ page.description }}
 {: .fs-6 .fw-300 }
 
-<a href="{% link installation.md %}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" style="margin: 0;">Get started</a>
+<a href="{% link _getting_started/getting-started.md %}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" style="margin: 0;">Get started</a>
 <a href="https://github.com/crmne/ruby_llm" class="btn fs-5 mb-4 mb-md-0 mr-2" style="margin: 0;">GitHub</a>
 
 ---
@@ -35,6 +41,13 @@ A delightful Ruby way to work with AI through a unified interface to Anthropic, 
     <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/gemini-brand-color.svg" alt="Gemini" class="logo-large">
   </div>
   <div class="provider-logo">
+    <img src="https://raw.githubusercontent.com/gpustack/gpustack/main/docs/assets/gpustack-logo.png" alt="GPUStack" class="logo-medium">
+  </div>
+  <div class="provider-logo">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/mistral-color.svg" alt="Mistral" class="logo-medium">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/mistral-text.svg" alt="Mistral" class="logo-small">
+  </div>
+  <div class="provider-logo">
     <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/ollama.svg" alt="Ollama" class="logo-medium">
     <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/ollama-text.svg" alt="Ollama" class="logo-medium">
   </div>
@@ -46,6 +59,14 @@ A delightful Ruby way to work with AI through a unified interface to Anthropic, 
     <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/openrouter.svg" alt="OpenRouter" class="logo-medium">
     <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/openrouter-text.svg" alt="OpenRouter" class="logo-small">
   </div>
+  <div class="provider-logo">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/perplexity-color.svg" alt="Perplexity" class="logo-medium">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/perplexity-text.svg" alt="Perplexity" class="logo-small">
+  </div>
+  <div class="provider-logo">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/vertexai-color.svg" alt="VertexAI" class="logo-medium">
+    <img src="https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/vertexai-text.svg" alt="VertexAI" class="logo-small">
+  </div>
 </div>
 
 <div class="badge-container">
@@ -55,73 +76,110 @@ A delightful Ruby way to work with AI through a unified interface to Anthropic, 
   <a href="https://codecov.io/gh/crmne/ruby_llm"><img src="https://codecov.io/gh/crmne/ruby_llm/branch/main/graph/badge.svg" alt="codecov" /></a>
 </div>
 
-🤺 Battle tested at [💬  Chat with Work](https://chatwithwork.com)
+<a href="https://trendshift.io/repositories/13640" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13640" alt="crmne%2Fruby_llm | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
+Battle tested at [<img src="https://chatwithwork.com/logotype.svg" alt="Chat with Work" class="chatwithwork-logo" style="height: 2em; vertical-align: middle;">](https://chatwithwork.com) — *Claude Code for your documents*
+
+Using RubyLLM in production? [Share your story](https://tally.so/r/3Na02p)! Takes 5 minutes.
+{: .note }
 
 ---
 
-## The problem with AI libraries
+## Why RubyLLM?
 
-Every AI provider comes with its own client library, its own response format, its own conventions for streaming, and its own way of handling errors. Want to use multiple providers? Prepare to juggle incompatible APIs and bloated dependencies.
+Every AI provider ships their own bloated client. Different APIs. Different response formats. Different conventions. It's exhausting.
 
-RubyLLM fixes all that. One beautiful API for everything. One consistent format. Minimal dependencies — just Faraday, Zeitwerk, and Marcel. Because working with AI should be a joy, not a chore.
+RubyLLM gives you one beautiful API for all of them. Same interface whether you're using GPT, Claude, or your local Ollama. Just three dependencies: Faraday, Zeitwerk, and Marcel. That's it.
 
-## What makes it great
+## Show me the code
 
 ```ruby
 # Just ask questions
 chat = RubyLLM.chat
 chat.ask "What's the best way to learn Ruby?"
+```
 
-# Analyze images, audio, documents, and text files
+```ruby
+# Analyze any file type
 chat.ask "What's in this image?", with: "ruby_conf.jpg"
+chat.ask "What's happening in this video?", with: "video.mp4"
 chat.ask "Describe this meeting", with: "meeting.wav"
 chat.ask "Summarize this document", with: "contract.pdf"
 chat.ask "Explain this code", with: "app.rb"
+```
 
-# Multiple files at once - types automatically detected
+```ruby
+# Multiple files at once
 chat.ask "Analyze these files", with: ["diagram.png", "report.pdf", "notes.txt"]
+```
 
-# Stream responses in real-time
-chat.ask "Tell me a story about a Ruby programmer" do |chunk|
+```ruby
+# Stream responses
+chat.ask "Tell me a story about Ruby" do |chunk|
   print chunk.content
 end
+```
 
+```ruby
 # Generate images
 RubyLLM.paint "a sunset over mountains in watercolor style"
+```
 
-# Create vector embeddings
+```ruby
+# Create embeddings
 RubyLLM.embed "Ruby is elegant and expressive"
+```
 
+```ruby
+# Moderate content for safety
+RubyLLM.moderate("Check if this text is safe").flagged? # => false
+```
+
+```ruby
 # Let AI use your code
 class Weather < RubyLLM::Tool
-  description "Gets current weather for a location"
-  param :latitude, desc: "Latitude (e.g., 52.5200)"
-  param :longitude, desc: "Longitude (e.g., 13.4050)"
+  description "Get current weather"
+  param :latitude
+  param :longitude
 
   def execute(latitude:, longitude:)
     url = "https://api.open-meteo.com/v1/forecast?latitude=#{latitude}&longitude=#{longitude}&current=temperature_2m,wind_speed_10m"
-
-    response = Faraday.get(url)
-    data = JSON.parse(response.body)
-  rescue => e
-    { error: e.message }
+    JSON.parse(Faraday.get(url).body)
   end
 end
 
-chat.with_tool(Weather).ask "What's the weather in Berlin? (52.5200, 13.4050)"
+chat.with_tool(Weather).ask "What's the weather in Berlin?"
 ```
 
-## Core Capabilities
+```ruby
+# Get structured output
+class ProductSchema < RubyLLM::Schema
+  string :name
+  number :price
+  array :features do
+    string
+  end
+end
 
-*   💬 **Unified Chat:** Converse with models from OpenAI, Anthropic, Gemini, Bedrock, OpenRouter, DeepSeek, Ollama, or any OpenAI-compatible API using `RubyLLM.chat`.
-*   👁️ **Vision:** Analyze images within chats.
-*   🔊 **Audio:** Transcribe and understand audio content.
-*   📄 **Document Analysis:** Extract information from PDFs, text files, and other documents.
-*   🖼️ **Image Generation:** Create images with `RubyLLM.paint`.
-*   📊 **Embeddings:** Generate text embeddings for vector search with `RubyLLM.embed`.
-*   🔧 **Tools (Function Calling):** Let AI models call your Ruby code using `RubyLLM::Tool`.
-*   🚂 **Rails Integration:** Easily persist chats, messages, and tool calls using `acts_as_chat` and `acts_as_message`.
-*   🌊 **Streaming:** Process responses in real-time with idiomatic Ruby blocks.
+response = chat.with_schema(ProductSchema).ask "Analyze this product", with: "product.txt"
+```
+
+## Features
+
+* **Chat:** Conversational AI with `RubyLLM.chat`
+* **Vision:** Analyze images and screenshots
+* **Audio:** Transcribe and understand speech
+* **Documents:** Extract from PDFs, CSVs, JSON, any file type
+* **Image generation:** Create images with `RubyLLM.paint`
+* **Embeddings:** Vector search with `RubyLLM.embed`
+* **Moderation:** Content safety with `RubyLLM.moderate`
+* **Tools:** Let AI call your Ruby methods
+* **Structured output:** JSON schemas that just work
+* **Streaming:** Real-time responses with blocks
+* **Rails:** ActiveRecord integration with `acts_as_chat`
+* **Async:** Fiber-based concurrency
+* **Model registry:** 500+ models with capability detection and pricing
+* **Providers:** OpenAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API
 
 ## Installation
 
@@ -131,47 +189,32 @@ gem 'ruby_llm'
 ```
 Then `bundle install`.
 
-Configure your API keys (using environment variables is recommended):
+Configure your API keys:
 ```ruby
-# config/initializers/ruby_llm.rb or similar
+# config/initializers/ruby_llm.rb
 RubyLLM.configure do |config|
-  config.openai_api_key = ENV.fetch('OPENAI_API_KEY', nil)
-  # Add keys ONLY for providers you intend to use
-  # config.anthropic_api_key = ENV.fetch('ANTHROPIC_API_KEY', nil)
-  # ... see Configuration guide for all options ...
+  config.openai_api_key = ENV['OPENAI_API_KEY']
 end
 ```
-See the [Installation Guide](https://rubyllm.com/installation) for full details.
 
-## Rails Integration
+## Rails
 
-Add persistence to your chat models effortlessly:
+```bash
+# Install database models
+rails generate ruby_llm:install
+
+# Add chat UI (optional)
+rails generate ruby_llm:chat_ui
+```
 
 ```ruby
-# app/models/chat.rb
 class Chat < ApplicationRecord
-  acts_as_chat # Automatically saves messages & tool calls
-  # ... your other model logic ...
+  acts_as_chat
 end
 
-# app/models/message.rb
-class Message < ApplicationRecord
-  acts_as_message
-  # ...
-end
-
-# app/models/tool_call.rb (if using tools)
-class ToolCall < ApplicationRecord
-  acts_as_tool_call
-  # ...
-end
-
-# Now interacting with a Chat record persists the conversation:
-chat_record = Chat.create!(model_id: "gpt-4.1-nano")
-chat_record.ask("Explain Active Record callbacks.") # User & Assistant messages saved
-
-# Works seamlessly with file attachments - types automatically detected
-chat_record.ask("What's in this file?", with: "report.pdf")
-chat_record.ask("Analyze these", with: ["image.jpg", "data.csv", "notes.txt"])
+chat = Chat.create! model: "claude-sonnet-4"
+chat.ask "What's in this file?", with: "report.pdf"
 ```
-Check the [Rails Integration Guide](https://rubyllm.com/guides/rails) for more.
+
+Visit `http://localhost:3000/chats` for a ready-to-use chat interface!
+

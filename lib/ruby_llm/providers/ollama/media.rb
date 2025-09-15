@@ -2,14 +2,15 @@
 
 module RubyLLM
   module Providers
-    module Ollama
-      # Handles formatting of media content (images, audio) for OpenAI APIs
+    class Ollama
+      # Handles formatting of media content (images, audio) for Ollama APIs
       module Media
         extend OpenAI::Media
 
         module_function
 
         def format_content(content)
+          return content.to_json if content.is_a?(Hash) || content.is_a?(Array)
           return content unless content.is_a?(Content)
 
           parts = []
@@ -19,10 +20,6 @@ module RubyLLM
             case attachment.type
             when :image
               parts << Ollama::Media.format_image(attachment)
-            when :pdf
-              parts << format_pdf(attachment)
-            when :audio
-              parts << format_audio(attachment)
             when :text
               parts << format_text_file(attachment)
             else
@@ -37,7 +34,7 @@ module RubyLLM
           {
             type: 'image_url',
             image_url: {
-              url: "data:#{image.mime_type};base64,#{image.encoded}",
+              url: image.for_llm,
               detail: 'auto'
             }
           }

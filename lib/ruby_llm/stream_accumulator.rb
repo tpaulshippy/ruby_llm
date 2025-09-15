@@ -2,13 +2,11 @@
 
 module RubyLLM
   # Assembles streaming responses from LLMs into complete messages.
-  # Handles the complexities of accumulating content and tool calls
-  # from partial chunks while tracking token usage.
   class StreamAccumulator
     attr_reader :content, :model_id, :tool_calls
 
     def initialize
-      @content = String.new
+      @content = +''
       @tool_calls = {}
       @input_tokens = 0
       @output_tokens = 0
@@ -16,7 +14,7 @@ module RubyLLM
     end
 
     def add(chunk)
-      RubyLLM.logger.debug chunk.inspect
+      RubyLLM.logger.debug chunk.inspect if RubyLLM.config.log_stream_debug
       @model_id ||= chunk.model_id
 
       if chunk.tool_call?
@@ -26,17 +24,18 @@ module RubyLLM
       end
 
       count_tokens chunk
-      RubyLLM.logger.debug inspect
+      RubyLLM.logger.debug inspect if RubyLLM.config.log_stream_debug
     end
 
-    def to_message
+    def to_message(response)
       Message.new(
         role: :assistant,
         content: content.empty? ? nil : content,
         model_id: model_id,
         tool_calls: tool_calls_from_stream,
         input_tokens: @input_tokens.positive? ? @input_tokens : nil,
-        output_tokens: @output_tokens.positive? ? @output_tokens : nil
+        output_tokens: @output_tokens.positive? ? @output_tokens : nil,
+        raw: response
       )
     end
 
@@ -47,7 +46,7 @@ module RubyLLM
         arguments = if tc.arguments.is_a?(String) && !tc.arguments.empty?
                       JSON.parse(tc.arguments)
                     elsif tc.arguments.is_a?(String)
-                      {} # Return empty hash for empty string arguments
+                      {}
                     else
                       tc.arguments
                     end
@@ -61,11 +60,11 @@ module RubyLLM
     end
 
     def accumulate_tool_calls(new_tool_calls)
-      RubyLLM.logger.debug "Accumulating tool calls: #{new_tool_calls}"
+      RubyLLM.logger.debug "Accumulating tool calls: #{new_tool_calls}" if RubyLLM.config.log_stream_debug
       new_tool_calls.each_value do |tool_call|
         if tool_call.id
           tool_call_id = tool_call.id.empty? ? SecureRandom.uuid : tool_call.id
-          tool_call_arguments = tool_call.arguments.empty? ? String.new : tool_call.arguments
+          tool_call_arguments = tool_call.arguments.empty? ? +'' : tool_call.arguments
           @tool_calls[tool_call.id] = ToolCall.new(
             id: tool_call_id,
             name: tool_call.name,

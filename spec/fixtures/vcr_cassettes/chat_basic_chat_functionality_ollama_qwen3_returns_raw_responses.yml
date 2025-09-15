@@ -1,0 +1,35 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<OLLAMA_API_BASE>/chat/completions"
+    body:
+      encoding: UTF-8
+      string: '{"model":"qwen3","messages":[{"role":"user","content":"What is the
+        capital of France?"}],"stream":false}'
+    headers:
+      User-Agent:
+      - Faraday v2.13.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 14 Sep 2025 10:01:50 GMT
+      Content-Length:
+      - '1092'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLTQwIiwib2JqZWN0IjoiY2hhdC5jb21wbGV0aW9uIiwiY3JlYXRlZCI6MTc1Nzg0NDExMCwibW9kZWwiOiJxd2VuMyIsInN5c3RlbV9maW5nZXJwcmludCI6ImZwX29sbGFtYSIsImNob2ljZXMiOlt7ImluZGV4IjowLCJtZXNzYWdlIjp7InJvbGUiOiJhc3Npc3RhbnQiLCJjb250ZW50IjoiXHUwMDNjdGhpbmtcdTAwM2Vcbk9rYXksIHRoZSB1c2VyIGlzIGFza2luZyBmb3IgdGhlIGNhcGl0YWwgb2YgRnJhbmNlLiBJIG5lZWQgdG8gbWFrZSBzdXJlIEkgcHJvdmlkZSB0aGUgY29ycmVjdCBhbnN3ZXIuIExldCBtZSByZWNhbGwgd2hhdCBJIGtub3cuIEZyYW5jZSBpcyBhIGNvdW50cnkgaW4gRXVyb3BlLCBhbmQgSSByZW1lbWJlciB0aGF0IFBhcmlzIGlzIHRoZSBjYXBpdGFsLiBXYWl0LCBidXQgSSBzaG91bGQgZG91YmxlLWNoZWNrIHRvIGF2b2lkIGFueSBtaXN0YWtlcy4gU29tZXRpbWVzIHRoZXJlIG1pZ2h0IGJlIGNvbmZ1c2lvbiB3aXRoIG90aGVyIGNpdGllcyBsaWtlIEx5b24gb3IgTWFyc2VpbGxlLCBidXQgdGhvc2UgYXJlIG1ham9yIGNpdGllcywgbm90IGNhcGl0YWxzLiBQYXJpcyBpcyB0aGUgcG9saXRpY2FsLCBjdWx0dXJhbCwgYW5kIGVjb25vbWljIGNlbnRlciBvZiBGcmFuY2UuIFllcywgSSdtIHByZXR0eSBjb25maWRlbnQgaXQncyBQYXJpcy4gSSBzaG91bGQganVzdCBzdGF0ZSB0aGF0IGNsZWFybHkuIE5vIG5lZWQgZm9yIGV4dHJhIGRldGFpbHMgdW5sZXNzIHRoZSB1c2VyIGFza3MgZm9yIG1vcmUsIGJ1dCB0aGUgcXVlc3Rpb24gaXMgc3RyYWlnaHRmb3J3YXJkLiBMZXQgbWUgbWFrZSBzdXJlIHRoZXJlJ3Mgbm8gdHJpY2sgaGVyZS4gVGhlIHVzZXIgbWlnaHQgYmUgdGVzdGluZyBiYXNpYyBrbm93bGVkZ2UsIHNvIGEgc2ltcGxlIGFuc3dlciBzaG91bGQgc3VmZmljZS5cblx1MDAzYy90aGlua1x1MDAzZVxuXG5UaGUgY2FwaXRhbCBvZiBGcmFuY2UgaXMgKipQYXJpcyoqLiDwn4er8J+HtyJ9LCJmaW5pc2hfcmVhc29uIjoic3RvcCJ9XSwidXNhZ2UiOnsicHJvbXB0X3Rva2VucyI6MTUsImNvbXBsZXRpb25fdG9rZW5zIjoxNzEsInRvdGFsX3Rva2VucyI6MTg2fX0K
+  recorded_at: Sun, 14 Sep 2025 10:01:50 GMT
+recorded_with: VCR 6.3.1

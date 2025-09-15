@@ -5,10 +5,6 @@ module RubyLLM
   module Utils
     module_function
 
-    def format_text_file_for_llm(text_file)
-      "<file name='#{text_file.filename}' mime_type='#{text_file.mime_type}'>#{text_file.content}</file>"
-    end
-
     def hash_get(hash, key)
       hash[key.to_sym] || hash[key.to_s]
     end
@@ -21,6 +17,28 @@ module RubyLLM
         [item]
       else
         Array(item)
+      end
+    end
+
+    def to_time(value)
+      return unless value
+
+      value.is_a?(Time) ? value : Time.parse(value.to_s)
+    end
+
+    def to_date(value)
+      return unless value
+
+      value.is_a?(Date) ? value : Date.parse(value.to_s)
+    end
+
+    def deep_merge(original, overrides)
+      original.merge(overrides) do |_key, original_value, overrides_value|
+        if original_value.is_a?(Hash) && overrides_value.is_a?(Hash)
+          deep_merge(original_value, overrides_value)
+        else
+          overrides_value
+        end
       end
     end
   end
