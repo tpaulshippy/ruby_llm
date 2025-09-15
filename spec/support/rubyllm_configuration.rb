@@ -24,6 +24,10 @@ RSpec.shared_context 'with configured RubyLLM' do
       config.bedrock_region = 'us-west-2'
       config.bedrock_session_token = ENV.fetch('AWS_SESSION_TOKEN', nil)
 
+      config.azure_openai_api_base = ENV.fetch('AZURE_OPENAI_ENDPOINT', 'test')
+      config.azure_openai_api_key = ENV.fetch('AZURE_OPENAI_API_KEY', 'test')
+      config.azure_openai_api_version = ENV.fetch('AZURE_OPENAI_API_VER', 'test')
+
       config.vertexai_project_id = ENV.fetch('GOOGLE_CLOUD_PROJECT', 'test-project')
       config.vertexai_location = ENV.fetch('GOOGLE_CLOUD_LOCATION', 'us-central1')
 

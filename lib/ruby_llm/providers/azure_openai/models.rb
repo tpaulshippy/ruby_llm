@@ -2,13 +2,13 @@
 
 module RubyLLM
   module Providers
-    module AzureOpenAI
+    class AzureOpenAI
       # Models methods of the OpenAI API integration
       module Models
         extend OpenAI::Models
 
         KNOWN_MODELS = [
-          'gpt-4o'
+          'gpt-5-nano'
         ].freeze
 
         module_function
